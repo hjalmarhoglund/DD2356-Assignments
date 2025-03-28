@@ -6,8 +6,8 @@
 #include "clock.h" /* routines to access the cycle counter */
 
 #define MINBYTES (1 << 14)  /* First working set size */
-#define MAXBYTES (1 << 27)  /* Last working set size */
-//#define MAXBYTES (1 << 29)  /* Last working set size */
+//#define MAXBYTES (1 << 27)  /* Last working set size */
+#define MAXBYTES (1 << 29)  /* Last working set size */
 //#define MAXSTRIDE 15        /* Stride x8 bytes */
 #define MAXSTRIDE 32        /* Stride x8 bytes */
 #define MAXELEMS MAXBYTES/sizeof(long) 
