@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 # replace with actual data
 message_sizes = np.array([1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024])  # in Bytes
-rtt_times = np.array([10, 12, 16, 22, 30, 42, 55, 70, 90, 120, 160])  # in microseconds
+rtt_times = np.array([5.4302, 4.8921, 4.9133, 4.9492, 5.0105, 6.2017, 6.3169, 6.369, 6.6887, 7.4462, 8.0062]) # in microseconds
 
 coeffs = np.polyfit(message_sizes, rtt_times, 1)
 latency_extrapolated = coeffs[1]  # y-intercept
