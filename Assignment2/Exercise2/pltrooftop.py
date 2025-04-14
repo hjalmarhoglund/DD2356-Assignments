@@ -18,7 +18,7 @@ plt.loglog(operational_intensity, performance, marker='o', label='Measured Data'
 plt.axhline(y=compute_peak, color='r', linestyle='--', label='Peak FLOP/s')
 plt.loglog(x_for_slope, memory_line, linestyle='dotted', color='gray', label='Memory Bandwidth Limit')
 plt.xlabel('Operational Intensity (FLOPs/Byte)')
-plt.ylabel('Performance (GFLOP/s)')
+plt.ylabel('Performance (FLOP/s)')
 plt.title('Roofline Model')
 plt.legend()
 plt.grid(True, which='both', linestyle='--')
