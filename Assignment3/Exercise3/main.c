@@ -8,7 +8,7 @@ Date: 2025-04-22
 #include <time.h>
 #include <omp.h>
 
-#define N 10000000 // 10^7
+#define N 100000000 // 10^8
 #define NUM_WARMUP 3
 #define NUM_RUNS 10
 
