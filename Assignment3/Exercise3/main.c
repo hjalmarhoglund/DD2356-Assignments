@@ -5,6 +5,7 @@ Date: 2025-04-22
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <omp.h>
 
 #define N 10000000 // 10^7
@@ -91,6 +92,7 @@ double omp_reduction_sum(double *x, size_t size) {
 
 void generate_random(double *input, size_t size)
 {
+    srand(time(0));
     for (size_t i = 0; i < size; i++) {
         input[i] = rand() / (double)(RAND_MAX);
     }
@@ -180,6 +182,7 @@ int main() {
     double *arr = (double*) malloc(N * sizeof(double));
 
     generate_random(arr, N);
+
     printf("===        START SERIAL SUM ===\n");
     time_serial_sum(arr, N);
     printf("===          END SERIAL SUM ===\n");
