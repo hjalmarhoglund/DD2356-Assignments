@@ -1,0 +1,75 @@
+===        START SERIAL SUM ===
+Warmup run 0 got s=5002219.2193
+Warmup run 1 got s=5002219.2193
+Warmup run 2 got s=5002219.2193
+Run 0 took 0.009178 seconds and got s=5002219.2193
+Run 1 took 0.009189 seconds and got s=5002219.2193
+Run 2 took 0.009167 seconds and got s=5002219.2193
+Run 3 took 0.009191 seconds and got s=5002219.2193
+Run 4 took 0.009126 seconds and got s=5002219.2193
+Run 5 took 0.009146 seconds and got s=5002219.2193
+Run 6 took 0.009300 seconds and got s=5002219.2193
+Run 7 took 0.009170 seconds and got s=5002219.2193
+Run 8 took 0.009137 seconds and got s=5002219.2193
+Run 9 took 0.009191 seconds and got s=5002219.2193
+===          END SERIAL SUM ===
+===           START OMP SUM ===
+Warmup run 0 got s=156325.7447
+Warmup run 1 got s=156369.3442
+Warmup run 2 got s=156512.6807
+Run 0 took 0.008245 seconds and got s=156546.5840
+Run 1 took 0.008216 seconds and got s=156545.8262
+Run 2 took 0.008146 seconds and got s=156326.2812
+Run 3 took 0.008192 seconds and got s=156333.4851
+Run 4 took 0.008183 seconds and got s=156573.2080
+Run 5 took 0.008196 seconds and got s=156327.1247
+Run 6 took 0.008261 seconds and got s=156477.1724
+Run 7 took 0.008196 seconds and got s=156381.4936
+Run 8 took 0.008153 seconds and got s=156369.2463
+Run 9 took 0.008147 seconds and got s=156310.1771
+===             END OMP SUM ===
+===  START OMP CRITICAL SUM ===
+Warmup run 0 got s=5002219.2193
+Warmup run 1 got s=5002219.2193
+Warmup run 2 got s=5002219.2193
+Run 0 took 0.648281 seconds and got s=5002219.2193
+Run 1 took 0.645557 seconds and got s=5002219.2193
+Run 2 took 0.645193 seconds and got s=5002219.2193
+Run 3 took 0.645970 seconds and got s=5002219.2193
+Run 4 took 0.647752 seconds and got s=5002219.2193
+Run 5 took 0.645404 seconds and got s=5002219.2193
+Run 6 took 0.647858 seconds and got s=5002219.2193
+Run 7 took 0.645948 seconds and got s=5002219.2193
+Run 8 took 0.669996 seconds and got s=5002219.2193
+Run 9 took 0.665490 seconds and got s=5002219.2193
+===    END OMP CRITICAL SUM ===
+===     START OMP LOCAL SUM ===
+Warmup run 0 got s=5002219.2193
+Warmup run 1 got s=5002219.2193
+Warmup run 2 got s=5002219.2193
+Run 0 took 0.017945 seconds and got s=5002219.2193
+Run 1 took 0.021757 seconds and got s=5002219.2193
+Run 2 took 0.015960 seconds and got s=5002219.2193
+Run 3 took 0.021706 seconds and got s=5002219.2193
+Run 4 took 0.021864 seconds and got s=5002219.2193
+Run 5 took 0.021629 seconds and got s=5002219.2193
+Run 6 took 0.021586 seconds and got s=5002219.2193
+Run 7 took 0.021746 seconds and got s=5002219.2193
+Run 8 took 0.021739 seconds and got s=5002219.2193
+Run 9 took 0.021575 seconds and got s=5002219.2193
+===       END OMP LOCAL SUM ===
+=== START OMP REDUCTION SUM ===
+Warmup run 0 got s=5002219.2193
+Warmup run 1 got s=5002219.2193
+Warmup run 2 got s=5002219.2193
+Run 0 took 0.001183 seconds and got s=5002219.2193
+Run 1 took 0.001159 seconds and got s=5002219.2193
+Run 2 took 0.001189 seconds and got s=5002219.2193
+Run 3 took 0.001179 seconds and got s=5002219.2193
+Run 4 took 0.001155 seconds and got s=5002219.2193
+Run 5 took 0.001155 seconds and got s=5002219.2193
+Run 6 took 0.001217 seconds and got s=5002219.2193
+Run 7 took 0.001172 seconds and got s=5002219.2193
+Run 8 took 0.001161 seconds and got s=5002219.2193
+Run 9 took 0.001195 seconds and got s=5002219.2193
+===   END OMP REDUCTION SUM ===
