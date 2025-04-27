@@ -3,7 +3,7 @@ import numpy as np
 NUM_WARMUP = 3
 NUM_REAL = 10
 
-versions = ['serial', 'omp_sum', 'omp_critical', 'omp_local_sum', 'omp_reduction']
+versions = ['serial', '\\texttt{omp\\_sum}', '\\texttt{omp\\_critical}', '\\texttt{omp\\_local\\_sum}', '\\texttt{omp\\_reduction}']
 NUM_VERSIONS = len(versions)
 
 threads = [1,2,4,8,16,20,24,28,32,64,128]
@@ -25,15 +25,38 @@ for t in range(NUM_THREAD_CONFS):
         input() # Read "=== END ... ==="
 
 # Print for N in 1 ... 32
-for ver in range(3):
-    print("\t\\begin{tabular}{|c|c|c|}")
-    print("\t\t\\hline\n\t\t\\# thrds & $\\mu$ (s) & $\\sigma$ \\\\\n\t\t\\hline")
-    for n in range(9):
-        s = f"\t\t${threads[n]}$ & ${np.mean(data[ver,n,:]):.2e}$ & ${np.std(data[ver,n,:]):.2e}$ \\\\"
+handle_first = 3
+print("\t\\adjustbox{max width=\\textwidth}{")
+print("\t\\begin{tabular}{ccccccc}")
+print("\t\t\\toprule")
+print("\t\t\\multicolumn{1}{c}{}", end='')
+for ver in range(handle_first):
+    s = " & \\multicolumn{2}{c}{" + versions[ver] + '}'
+    print(s, end='')
+print(" \\\\")
+print("\t\t", end='')
+for i in range(1,handle_first+1):
+    s = " \\cmidrule(rl){" + str(2*i) + "-" + str(2*i+1) + "}"
+    print(s, end='')
+print()
+print("\t\t\\# threads", end='')
+for _ in range(handle_first):
+    print(" & $\\mu$ (s) & $\\sigma$", end='')
+print(" \\\\")
+print("\t\t", end='')
+for i in range(1,handle_first*2+2):
+    s = "\\cmidrule(rl){" + str(i) + '-' + str(i) + "}"
+    print(s, end=' ')
+print()
+for n in range(9):
+    print(f"\t\t${threads[n]}$", end='')
+    for ver in range(handle_first):
+        s = f" & ${np.mean(data[ver,n,:]):.2e}$ & ${np.std(data[ver,n,:]):.2e}$"
         for i in range(1,8):
             subr = "{-" + str(i) + "}"
             s = s.replace(f"e-0{i}", f" \\cdot 10^{subr}")
-        print(s)
-    print("\t\t\\hline")
-    print("\t\\end{tabular}\n\t\\quad")
+        print(s, end='')
+    print(" \\\\")
+print("\t\t\\bottomrule")
+print("\t\\end{tabular}\n\t}")
 
