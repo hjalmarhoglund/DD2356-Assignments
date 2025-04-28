@@ -1,0 +1,184 @@
+SETTING OMP_NUM_THREADS=1
+===     START OMP LOCAL SUM ===
+Warmup run 0 got s=50001997.8110
+Warmup run 1 got s=50001997.8110
+Warmup run 2 got s=50001997.8110
+Run 0 took 0.096495 seconds and got s=50001997.8110
+Run 1 took 0.096362 seconds and got s=50001997.8110
+Run 2 took 0.096344 seconds and got s=50001997.8110
+Run 3 took 0.096481 seconds and got s=50001997.8110
+Run 4 took 0.096264 seconds and got s=50001997.8110
+Run 5 took 0.096323 seconds and got s=50001997.8110
+Run 6 took 0.096279 seconds and got s=50001997.8110
+Run 7 took 0.096118 seconds and got s=50001997.8110
+Run 8 took 0.095966 seconds and got s=50001997.8110
+Run 9 took 0.096339 seconds and got s=50001997.8110
+===       END OMP LOCAL SUM ===
+===     START OPT LOCAL SUM ===
+Warmup run 0 got s=50001997.8110
+Warmup run 1 got s=50001997.8110
+Warmup run 2 got s=50001997.8110
+Run 0 took 0.096162 seconds and got s=50001997.8110
+Run 1 took 0.096287 seconds and got s=50001997.8110
+Run 2 took 0.096219 seconds and got s=50001997.8110
+Run 3 took 0.096101 seconds and got s=50001997.8110
+Run 4 took 0.096202 seconds and got s=50001997.8110
+Run 5 took 0.095982 seconds and got s=50001997.8110
+Run 6 took 0.096348 seconds and got s=50001997.8110
+Run 7 took 0.096115 seconds and got s=50001997.8110
+Run 8 took 0.096194 seconds and got s=50001997.8110
+Run 9 took 0.096020 seconds and got s=50001997.8110
+===       END OPT LOCAL SUM ===
+=== START OMP REDUCTION SUM ===
+Warmup run 0 got s=50001997.8110
+Warmup run 1 got s=50001997.8110
+Warmup run 2 got s=50001997.8110
+Run 0 took 0.096061 seconds and got s=50001997.8110
+Run 1 took 0.096393 seconds and got s=50001997.8110
+Run 2 took 0.096355 seconds and got s=50001997.8110
+Run 3 took 0.096088 seconds and got s=50001997.8110
+Run 4 took 0.096276 seconds and got s=50001997.8110
+Run 5 took 0.096230 seconds and got s=50001997.8110
+Run 6 took 0.096416 seconds and got s=50001997.8110
+Run 7 took 0.096171 seconds and got s=50001997.8110
+Run 8 took 0.096122 seconds and got s=50001997.8110
+Run 9 took 0.096188 seconds and got s=50001997.8110
+===   END OMP REDUCTION SUM ===
+SETTING OMP_NUM_THREADS=32
+===     START OMP LOCAL SUM ===
+Warmup run 0 got s=50002050.2281
+Warmup run 1 got s=50002050.2281
+Warmup run 2 got s=50002050.2281
+Run 0 took 0.025075 seconds and got s=50002050.2281
+Run 1 took 0.025217 seconds and got s=50002050.2281
+Run 2 took 0.025211 seconds and got s=50002050.2281
+Run 3 took 0.025199 seconds and got s=50002050.2281
+Run 4 took 0.025222 seconds and got s=50002050.2281
+Run 5 took 0.025223 seconds and got s=50002050.2281
+Run 6 took 0.025474 seconds and got s=50002050.2281
+Run 7 took 0.025259 seconds and got s=50002050.2281
+Run 8 took 0.025289 seconds and got s=50002050.2281
+Run 9 took 0.025410 seconds and got s=50002050.2281
+===       END OMP LOCAL SUM ===
+===     START OPT LOCAL SUM ===
+Warmup run 0 got s=50002050.2281
+Warmup run 1 got s=50002050.2281
+Warmup run 2 got s=50002050.2281
+Run 0 took 0.025318 seconds and got s=50002050.2281
+Run 1 took 0.025317 seconds and got s=50002050.2281
+Run 2 took 0.025231 seconds and got s=50002050.2281
+Run 3 took 0.025958 seconds and got s=50002050.2281
+Run 4 took 0.025947 seconds and got s=50002050.2281
+Run 5 took 0.025931 seconds and got s=50002050.2281
+Run 6 took 0.022624 seconds and got s=50002050.2281
+Run 7 took 0.022722 seconds and got s=50002050.2281
+Run 8 took 0.022701 seconds and got s=50002050.2281
+Run 9 took 0.022704 seconds and got s=50002050.2281
+===       END OPT LOCAL SUM ===
+=== START OMP REDUCTION SUM ===
+Warmup run 0 got s=50002050.2281
+Warmup run 1 got s=50002050.2281
+Warmup run 2 got s=50002050.2281
+Run 0 took 0.020378 seconds and got s=50002050.2281
+Run 1 took 0.020433 seconds and got s=50002050.2281
+Run 2 took 0.020409 seconds and got s=50002050.2281
+Run 3 took 0.020410 seconds and got s=50002050.2281
+Run 4 took 0.020493 seconds and got s=50002050.2281
+Run 5 took 0.020435 seconds and got s=50002050.2281
+Run 6 took 0.020382 seconds and got s=50002050.2281
+Run 7 took 0.020402 seconds and got s=50002050.2281
+Run 8 took 0.020399 seconds and got s=50002050.2281
+Run 9 took 0.020419 seconds and got s=50002050.2281
+===   END OMP REDUCTION SUM ===
+SETTING OMP_NUM_THREADS=64
+===     START OMP LOCAL SUM ===
+Warmup run 0 got s=49999868.4231
+Warmup run 1 got s=49999868.4231
+Warmup run 2 got s=49999868.4231
+Run 0 took 0.021037 seconds and got s=49999868.4231
+Run 1 took 0.021024 seconds and got s=49999868.4231
+Run 2 took 0.021399 seconds and got s=49999868.4231
+Run 3 took 0.021062 seconds and got s=49999868.4231
+Run 4 took 0.021044 seconds and got s=49999868.4231
+Run 5 took 0.021091 seconds and got s=49999868.4231
+Run 6 took 0.021071 seconds and got s=49999868.4231
+Run 7 took 0.021079 seconds and got s=49999868.4231
+Run 8 took 0.021037 seconds and got s=49999868.4231
+Run 9 took 0.021161 seconds and got s=49999868.4231
+===       END OMP LOCAL SUM ===
+===     START OPT LOCAL SUM ===
+Warmup run 0 got s=49999868.4231
+Warmup run 1 got s=49999868.4231
+Warmup run 2 got s=49999868.4231
+Run 0 took 0.021288 seconds and got s=49999868.4231
+Run 1 took 0.021288 seconds and got s=49999868.4231
+Run 2 took 0.021093 seconds and got s=49999868.4231
+Run 3 took 0.021048 seconds and got s=49999868.4231
+Run 4 took 0.021023 seconds and got s=49999868.4231
+Run 5 took 0.021136 seconds and got s=49999868.4231
+Run 6 took 0.021183 seconds and got s=49999868.4231
+Run 7 took 0.021159 seconds and got s=49999868.4231
+Run 8 took 0.021180 seconds and got s=49999868.4231
+Run 9 took 0.021141 seconds and got s=49999868.4231
+===       END OPT LOCAL SUM ===
+=== START OMP REDUCTION SUM ===
+Warmup run 0 got s=49999868.4231
+Warmup run 1 got s=49999868.4231
+Warmup run 2 got s=49999868.4231
+Run 0 took 0.020832 seconds and got s=49999868.4231
+Run 1 took 0.020828 seconds and got s=49999868.4231
+Run 2 took 0.020839 seconds and got s=49999868.4231
+Run 3 took 0.020811 seconds and got s=49999868.4231
+Run 4 took 0.020827 seconds and got s=49999868.4231
+Run 5 took 0.020860 seconds and got s=49999868.4231
+Run 6 took 0.020869 seconds and got s=49999868.4231
+Run 7 took 0.020862 seconds and got s=49999868.4231
+Run 8 took 0.020812 seconds and got s=49999868.4231
+Run 9 took 0.020816 seconds and got s=49999868.4231
+===   END OMP REDUCTION SUM ===
+SETTING OMP_NUM_THREADS=128
+===     START OMP LOCAL SUM ===
+Warmup run 0 got s=49998577.4121
+Warmup run 1 got s=49998577.4121
+Warmup run 2 got s=49998577.4121
+Run 0 took 0.021386 seconds and got s=49998577.4121
+Run 1 took 0.021739 seconds and got s=49998577.4121
+Run 2 took 0.021825 seconds and got s=49998577.4121
+Run 3 took 0.021744 seconds and got s=49998577.4121
+Run 4 took 0.021772 seconds and got s=49998577.4121
+Run 5 took 0.021637 seconds and got s=49998577.4121
+Run 6 took 0.021450 seconds and got s=49998577.4121
+Run 7 took 0.021522 seconds and got s=49998577.4121
+Run 8 took 0.021893 seconds and got s=49998577.4121
+Run 9 took 0.021832 seconds and got s=49998577.4121
+===       END OMP LOCAL SUM ===
+===     START OPT LOCAL SUM ===
+Warmup run 0 got s=49998577.4121
+Warmup run 1 got s=49998577.4121
+Warmup run 2 got s=49998577.4121
+Run 0 took 0.021962 seconds and got s=49998577.4121
+Run 1 took 0.023255 seconds and got s=49998577.4121
+Run 2 took 0.023254 seconds and got s=49998577.4121
+Run 3 took 0.023238 seconds and got s=49998577.4121
+Run 4 took 0.023125 seconds and got s=49998577.4121
+Run 5 took 0.023070 seconds and got s=49998577.4121
+Run 6 took 0.023012 seconds and got s=49998577.4121
+Run 7 took 0.023302 seconds and got s=49998577.4121
+Run 8 took 0.023059 seconds and got s=49998577.4121
+Run 9 took 0.023354 seconds and got s=49998577.4121
+===       END OPT LOCAL SUM ===
+=== START OMP REDUCTION SUM ===
+Warmup run 0 got s=49998577.4121
+Warmup run 1 got s=49998577.4121
+Warmup run 2 got s=49998577.4121
+Run 0 took 0.026241 seconds and got s=49998577.4121
+Run 1 took 0.026007 seconds and got s=49998577.4121
+Run 2 took 0.026023 seconds and got s=49998577.4121
+Run 3 took 0.026268 seconds and got s=49998577.4121
+Run 4 took 0.026074 seconds and got s=49998577.4121
+Run 5 took 0.025864 seconds and got s=49998577.4121
+Run 6 took 0.025616 seconds and got s=49998577.4121
+Run 7 took 0.025507 seconds and got s=49998577.4121
+Run 8 took 0.025516 seconds and got s=49998577.4121
+Run 9 took 0.025961 seconds and got s=49998577.4121
+===   END OMP REDUCTION SUM ===
