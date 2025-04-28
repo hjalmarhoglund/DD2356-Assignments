@@ -54,6 +54,7 @@ double omp_local_sum(double *x, size_t size)
     size_t num_threads;
 #pragma omp parallel shared(local_sum,num_threads)
     {
+    int mythreadnum = omp_get_thread_num();
 #pragma omp single
     {
     num_threads = omp_get_num_threads();
@@ -65,7 +66,7 @@ double omp_local_sum(double *x, size_t size)
 
 #pragma omp for
     for (size_t i = 0; i < size; i++) {
-        local_sum[omp_get_thread_num()] += x[i];
+        local_sum[mythreadnum] += x[i];
     }
     }
     double sum_val = 0.0;
@@ -76,8 +77,35 @@ double omp_local_sum(double *x, size_t size)
     return sum_val;
 }
 
+double opt_local_sum(double *x, size_t size) {
+    double *local_sum;
+    size_t num_threads;
+    size_t chunk;
+#pragma omp parallel shared(local_sum,num_threads,chunk)
+    {
+    int mythreadnum = omp_get_thread_num();
+#pragma omp single
+    {
+    num_threads = omp_get_num_threads();
+    local_sum = (double *) malloc(num_threads * sizeof(double));
+    for (size_t i = 0; i < num_threads; i++) {
+        local_sum[i] = 0.0;
+    }
+    chunk = (N + num_threads - 1) / num_threads;
+    }
 
-// TODO: Write omp_local_sum without false sharing. Maybe reduction or shedule(static,chunk) ???
+#pragma omp for schedule(static,chunk)
+    for (size_t i = 0; i < size; i++) {
+        local_sum[mythreadnum] += x[i];
+    }
+    }
+    double sum_val = 0.0;
+    for (size_t i = 0; i < num_threads; i++) {
+        sum_val += local_sum[i];
+    }
+    free(local_sum);
+    return sum_val;
+}
 
 double omp_reduction_sum(double *x, size_t size) {
     double sum_val = 0.0;
@@ -162,6 +190,22 @@ void time_omp_local_sum(double *arr, size_t size) {
     }
 }
 
+void time_opt_local_sum(double *arr, size_t size) {
+    // Do warmup runs
+    for (int i = 0; i < NUM_WARMUP; i++) {
+        double s = opt_local_sum(arr, size);
+        printf("Warmup run %d got s=%.4f\n", i, s);
+    }
+    double start_time, end_time;
+    for (int i = 0; i < NUM_RUNS; i++) {
+        start_time = omp_get_wtime();
+        double s = opt_local_sum(arr, size);
+        end_time = omp_get_wtime();
+
+        printf("Run %d took %.6f seconds and got s=%.4f\n", i, end_time - start_time, s);
+    }
+}
+
 void time_omp_reduction_sum(double *arr, size_t size) {
     // Do warmup runs
     for (int i = 0; i < NUM_WARMUP; i++) {
@@ -183,6 +227,7 @@ int main() {
 
     generate_random(arr, N);
 
+    /*
     printf("===        START SERIAL SUM ===\n");
     time_serial_sum(arr, N);
     printf("===          END SERIAL SUM ===\n");
@@ -192,12 +237,17 @@ int main() {
     printf("===             END OMP SUM ===\n");
 
     printf("===  START OMP CRITICAL SUM ===\n");
-    //time_omp_critical_sum(arr, N);
+    time_omp_critical_sum(arr, N);
     printf("===    END OMP CRITICAL SUM ===\n");
+    */
 
     printf("===     START OMP LOCAL SUM ===\n");
     time_omp_local_sum(arr, N);
     printf("===       END OMP LOCAL SUM ===\n");
+
+    printf("===     START OPT LOCAL SUM ===\n");
+    time_opt_local_sum(arr, N);
+    printf("===       END OPT LOCAL SUM ===\n");
 
     printf("=== START OMP REDUCTION SUM ===\n");
     time_omp_reduction_sum(arr, N);
