@@ -1,3 +1,3 @@
 default:
-	gcc -lomp -Xclang -fopenmp main.c
+	gcc -lomp -Xclang -fopenmp -O3 main.c
 	./a.out

@@ -23,6 +23,7 @@ int DFT(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 int DFT_omp(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 int DFT_omp_schedule(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 int DFT_omp_reduction(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
+int DFT_swap(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 // set the input array with random number
 int fillInput(double *xr, double *xi, int N);
 // set to zero the input vector
@@ -102,7 +103,6 @@ int main(int argc, char *argv[]) {
     // check the results: easy to make correctness errors with openMP
     checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
 
-    /* NOTE: THE REDUCTION CODE IS NOT WORKING
     // Reset
     setOutputZero(xr_check, xi_check, N);
     setOutputZero(Xr_o, Xi_o, N);
@@ -119,7 +119,23 @@ int main(int argc, char *argv[]) {
     printf("DFTW OMP REDUCTION computation in %f seconds\n", run_time);
     // check the results: easy to make correctness errors with openMP
     checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
-    */
+
+    // Reset
+    setOutputZero(xr_check, xi_check, N);
+    setOutputZero(Xr_o, Xi_o, N);
+    start_time = omp_get_wtime();
+
+    // DFT
+    idft = 1;
+    DFT_swap(idft, xr, xi, Xr_o, Xi_o, N);
+    // IDFT
+    idft = -1;
+    DFT_swap(idft, Xr_o, Xi_o, xr_check, xi_check, N);
+    // stop timer
+    run_time = omp_get_wtime() - start_time;
+    printf("DFTW OMP SWAP computation in %f seconds\n", run_time);
+    // check the results: easy to make correctness errors with openMP
+    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
 
     // print the results of the DFT
 #ifdef DEBUG
@@ -139,15 +155,40 @@ int main(int argc, char *argv[]) {
 
 // DFT/IDFT routine
 // idft: 1 direct DFT, -1 inverse IDFT (Inverse DFT)
-int DFT_omp_reduction(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N) {
-    double Xro_k = 0.0;
-    double Xio_k = 0.0;
-#pragma omp parallel shared(Xro_k,Xio_k)
+int DFT_swap(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N) {
+#pragma omp parallel
     {
+    for (int n = 0; n < N; n++) {
+#pragma omp for
+        for (int k = 0; k < N; k++) {
+            // Real part of X[k]
+            Xr_o[k] +=
+                xr[n] * cos(n * k * PI2 / N) + idft * xi[n] * sin(n * k * PI2 / N);
+            // Imaginary part of X[k]
+            Xi_o[k] +=
+                -idft * xr[n] * sin(n * k * PI2 / N) + xi[n] * cos(n * k * PI2 / N);
+        }
+    }
+
+    // normalize if you are doing IDFT
+    if (idft == -1) {
+#pragma omp for
+        for (int n = 0; n < N; n++) {
+            Xr_o[n] /= N;
+            Xi_o[n] /= N;
+        }
+    }
+    }
+    return 1;
+}
+
+// DFT/IDFT routine
+// idft: 1 direct DFT, -1 inverse IDFT (Inverse DFT)
+int DFT_omp_reduction(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N) {
     for (int k = 0; k < N; k++) {
-        Xro_k = 0.0;
-        Xio_k = 0.0;
-#pragma omp for reduction(+:Xro_k,Xio_k)
+        double Xro_k = 0.0;
+        double Xio_k = 0.0;
+#pragma omp parallel for reduction(+:Xro_k,Xio_k)
         for (int n = 0; n < N; n++) {
             // Real part of X[k]
             Xro_k +=
@@ -162,12 +203,11 @@ int DFT_omp_reduction(int idft, double *xr, double *xi, double *Xr_o, double *Xi
 
     // normalize if you are doing IDFT
     if (idft == -1) {
-#pragma omp for
+#pragma parallel omp for
         for (int n = 0; n < N; n++) {
             Xr_o[n] /= N;
             Xi_o[n] /= N;
         }
-    }
     }
     return 1;
 }
