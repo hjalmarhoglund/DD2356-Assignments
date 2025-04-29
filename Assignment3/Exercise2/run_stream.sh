@@ -9,6 +9,9 @@
 #SBATCH --time=00:20:00
 #SBATCH --mem=100G
 
+numactl --show
+echo "Cores available: $(nproc)"
+
 # compile
 gcc -O3 -fopenmp -DSTREAM_ARRAY_SIZE=20000000 stream.c -o stream
 
