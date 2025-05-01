@@ -77,13 +77,11 @@ double omp_local_sum(double *x, size_t size)
     return sum_val;
 }
 
-// tvals is of size 8 + 1016 = 1024 = 1 KiB
-typedef struct { double val; char pad[1016]; } tvals;
+typedef struct { double val; char pad[120]; } tvals;
 
 double opt_local_sum(double *x, size_t size) {
     tvals *local_sum;
     size_t num_threads;
-    //size_t chunk;
 #pragma omp parallel shared(local_sum,num_threads)
     {
     int mythreadnum = omp_get_thread_num();
@@ -94,10 +92,9 @@ double opt_local_sum(double *x, size_t size) {
     for (size_t i = 0; i < num_threads; i++) {
         local_sum[i].val = 0.0;
     }
-    //chunk = (N + num_threads - 1) / num_threads;
     }
 
-#pragma omp for //schedule(static,chunk)
+#pragma omp for 
     for (size_t i = 0; i < size; i++) {
         local_sum[mythreadnum].val += x[i];
     }
@@ -113,7 +110,7 @@ double opt_local_sum(double *x, size_t size) {
 double omp_reduction_sum(double *x, size_t size) {
     double sum_val = 0.0;
 
-#pragma omp parallel for default(shared) reduction(+:sum_val)
+#pragma omp parallel for reduction(+:sum_val)
     for (size_t i = 0; i < size; i++) {
         sum_val += x[i];
     }
