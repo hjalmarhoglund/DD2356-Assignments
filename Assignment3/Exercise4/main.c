@@ -11,6 +11,10 @@
 #include "time.h"   // time(0) to get random seed
 #include "math.h"   // sine and cosine
 #include "omp.h"    // openmp library like timing
+#include "assert.h"
+
+#define NUM_WARMUP 3
+#define NUM_REAL 10
 
 // two pi
 #define PI2 6.28318530718
@@ -24,6 +28,8 @@ int DFT_omp(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N)
 int DFT_omp_schedule(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 int DFT_omp_reduction(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
 int DFT_swap(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
+int DFT_manual(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N);
+void perform_test(int version, double *xr, double *xi, double *Xr_o, double *Xi_o, double *xr_check, double *xi_check, int N);
 // set the input array with random number
 int fillInput(double *xr, double *xi, int N);
 // set to zero the input vector
@@ -47,95 +53,19 @@ int main(int argc, char *argv[]) {
     // for checking purposes
     double *xr_check = (double *)malloc(N * sizeof(double));
     double *xi_check = (double *)malloc(N * sizeof(double));
-    setOutputZero(xr_check, xi_check, N);
 
     // Allocate array for output vector
     double *Xr_o = (double *)malloc(N * sizeof(double));
     double *Xi_o = (double *)malloc(N * sizeof(double));
-    setOutputZero(Xr_o, Xi_o, N);
 
-    // start timer
-    double start_time = omp_get_wtime();
-
-    // DFT
-    int idft = 1;
-    DFT(idft, xr, xi, Xr_o, Xi_o, N);
-    // IDFT
-    idft = -1;
-    DFT(idft, Xr_o, Xi_o, xr_check, xi_check, N);
-    // stop timer
-    double run_time = omp_get_wtime() - start_time;
-    printf("DFTW computation in %f seconds\n", run_time);
-    // check the results: easy to make correctness errors with openMP
-    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
-
-    // Reset
-    setOutputZero(xr_check, xi_check, N);
-    setOutputZero(Xr_o, Xi_o, N);
-    start_time = omp_get_wtime();
-
-    // DFT
-    idft = 1;
-    DFT_omp(idft, xr, xi, Xr_o, Xi_o, N);
-    // IDFT
-    idft = -1;
-    DFT_omp(idft, Xr_o, Xi_o, xr_check, xi_check, N);
-    // stop timer
-    run_time = omp_get_wtime() - start_time;
-    printf("DFTW OMP computation in %f seconds\n", run_time);
-    // check the results: easy to make correctness errors with openMP
-    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
-
-    // Reset
-    setOutputZero(xr_check, xi_check, N);
-    setOutputZero(Xr_o, Xi_o, N);
-    start_time = omp_get_wtime();
-
-    // DFT
-    idft = 1;
-    DFT_omp_schedule(idft, xr, xi, Xr_o, Xi_o, N);
-    // IDFT
-    idft = -1;
-    DFT_omp_schedule(idft, Xr_o, Xi_o, xr_check, xi_check, N);
-    // stop timer
-    run_time = omp_get_wtime() - start_time;
-    printf("DFTW OMP SCHEDULE computation in %f seconds\n", run_time);
-    // check the results: easy to make correctness errors with openMP
-    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
-
-    // Reset
-    setOutputZero(xr_check, xi_check, N);
-    setOutputZero(Xr_o, Xi_o, N);
-    start_time = omp_get_wtime();
-
-    // DFT
-    idft = 1;
-    DFT_omp_reduction(idft, xr, xi, Xr_o, Xi_o, N);
-    // IDFT
-    idft = -1;
-    DFT_omp_reduction(idft, Xr_o, Xi_o, xr_check, xi_check, N);
-    // stop timer
-    run_time = omp_get_wtime() - start_time;
-    printf("DFTW OMP REDUCTION computation in %f seconds\n", run_time);
-    // check the results: easy to make correctness errors with openMP
-    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
-
-    // Reset
-    setOutputZero(xr_check, xi_check, N);
-    setOutputZero(Xr_o, Xi_o, N);
-    start_time = omp_get_wtime();
-
-    // DFT
-    idft = 1;
-    DFT_swap(idft, xr, xi, Xr_o, Xi_o, N);
-    // IDFT
-    idft = -1;
-    DFT_swap(idft, Xr_o, Xi_o, xr_check, xi_check, N);
-    // stop timer
-    run_time = omp_get_wtime() - start_time;
-    printf("DFTW OMP SWAP computation in %f seconds\n", run_time);
-    // check the results: easy to make correctness errors with openMP
-    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
+    for (int ver = 0; ver <= 5; ver++) {
+        for (int warm = 0; warm < NUM_WARMUP; warm++) {
+            perform_test(ver, xr, xi, Xr_o, Xi_o, xr_check, xi_check, N);
+        }
+        for (int real = 0; real < NUM_REAL; real++) {
+            perform_test(ver, xr, xi, Xr_o, Xi_o, xr_check, xi_check, N);
+        }
+    }
 
     // print the results of the DFT
 #ifdef DEBUG
@@ -151,6 +81,87 @@ int main(int argc, char *argv[]) {
     free(xi_check);
 
     return 0;
+}
+
+void perform_test(int version, double *xr, double *xi, double *Xr_o, double *Xi_o, double *xr_check, double *xi_check, int N) {
+    assert(0 <= version && version <= 5);
+    // Reset
+    setOutputZero(xr_check, xi_check, N);
+    setOutputZero(Xr_o, Xi_o, N);
+    double start_time = omp_get_wtime();
+
+    switch (version) {
+        case 0:
+            DFT(1, xr, xi, Xr_o, Xi_o, N);
+            DFT(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        case 1:
+            DFT_omp(1, xr, xi, Xr_o, Xi_o, N);
+            DFT_omp(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        case 2:
+            DFT_omp_schedule(1, xr, xi, Xr_o, Xi_o, N);
+            DFT_omp_schedule(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        case 3:
+            DFT_omp_reduction(1, xr, xi, Xr_o, Xi_o, N);
+            DFT_omp_reduction(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        case 4:
+            DFT_swap(1, xr, xi, Xr_o, Xi_o, N);
+            DFT_swap(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        case 5:
+            DFT_manual(1, xr, xi, Xr_o, Xi_o, N);
+            DFT_manual(-1, Xr_o, Xi_o, xr_check, xi_check, N);
+            break;
+        default:     
+            printf("BAD VERSION!\n");
+    }
+    // stop timer
+    double run_time = omp_get_wtime() - start_time;
+    char *version_names[] = {"Serial", "OMP", "OMP_SCHEDULE", "OMP_REDUCTION", "SWAP", "MANUAL"};
+    printf("DFTW %s computation in %f seconds\n", version_names[version], run_time);
+    // check the results: easy to make correctness errors with openMP
+    checkResults(xr, xi, xr_check, xi_check, Xr_o, Xi_o, N);
+}
+
+// DFT/IDFT routine
+// idft: 1 direct DFT, -1 inverse IDFT (Inverse DFT)
+int DFT_manual(int idft, double *xr, double *xi, double *Xr_o, double *Xi_o, int N) {
+    int num_threads, thread_num;
+    double Xr_o_local, Xi_o_local;
+#pragma omp parallel shared(num_threads) private(thread_num,Xr_o_local,Xi_o_local)
+    {
+    thread_num = omp_get_thread_num();
+#pragma single
+    {
+    num_threads = omp_get_num_threads();
+    }
+    for (int k = thread_num; k < N; k += num_threads) {
+        Xr_o_local = 0.0;
+        Xi_o_local = 0.0;
+        for (int n = 0; n < N; n++) {
+            // Real part of X[k]
+            Xr_o_local +=
+                xr[n] * cos(n * k * PI2 / N) + idft * xi[n] * sin(n * k * PI2 / N);
+            // Imaginary part of X[k]
+            Xi_o_local +=
+                -idft * xr[n] * sin(n * k * PI2 / N) + xi[n] * cos(n * k * PI2 / N);
+        }
+        Xr_o[k] = Xr_o_local;
+        Xi_o[k] = Xi_o_local;
+    }
+
+    // normalize if you are doing IDFT
+    if (idft == -1) {
+        for (int n = thread_num; n < N; n += num_threads) {
+            Xr_o[n] /= N;
+            Xi_o[n] /= N;
+        }
+    }
+    }
+    return 1;
 }
 
 // DFT/IDFT routine
