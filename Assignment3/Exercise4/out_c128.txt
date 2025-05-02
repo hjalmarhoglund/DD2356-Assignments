@@ -1,0 +1,157 @@
+DFTW calculation with N = 10000 
+DFTW Serial computation in 11.446492 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.447262 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.452002 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.454973 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.449635 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.448920 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.448317 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.457160 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.450066 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.445142 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.459745 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.451964 seconds
+Xre[0] = 10000.000000 
+DFTW Serial computation in 11.468761 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.157811 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144198 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144186 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144338 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144390 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144324 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144232 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144220 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144265 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144332 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144162 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144312 seconds
+Xre[0] = 10000.000000 
+DFTW OMP computation in 0.144277 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233407 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233483 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233433 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233462 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233510 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233443 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233451 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233421 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233517 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233478 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233433 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233440 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_SCHEDULE computation in 0.233381 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.457648 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.450377 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449985 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449740 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449757 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449106 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449927 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.448684 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.450298 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449550 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449514 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.449939 seconds
+Xre[0] = 10000.000000 
+DFTW OMP_REDUCTION computation in 1.450007 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.225521 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224696 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224813 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.225902 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224914 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.223805 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224542 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.225148 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224537 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.225483 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.223966 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224948 seconds
+Xre[0] = 10000.000000 
+DFTW SWAP computation in 0.224822 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140443 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140130 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140092 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140091 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140138 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140085 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140081 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140159 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140065 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140083 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140133 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140100 seconds
+Xre[0] = 10000.000000 
+DFTW MANUAL computation in 0.140095 seconds
+Xre[0] = 10000.000000 
