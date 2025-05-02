@@ -3,10 +3,10 @@ import numpy as np
 NUM_WARMUP = 3
 NUM_REAL = 10
 
-versions = ['serial', '\\texttt{omp\\_sum}', '\\texttt{omp\\_critical}', '\\texttt{omp\\_local\\_sum}', '\\texttt{omp\\_reduction}']
+versions = ['serial', '\\texttt{omp\\_sum}', '\\texttt{omp\\_critical}']
 NUM_VERSIONS = len(versions)
 
-threads = [1,2,4,8,16,20,24,28,32,64,128]
+threads = [1,2,4,8,16,20,24,28,32]
 NUM_THREAD_CONFS = len(threads)
 
 # Set up matrix to store the output
@@ -25,7 +25,7 @@ for t in range(NUM_THREAD_CONFS):
         input() # Read "=== END ... ==="
 
 # Print for N in 1 ... 32
-handle_first = 3
+handle_first = NUM_VERSIONS
 print("\t\\adjustbox{max width=\\textwidth}{")
 print("\t\\begin{tabular}{ccccccc}")
 print("\t\t\\toprule")
