@@ -27,6 +27,9 @@ for ver in range(NUM_VERSIONS):
 for i in range(10):
     subr = ' \\cdot 10^{' + str(-i) + '}'
     s = s.replace(f'e-0{i}', subr)
+for i in range(10):
+    subr = ' \\cdot 10^{' + str(i) + '\\phantom{-}}'
+    s = s.replace(f'e+0{i}', subr)
 
-print(s)
+print(s, end='')
 
