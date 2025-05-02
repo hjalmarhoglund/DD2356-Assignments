@@ -7,23 +7,18 @@ Date: 2025-04-28
 #include <stdlib.h>
 #include <omp.h>
 
-#define NUM_WARMUP 3
-#define NUM_RUNS 10
-
-#define N 500  // Grid size
-#define ITER 1000  // Number of iterations
-#define DT 0.01  // Time step
-#define DX 1.0   // Grid spacing
+#define N 500           // Grid size
+#define ITER 1000       // Number of iterations
+#define NUM_WARMUP 3    // Number of warm‐up runs
+#define NUM_RUNS 10     // Number of timed runs
 
 double h[N][N], u[N][N], v[N][N];
 
 double calc_sum() {
     double s = 0.0;
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
+    for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
             s += h[i][j];
-        }
-    }
     return s;
 }
 
@@ -36,13 +31,13 @@ void initialize() {
         }
 }
 
-void compute() {
+void compute_serial() {
     for (int iter = 0; iter < ITER; iter++) {
         for (int i = 1; i < N - 1; i++) {
             for (int j = 1; j < N - 1; j++) {
-                double dudx = (u[i+1][j] - u[i-1][j]) / (2.0 * DX);
-                double dvdy = (v[i][j+1] - v[i][j-1]) / (2.0 * DX);
-                h[i][j] -= DT * (dudx + dvdy);
+                double dudx = (u[i+1][j] - u[i-1][j]) / 2.0;
+                double dvdy = (v[i][j+1] - v[i][j-1]) / 2.0;
+                h[i][j] -= 0.01 * (dudx + dvdy);
             }
         }
     }
@@ -51,16 +46,16 @@ void compute() {
 void compute_parallel() {
 #pragma omp parallel
     {
-    for (int iter = 0; iter < ITER; iter++) {
-#pragma omp for collapse(2)
-        for (int i = 1; i < N - 1; i++) {
-            for (int j = 1; j < N - 1; j++) {
-                double dudx = (u[i+1][j] - u[i-1][j]) / (2.0 * DX);
-                double dvdy = (v[i][j+1] - v[i][j-1]) / (2.0 * DX);
-                h[i][j] -= DT * (dudx + dvdy);
+        for (int iter = 0; iter < ITER; iter++) {
+#pragma omp for collapse(2) schedule(runtime)
+            for (int i = 1; i < N - 1; i++) {
+                for (int j = 1; j < N - 1; j++) {
+                    double dudx = (u[i+1][j] - u[i-1][j]) / 2.0;
+                    double dvdy = (v[i][j+1] - v[i][j-1]) / 2.0;
+                    h[i][j] -= 0.01 * (dudx + dvdy);
+                }
             }
         }
-    }
     }
 }
 
@@ -75,58 +70,95 @@ void write_output() {
     fclose(f);
 }
 
-void measure_serial() {
-    // Do warmup
-    for (int i = 0; i < NUM_WARMUP; i++) {
-        initialize();
-        compute();
-        double s = calc_sum();
-        printf("Warmup run %d got s=%.4f\n", i, s);
-    }
-    double start_time, end_time;
-    for (int i = 0; i < NUM_RUNS; i++) {
-        initialize();
-
-        start_time = omp_get_wtime();
-        compute();
-        end_time = omp_get_wtime();
-
-        double s = calc_sum();
-        printf("Run %d took %.6f seconds and got s=%.4f\n", i, end_time - start_time, s);
-    }
-}
-
-void measure_parallel() {
-    // Do warmup
-    for (int i = 0; i < NUM_WARMUP; i++) {
-        initialize();
-        compute_parallel();
-        double s = calc_sum();
-        printf("Warmup run %d got s=%.4f\n", i, s);
-    }
-    double start_time, end_time;
-    for (int i = 0; i < NUM_RUNS; i++) {
-        initialize();
-
-        start_time = omp_get_wtime();
-        compute_parallel();
-        end_time = omp_get_wtime();
-
-        double s = calc_sum();
-        printf("Run %d took %.6f seconds and got s=%.4f\n", i, end_time - start_time, s);
-    }
-}
-
 int main() {
-    printf("=== MEASURE SERIAL   ===\n");
-    measure_serial();
-    printf("===     END SERIAL   ===\n");
+    // disable OpenMP dynamic adjustment for consistency/reproducibility
+    omp_set_dynamic(0);
 
-    printf("=== MEASURE PARALLEL ===\n");
-    measure_parallel();
-    printf("===     END PARALLEL ===\n");
+    // serial run
+    double serial_times[NUM_RUNS];
+    for (int w = 0; w < NUM_WARMUP; w++) {
+        initialize();
+        compute_serial();
+        printf("[warmup serial %d] sum=%.4f\n", w, calc_sum());
+    }
+    for (int run = 0; run < NUM_RUNS; run++) {
+        initialize();
+        double t0 = omp_get_wtime();
+        compute_serial();
+        double t1 = omp_get_wtime();
+        serial_times[run] = t1 - t0;
+        printf("[serial run %d] time=%.6f  sum=%.4f\n",
+               run, serial_times[run], calc_sum());
+    }
+    // best (minimal) serial time
+    double t_serial = serial_times[0];
+    for (int i = 1; i < NUM_RUNS; i++)
+        if (serial_times[i] < t_serial) t_serial = serial_times[i];
+    printf("-> Best serial time = %.6f s\n\n", t_serial);
 
-    printf("Computation completed.\n");
+    // schedules and thread counts
+    struct {
+        omp_sched_t policy;
+        int chunk;
+        const char *name;
+    } schedules[] = {
+        { omp_sched_static, 1, "static" },
+        { omp_sched_static, 16, "static,16" },
+        { omp_sched_dynamic, 1, "dynamic" },
+        { omp_sched_guided,  1, "guided" }
+    };
+    int threads[] = { 1, 2, 4, 8 };
+    int nsched = sizeof(schedules)/sizeof(schedules[0]);
+    int nth = sizeof(threads)/sizeof(threads[0]);
+
+    for (int s = 0; s < nsched; s++) {
+        // set OpenMP schedule
+        omp_set_schedule(schedules[s].policy, schedules[s].chunk);
+        printf("=== Schedule: %s ===\n", schedules[s].name);
+
+        for (int t = 0; t < nth; t++) {
+            int nthreads = threads[t];
+            omp_set_num_threads(nthreads);
+
+            // warmup
+            for (int w = 0; w < NUM_WARMUP; w++) {
+                initialize();
+                compute_parallel();
+                printf("[warmup thread=%d] sum=%.4f\n",
+                       nthreads, calc_sum());
+            }
+
+            // timed runs
+            double par_times[NUM_RUNS];
+            for (int run = 0; run < NUM_RUNS; run++) {
+                initialize();
+                double t0 = omp_get_wtime();
+                compute_parallel();
+                double t1 = omp_get_wtime();
+                par_times[run] = t1 - t0;
+                printf("[parallel run %d thread=%d] time=%.6f sum=%.4f\n",
+                       run, nthreads, par_times[run], calc_sum());
+            }
+            
+	    // best parallel time
+            double t_par = par_times[0];
+            for (int i = 1; i < NUM_RUNS; i++)
+                if (par_times[i] < t_par) t_par = par_times[i];
+            double speedup = t_serial / t_par;
+            printf("-> Best parallel time (thread=%d) = %.6f s, speedup = %.2fx\n\n", nthreads, t_par, speedup);
+        }
+    }
+
+    // final guided run and output
+    omp_set_schedule(omp_sched_guided, 1);
+    omp_set_num_threads(threads[nth-1]);
+    
+    initialize();
+    compute_parallel();
+    
+    write_output();
+    printf("Output written to output.txt\n");
+
     return 0;
 }
 

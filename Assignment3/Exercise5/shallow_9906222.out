@@ -1,0 +1,4160 @@
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.154831  sum=250000.0000
+[serial run  1] time=0.155087  sum=250000.0000
+[serial run  2] time=0.155124  sum=250000.0000
+[serial run  3] time=0.155220  sum=250000.0000
+[serial run  4] time=0.154919  sum=250000.0000
+[serial run  5] time=0.155106  sum=250000.0000
+[serial run  6] time=0.155057  sum=250000.0000
+[serial run  7] time=0.155170  sum=250000.0000
+[serial run  8] time=0.155314  sum=250000.0000
+[serial run  9] time=0.155250  sum=250000.0000
+-> Best serial time = 0.154831 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523182 sum=250000.0000
+[par run  1 th=1] time=0.523021 sum=250000.0000
+[par run  2 th=1] time=0.523332 sum=250000.0000
+[par run  3 th=1] time=0.523066 sum=250000.0000
+[par run  4 th=1] time=0.523138 sum=250000.0000
+[par run  5 th=1] time=0.523159 sum=250000.0000
+[par run  6 th=1] time=0.523518 sum=250000.0000
+[par run  7 th=1] time=0.523283 sum=250000.0000
+[par run  8 th=1] time=0.523140 sum=250000.0000
+[par run  9 th=1] time=0.522834 sum=250000.0000
+-> Best parallel time (th=1) = 0.522834 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.490987 sum=250000.0000
+[par run  1 th=2] time=2.484357 sum=250000.0000
+[par run  2 th=2] time=2.484417 sum=250000.0000
+[par run  3 th=2] time=2.490100 sum=250000.0000
+[par run  4 th=2] time=2.486949 sum=250000.0000
+[par run  5 th=2] time=2.483784 sum=250000.0000
+[par run  6 th=2] time=2.491213 sum=250000.0000
+[par run  7 th=2] time=2.485987 sum=250000.0000
+[par run  8 th=2] time=2.489351 sum=250000.0000
+[par run  9 th=2] time=2.488025 sum=250000.0000
+-> Best parallel time (th=2) = 2.483784 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.494292 sum=250000.0000
+[par run  1 th=4] time=1.497654 sum=250000.0000
+[par run  2 th=4] time=1.491923 sum=250000.0000
+[par run  3 th=4] time=1.495093 sum=250000.0000
+[par run  4 th=4] time=1.494581 sum=250000.0000
+[par run  5 th=4] time=1.496675 sum=250000.0000
+[par run  6 th=4] time=1.497420 sum=250000.0000
+[par run  7 th=4] time=1.497880 sum=250000.0000
+[par run  8 th=4] time=1.489129 sum=250000.0000
+[par run  9 th=4] time=1.493437 sum=250000.0000
+-> Best parallel time (th=4) = 1.489129 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.961364 sum=250000.0000
+[par run  1 th=8] time=0.966049 sum=250000.0000
+[par run  2 th=8] time=0.966767 sum=250000.0000
+[par run  3 th=8] time=0.985577 sum=250000.0000
+[par run  4 th=8] time=0.963684 sum=250000.0000
+[par run  5 th=8] time=0.970008 sum=250000.0000
+[par run  6 th=8] time=0.966165 sum=250000.0000
+[par run  7 th=8] time=0.961440 sum=250000.0000
+[par run  8 th=8] time=0.971851 sum=250000.0000
+[par run  9 th=8] time=0.966239 sum=250000.0000
+-> Best parallel time (th=8) = 0.961364 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522025 sum=250000.0000
+[par run  1 th=1] time=0.522040 sum=250000.0000
+[par run  2 th=1] time=0.522244 sum=250000.0000
+[par run  3 th=1] time=0.522097 sum=250000.0000
+[par run  4 th=1] time=0.522276 sum=250000.0000
+[par run  5 th=1] time=0.522548 sum=250000.0000
+[par run  6 th=1] time=0.522099 sum=250000.0000
+[par run  7 th=1] time=0.522162 sum=250000.0000
+[par run  8 th=1] time=0.523610 sum=250000.0000
+[par run  9 th=1] time=0.523588 sum=250000.0000
+-> Best parallel time (th=1) = 0.522025 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.497118 sum=250000.0000
+[par run  1 th=2] time=0.496959 sum=250000.0000
+[par run  2 th=2] time=0.497637 sum=250000.0000
+[par run  3 th=2] time=0.497786 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155743  sum=250000.0000
+[serial run  1] time=0.155809  sum=250000.0000
+[serial run  2] time=0.155968  sum=250000.0000
+[serial run  3] time=0.155921  sum=250000.0000
+[serial run  4] time=0.155713  sum=250000.0000
+[serial run  5] time=0.155679  sum=250000.0000
+[serial run  6] time=0.155743  sum=250000.0000
+[serial run  7] time=0.156014  sum=250000.0000
+[serial run  8] time=0.155847  sum=250000.0000
+[serial run  9] time=0.156013  sum=250000.0000
+-> Best serial time = 0.155679 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524222 sum=250000.0000
+[par run  1 th=1] time=0.523846 sum=250000.0000
+[par run  2 th=1] time=0.524096 sum=250000.0000
+[par run  3 th=1] time=0.523939 sum=250000.0000
+[par run  4 th=1] time=0.523484 sum=250000.0000
+[par run  5 th=1] time=0.523661 sum=250000.0000
+[par run  6 th=1] time=0.522979 sum=250000.0000
+[par run  7 th=1] time=0.524137 sum=250000.0000
+[par run  8 th=1] time=0.523015 sum=250000.0000
+[par run  9 th=1] time=0.523836 sum=250000.0000
+-> Best parallel time (th=1) = 0.522979 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.485973 sum=250000.0000
+[par run  1 th=2] time=2.488106 sum=250000.0000
+[par run  2 th=2] time=2.484121 sum=250000.0000
+[par run  3 th=2] time=2.477078 sum=250000.0000
+[par run  4 th=2] time=2.487158 sum=250000.0000
+[par run  5 th=2] time=2.493867 sum=250000.0000
+[par run  6 th=2] time=2.495904 sum=250000.0000
+[par run  7 th=2] time=2.489794 sum=250000.0000
+[par run  8 th=2] time=2.499526 sum=250000.0000
+[par run  9 th=2] time=2.494826 sum=250000.0000
+-> Best parallel time (th=2) = 2.477078 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.485940 sum=250000.0000
+[par run  1 th=4] time=1.490006 sum=250000.0000
+[par run  2 th=4] time=1.496821 sum=250000.0000
+[par run  3 th=4] time=1.487495 sum=250000.0000
+[par run  4 th=4] time=1.492760 sum=250000.0000
+[par run  5 th=4] time=1.494033 sum=250000.0000
+[par run  6 th=4] time=1.482616 sum=250000.0000
+[par run  7 th=4] time=1.484947 sum=250000.0000
+[par run  8 th=4] time=1.482272 sum=250000.0000
+[par run  9 th=4] time=1.495555 sum=250000.0000
+-> Best parallel time (th=4) = 1.482272 s, speedup = 0.11x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.943891 sum=250000.0000
+[par run  1 th=8] time=0.952731 sum=250000.0000
+[par run  2 th=8] time=0.950363 sum=250000.0000
+[par run  3 th=8] time=0.951689 sum=250000.0000
+[par run  4 th=8] time=0.936019 sum=250000.0000
+[par run  5 th=8] time=0.951705 sum=250000.0000
+[par run  6 th=8] time=0.948496 sum=250000.0000
+[par run  7 th=8] time=0.941022 sum=250000.0000
+[par run  8 th=8] time=0.932983 sum=250000.0000
+[par run  9 th=8] time=0.949349 sum=250000.0000
+-> Best parallel time (th=8) = 0.932983 s, speedup = 0.17x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523840 sum=250000.0000
+[par run  1 th=1] time=0.523499 sum=250000.0000
+[par run  2 th=1] time=0.523895 sum=250000.0000
+[par run  3 th=1] time=0.523365 sum=250000.0000
+[par run  4 th=1] time=0.523844 sum=250000.0000
+[par run  5 th=1] time=0.524454 sum=250000.0000
+[par run  6 th=1] time=0.523770 sum=250000.0000
+[par run  7 th=1] time=0.523880 sum=250000.0000
+[par run  8 th=1] time=0.523934 sum=250000.0000
+[par run  9 th=1] time=0.523509 sum=250000.0000
+-> Best parallel time (th=1) = 0.523365 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.503139 sum=250000.0000
+[par run  1 th=2] time=0.504007 sum=250000.0000
+[par run  2 th=2] time=0.502745 sum=250000.0000
+[par run  3 th=2] time=0.501220 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155617  sum=250000.0000
+[serial run  1] time=0.155648  sum=250000.0000
+[serial run  2] time=0.155406  sum=250000.0000
+[serial run  3] time=0.155670  sum=250000.0000
+[serial run  4] time=0.155405  sum=250000.0000
+[serial run  5] time=0.155115  sum=250000.0000
+[serial run  6] time=0.155237  sum=250000.0000
+[serial run  7] time=0.155695  sum=250000.0000
+[serial run  8] time=0.155348  sum=250000.0000
+[serial run  9] time=0.155363  sum=250000.0000
+-> Best serial time = 0.155115 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524470 sum=250000.0000
+[par run  1 th=1] time=0.523727 sum=250000.0000
+[par run  2 th=1] time=0.524103 sum=250000.0000
+[par run  3 th=1] time=0.524068 sum=250000.0000
+[par run  4 th=1] time=0.523622 sum=250000.0000
+[par run  5 th=1] time=0.524064 sum=250000.0000
+[par run  6 th=1] time=0.523150 sum=250000.0000
+[par run  7 th=1] time=0.524245 sum=250000.0000
+[par run  8 th=1] time=0.523519 sum=250000.0000
+[par run  9 th=1] time=0.523685 sum=250000.0000
+-> Best parallel time (th=1) = 0.523150 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.522624 sum=250000.0000
+[par run  1 th=2] time=2.523966 sum=250000.0000
+[par run  2 th=2] time=2.522346 sum=250000.0000
+[par run  3 th=2] time=2.526339 sum=250000.0000
+[par run  4 th=2] time=2.521773 sum=250000.0000
+[par run  5 th=2] time=2.527688 sum=250000.0000
+[par run  6 th=2] time=2.532724 sum=250000.0000
+[par run  7 th=2] time=2.521810 sum=250000.0000
+[par run  8 th=2] time=2.533430 sum=250000.0000
+[par run  9 th=2] time=2.537016 sum=250000.0000
+-> Best parallel time (th=2) = 2.521773 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.500568 sum=250000.0000
+[par run  1 th=4] time=1.498657 sum=250000.0000
+[par run  2 th=4] time=1.500880 sum=250000.0000
+[par run  3 th=4] time=1.502949 sum=250000.0000
+[par run  4 th=4] time=1.502389 sum=250000.0000
+[par run  5 th=4] time=1.497477 sum=250000.0000
+[par run  6 th=4] time=1.499479 sum=250000.0000
+[par run  7 th=4] time=1.493055 sum=250000.0000
+[par run  8 th=4] time=1.497119 sum=250000.0000
+[par run  9 th=4] time=1.551395 sum=250000.0000
+-> Best parallel time (th=4) = 1.493055 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.945122 sum=250000.0000
+[par run  1 th=8] time=0.935204 sum=250000.0000
+[par run  2 th=8] time=0.945160 sum=250000.0000
+[par run  3 th=8] time=0.947166 sum=250000.0000
+[par run  4 th=8] time=0.942170 sum=250000.0000
+[par run  5 th=8] time=0.943689 sum=250000.0000
+[par run  6 th=8] time=0.955865 sum=250000.0000
+[par run  7 th=8] time=0.939381 sum=250000.0000
+[par run  8 th=8] time=0.942593 sum=250000.0000
+[par run  9 th=8] time=0.822437 sum=250000.0000
+-> Best parallel time (th=8) = 0.822437 s, speedup = 0.19x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523106 sum=250000.0000
+[par run  1 th=1] time=0.523583 sum=250000.0000
+[par run  2 th=1] time=0.523475 sum=250000.0000
+[par run  3 th=1] time=0.523227 sum=250000.0000
+[par run  4 th=1] time=0.523381 sum=250000.0000
+[par run  5 th=1] time=0.523224 sum=250000.0000
+[par run  6 th=1] time=0.523017 sum=250000.0000
+[par run  7 th=1] time=0.522793 sum=250000.0000
+[par run  8 th=1] time=0.522957 sum=250000.0000
+[par run  9 th=1] time=0.522829 sum=250000.0000
+-> Best parallel time (th=1) = 0.522793 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.497842 sum=250000.0000
+[par run  1 th=2] time=0.496807 sum=250000.0000
+[par run  2 th=2] time=0.493451 sum=250000.0000
+[par run  3 th=2] time=0.485871 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155720  sum=250000.0000
+[serial run  1] time=0.155759  sum=250000.0000
+[serial run  2] time=0.155837  sum=250000.0000
+[serial run  3] time=0.155547  sum=250000.0000
+[serial run  4] time=0.155472  sum=250000.0000
+[serial run  5] time=0.155572  sum=250000.0000
+[serial run  6] time=0.155700  sum=250000.0000
+[serial run  7] time=0.155993  sum=250000.0000
+[serial run  8] time=0.155778  sum=250000.0000
+[serial run  9] time=0.155679  sum=250000.0000
+-> Best serial time = 0.155472 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524132 sum=250000.0000
+[par run  1 th=1] time=0.523662 sum=250000.0000
+[par run  2 th=1] time=0.523646 sum=250000.0000
+[par run  3 th=1] time=0.524050 sum=250000.0000
+[par run  4 th=1] time=0.523456 sum=250000.0000
+[par run  5 th=1] time=0.524297 sum=250000.0000
+[par run  6 th=1] time=0.523043 sum=250000.0000
+[par run  7 th=1] time=0.524139 sum=250000.0000
+[par run  8 th=1] time=0.523682 sum=250000.0000
+[par run  9 th=1] time=0.524068 sum=250000.0000
+-> Best parallel time (th=1) = 0.523043 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.477188 sum=250000.0000
+[par run  1 th=2] time=2.489262 sum=250000.0000
+[par run  2 th=2] time=2.488755 sum=250000.0000
+[par run  3 th=2] time=2.484265 sum=250000.0000
+[par run  4 th=2] time=2.482809 sum=250000.0000
+[par run  5 th=2] time=2.485594 sum=250000.0000
+[par run  6 th=2] time=2.491796 sum=250000.0000
+[par run  7 th=2] time=2.484471 sum=250000.0000
+[par run  8 th=2] time=2.486358 sum=250000.0000
+[par run  9 th=2] time=2.486194 sum=250000.0000
+-> Best parallel time (th=2) = 2.477188 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.483621 sum=250000.0000
+[par run  1 th=4] time=1.482518 sum=250000.0000
+[par run  2 th=4] time=1.486243 sum=250000.0000
+[par run  3 th=4] time=1.483769 sum=250000.0000
+[par run  4 th=4] time=1.484280 sum=250000.0000
+[par run  5 th=4] time=1.485760 sum=250000.0000
+[par run  6 th=4] time=1.483507 sum=250000.0000
+[par run  7 th=4] time=1.487195 sum=250000.0000
+[par run  8 th=4] time=1.486058 sum=250000.0000
+[par run  9 th=4] time=1.485881 sum=250000.0000
+-> Best parallel time (th=4) = 1.482518 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.955166 sum=250000.0000
+[par run  1 th=8] time=0.931230 sum=250000.0000
+[par run  2 th=8] time=0.937595 sum=250000.0000
+[par run  3 th=8] time=0.938186 sum=250000.0000
+[par run  4 th=8] time=0.939727 sum=250000.0000
+[par run  5 th=8] time=0.943729 sum=250000.0000
+[par run  6 th=8] time=0.938645 sum=250000.0000
+[par run  7 th=8] time=0.942908 sum=250000.0000
+[par run  8 th=8] time=0.939697 sum=250000.0000
+[par run  9 th=8] time=0.932760 sum=250000.0000
+-> Best parallel time (th=8) = 0.931230 s, speedup = 0.17x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522567 sum=250000.0000
+[par run  1 th=1] time=0.523353 sum=250000.0000
+[par run  2 th=1] time=0.523417 sum=250000.0000
+[par run  3 th=1] time=0.523141 sum=250000.0000
+[par run  4 th=1] time=0.523423 sum=250000.0000
+[par run  5 th=1] time=0.522961 sum=250000.0000
+[par run  6 th=1] time=0.523405 sum=250000.0000
+[par run  7 th=1] time=0.523005 sum=250000.0000
+[par run  8 th=1] time=0.523472 sum=250000.0000
+[par run  9 th=1] time=0.523000 sum=250000.0000
+-> Best parallel time (th=1) = 0.522567 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.616317 sum=250000.0000
+[par run  1 th=2] time=0.619256 sum=250000.0000
+[par run  2 th=2] time=0.617266 sum=250000.0000
+[par run  3 th=2] time=0.615535 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155434  sum=250000.0000
+[serial run  1] time=0.155670  sum=250000.0000
+[serial run  2] time=0.155529  sum=250000.0000
+[serial run  3] time=0.155443  sum=250000.0000
+[serial run  4] time=0.155300  sum=250000.0000
+[serial run  5] time=0.155516  sum=250000.0000
+[serial run  6] time=0.155505  sum=250000.0000
+[serial run  7] time=0.155820  sum=250000.0000
+[serial run  8] time=0.155677  sum=250000.0000
+[serial run  9] time=0.155476  sum=250000.0000
+-> Best serial time = 0.155300 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523508 sum=250000.0000
+[par run  1 th=1] time=0.523254 sum=250000.0000
+[par run  2 th=1] time=0.523393 sum=250000.0000
+[par run  3 th=1] time=0.523652 sum=250000.0000
+[par run  4 th=1] time=0.523271 sum=250000.0000
+[par run  5 th=1] time=0.523578 sum=250000.0000
+[par run  6 th=1] time=0.522964 sum=250000.0000
+[par run  7 th=1] time=0.523457 sum=250000.0000
+[par run  8 th=1] time=0.522852 sum=250000.0000
+[par run  9 th=1] time=0.523052 sum=250000.0000
+-> Best parallel time (th=1) = 0.522852 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.477634 sum=250000.0000
+[par run  1 th=2] time=2.480536 sum=250000.0000
+[par run  2 th=2] time=2.482322 sum=250000.0000
+[par run  3 th=2] time=2.478529 sum=250000.0000
+[par run  4 th=2] time=2.481752 sum=250000.0000
+[par run  5 th=2] time=2.487253 sum=250000.0000
+[par run  6 th=2] time=2.485944 sum=250000.0000
+[par run  7 th=2] time=2.485176 sum=250000.0000
+[par run  8 th=2] time=2.489740 sum=250000.0000
+[par run  9 th=2] time=2.484556 sum=250000.0000
+-> Best parallel time (th=2) = 2.477634 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.486945 sum=250000.0000
+[par run  1 th=4] time=1.489808 sum=250000.0000
+[par run  2 th=4] time=1.489800 sum=250000.0000
+[par run  3 th=4] time=1.487063 sum=250000.0000
+[par run  4 th=4] time=1.489303 sum=250000.0000
+[par run  5 th=4] time=1.490558 sum=250000.0000
+[par run  6 th=4] time=1.488939 sum=250000.0000
+[par run  7 th=4] time=1.490971 sum=250000.0000
+[par run  8 th=4] time=1.485613 sum=250000.0000
+[par run  9 th=4] time=1.488567 sum=250000.0000
+-> Best parallel time (th=4) = 1.485613 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.959399 sum=250000.0000
+[par run  1 th=8] time=0.953861 sum=250000.0000
+[par run  2 th=8] time=0.961558 sum=250000.0000
+[par run  3 th=8] time=0.959405 sum=250000.0000
+[par run  4 th=8] time=0.962142 sum=250000.0000
+[par run  5 th=8] time=0.960963 sum=250000.0000
+[par run  6 th=8] time=0.955423 sum=250000.0000
+[par run  7 th=8] time=0.958931 sum=250000.0000
+[par run  8 th=8] time=0.949974 sum=250000.0000
+[par run  9 th=8] time=0.949033 sum=250000.0000
+-> Best parallel time (th=8) = 0.949033 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522146 sum=250000.0000
+[par run  1 th=1] time=0.522401 sum=250000.0000
+[par run  2 th=1] time=0.522960 sum=250000.0000
+[par run  3 th=1] time=0.522481 sum=250000.0000
+[par run  4 th=1] time=0.523078 sum=250000.0000
+[par run  5 th=1] time=0.523118 sum=250000.0000
+[par run  6 th=1] time=0.522714 sum=250000.0000
+[par run  7 th=1] time=0.522658 sum=250000.0000
+[par run  8 th=1] time=0.522156 sum=250000.0000
+[par run  9 th=1] time=0.522415 sum=250000.0000
+-> Best parallel time (th=1) = 0.522146 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.614848 sum=250000.0000
+[par run  1 th=2] time=0.615584 sum=250000.0000
+[par run  2 th=2] time=0.615212 sum=250000.0000
+[par run  3 th=2] time=0.616954 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155408  sum=250000.0000
+[serial run  1] time=0.155547  sum=250000.0000
+[serial run  2] time=0.155482  sum=250000.0000
+[serial run  3] time=0.155355  sum=250000.0000
+[serial run  4] time=0.155237  sum=250000.0000
+[serial run  5] time=0.155284  sum=250000.0000
+[serial run  6] time=0.155328  sum=250000.0000
+[serial run  7] time=0.155672  sum=250000.0000
+[serial run  8] time=0.155381  sum=250000.0000
+[serial run  9] time=0.155382  sum=250000.0000
+-> Best serial time = 0.155237 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524748 sum=250000.0000
+[par run  1 th=1] time=0.523903 sum=250000.0000
+[par run  2 th=1] time=0.522485 sum=250000.0000
+[par run  3 th=1] time=0.522557 sum=250000.0000
+[par run  4 th=1] time=0.522240 sum=250000.0000
+[par run  5 th=1] time=0.522451 sum=250000.0000
+[par run  6 th=1] time=0.521858 sum=250000.0000
+[par run  7 th=1] time=0.522926 sum=250000.0000
+[par run  8 th=1] time=0.522189 sum=250000.0000
+[par run  9 th=1] time=0.522123 sum=250000.0000
+-> Best parallel time (th=1) = 0.521858 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.466281 sum=250000.0000
+[par run  1 th=2] time=2.476158 sum=250000.0000
+[par run  2 th=2] time=2.487583 sum=250000.0000
+[par run  3 th=2] time=2.476429 sum=250000.0000
+[par run  4 th=2] time=2.479979 sum=250000.0000
+[par run  5 th=2] time=2.489770 sum=250000.0000
+[par run  6 th=2] time=2.486849 sum=250000.0000
+[par run  7 th=2] time=2.496363 sum=250000.0000
+[par run  8 th=2] time=2.492465 sum=250000.0000
+[par run  9 th=2] time=2.494561 sum=250000.0000
+-> Best parallel time (th=2) = 2.466281 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.494958 sum=250000.0000
+[par run  1 th=4] time=1.496148 sum=250000.0000
+[par run  2 th=4] time=1.496216 sum=250000.0000
+[par run  3 th=4] time=1.493801 sum=250000.0000
+[par run  4 th=4] time=1.496055 sum=250000.0000
+[par run  5 th=4] time=1.498331 sum=250000.0000
+[par run  6 th=4] time=1.496473 sum=250000.0000
+[par run  7 th=4] time=1.495263 sum=250000.0000
+[par run  8 th=4] time=1.490844 sum=250000.0000
+[par run  9 th=4] time=1.500240 sum=250000.0000
+-> Best parallel time (th=4) = 1.490844 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.954388 sum=250000.0000
+[par run  1 th=8] time=0.956312 sum=250000.0000
+[par run  2 th=8] time=0.941221 sum=250000.0000
+[par run  3 th=8] time=0.944277 sum=250000.0000
+[par run  4 th=8] time=0.953984 sum=250000.0000
+[par run  5 th=8] time=0.953679 sum=250000.0000
+[par run  6 th=8] time=0.952436 sum=250000.0000
+[par run  7 th=8] time=0.968646 sum=250000.0000
+[par run  8 th=8] time=0.957879 sum=250000.0000
+[par run  9 th=8] time=0.958799 sum=250000.0000
+-> Best parallel time (th=8) = 0.941221 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523565 sum=250000.0000
+[par run  1 th=1] time=0.523888 sum=250000.0000
+[par run  2 th=1] time=0.523773 sum=250000.0000
+[par run  3 th=1] time=0.524233 sum=250000.0000
+[par run  4 th=1] time=0.524119 sum=250000.0000
+[par run  5 th=1] time=0.523955 sum=250000.0000
+[par run  6 th=1] time=0.523951 sum=250000.0000
+[par run  7 th=1] time=0.523886 sum=250000.0000
+[par run  8 th=1] time=0.523607 sum=250000.0000
+[par run  9 th=1] time=0.523743 sum=250000.0000
+-> Best parallel time (th=1) = 0.523565 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.613935 sum=250000.0000
+[par run  1 th=2] time=0.616342 sum=250000.0000
+[par run  2 th=2] time=0.612633 sum=250000.0000
+[par run  3 th=2] time=0.612141 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155211  sum=250000.0000
+[serial run  1] time=0.155368  sum=250000.0000
+[serial run  2] time=0.155274  sum=250000.0000
+[serial run  3] time=0.155312  sum=250000.0000
+[serial run  4] time=0.155043  sum=250000.0000
+[serial run  5] time=0.155267  sum=250000.0000
+[serial run  6] time=0.155103  sum=250000.0000
+[serial run  7] time=0.155273  sum=250000.0000
+[serial run  8] time=0.155376  sum=250000.0000
+[serial run  9] time=0.155420  sum=250000.0000
+-> Best serial time = 0.155043 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524251 sum=250000.0000
+[par run  1 th=1] time=0.523634 sum=250000.0000
+[par run  2 th=1] time=0.524103 sum=250000.0000
+[par run  3 th=1] time=0.523758 sum=250000.0000
+[par run  4 th=1] time=0.523889 sum=250000.0000
+[par run  5 th=1] time=0.523780 sum=250000.0000
+[par run  6 th=1] time=0.523907 sum=250000.0000
+[par run  7 th=1] time=0.523815 sum=250000.0000
+[par run  8 th=1] time=0.523686 sum=250000.0000
+[par run  9 th=1] time=0.523519 sum=250000.0000
+-> Best parallel time (th=1) = 0.523519 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.509321 sum=250000.0000
+[par run  1 th=2] time=2.510100 sum=250000.0000
+[par run  2 th=2] time=2.503666 sum=250000.0000
+[par run  3 th=2] time=2.513786 sum=250000.0000
+[par run  4 th=2] time=2.512129 sum=250000.0000
+[par run  5 th=2] time=2.503549 sum=250000.0000
+[par run  6 th=2] time=2.512146 sum=250000.0000
+[par run  7 th=2] time=2.509645 sum=250000.0000
+[par run  8 th=2] time=2.499650 sum=250000.0000
+[par run  9 th=2] time=2.505546 sum=250000.0000
+-> Best parallel time (th=2) = 2.499650 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.501262 sum=250000.0000
+[par run  1 th=4] time=1.497908 sum=250000.0000
+[par run  2 th=4] time=1.500559 sum=250000.0000
+[par run  3 th=4] time=1.496323 sum=250000.0000
+[par run  4 th=4] time=1.498381 sum=250000.0000
+[par run  5 th=4] time=1.498043 sum=250000.0000
+[par run  6 th=4] time=1.497751 sum=250000.0000
+[par run  7 th=4] time=1.498433 sum=250000.0000
+[par run  8 th=4] time=1.497891 sum=250000.0000
+[par run  9 th=4] time=1.498230 sum=250000.0000
+-> Best parallel time (th=4) = 1.496323 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.970102 sum=250000.0000
+[par run  1 th=8] time=0.972073 sum=250000.0000
+[par run  2 th=8] time=0.952190 sum=250000.0000
+[par run  3 th=8] time=0.966799 sum=250000.0000
+[par run  4 th=8] time=0.965347 sum=250000.0000
+[par run  5 th=8] time=0.970464 sum=250000.0000
+[par run  6 th=8] time=0.966537 sum=250000.0000
+[par run  7 th=8] time=0.960110 sum=250000.0000
+[par run  8 th=8] time=0.965347 sum=250000.0000
+[par run  9 th=8] time=0.966221 sum=250000.0000
+-> Best parallel time (th=8) = 0.952190 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523246 sum=250000.0000
+[par run  1 th=1] time=0.523308 sum=250000.0000
+[par run  2 th=1] time=0.523413 sum=250000.0000
+[par run  3 th=1] time=0.523543 sum=250000.0000
+[par run  4 th=1] time=0.523733 sum=250000.0000
+[par run  5 th=1] time=0.523335 sum=250000.0000
+[par run  6 th=1] time=0.523178 sum=250000.0000
+[par run  7 th=1] time=0.523660 sum=250000.0000
+[par run  8 th=1] time=0.523304 sum=250000.0000
+[par run  9 th=1] time=0.523345 sum=250000.0000
+-> Best parallel time (th=1) = 0.523178 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.595421 sum=250000.0000
+[par run  1 th=2] time=0.500306 sum=250000.0000
+[par run  2 th=2] time=0.500986 sum=250000.0000
+[par run  3 th=2] time=0.499443 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.156112  sum=250000.0000
+[serial run  1] time=0.156223  sum=250000.0000
+[serial run  2] time=0.156208  sum=250000.0000
+[serial run  3] time=0.156336  sum=250000.0000
+[serial run  4] time=0.156026  sum=250000.0000
+[serial run  5] time=0.156323  sum=250000.0000
+[serial run  6] time=0.156302  sum=250000.0000
+[serial run  7] time=0.156450  sum=250000.0000
+[serial run  8] time=0.156273  sum=250000.0000
+[serial run  9] time=0.156562  sum=250000.0000
+-> Best serial time = 0.156026 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524513 sum=250000.0000
+[par run  1 th=1] time=0.524320 sum=250000.0000
+[par run  2 th=1] time=0.524445 sum=250000.0000
+[par run  3 th=1] time=0.524576 sum=250000.0000
+[par run  4 th=1] time=0.523821 sum=250000.0000
+[par run  5 th=1] time=0.524505 sum=250000.0000
+[par run  6 th=1] time=0.524207 sum=250000.0000
+[par run  7 th=1] time=0.524612 sum=250000.0000
+[par run  8 th=1] time=0.524192 sum=250000.0000
+[par run  9 th=1] time=0.524187 sum=250000.0000
+-> Best parallel time (th=1) = 0.523821 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.500055 sum=250000.0000
+[par run  1 th=2] time=2.499735 sum=250000.0000
+[par run  2 th=2] time=2.497831 sum=250000.0000
+[par run  3 th=2] time=2.487733 sum=250000.0000
+[par run  4 th=2] time=2.498309 sum=250000.0000
+[par run  5 th=2] time=2.495411 sum=250000.0000
+[par run  6 th=2] time=2.498112 sum=250000.0000
+[par run  7 th=2] time=2.510365 sum=250000.0000
+[par run  8 th=2] time=2.509313 sum=250000.0000
+[par run  9 th=2] time=2.514113 sum=250000.0000
+-> Best parallel time (th=2) = 2.487733 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.487899 sum=250000.0000
+[par run  1 th=4] time=1.489488 sum=250000.0000
+[par run  2 th=4] time=1.490271 sum=250000.0000
+[par run  3 th=4] time=1.494653 sum=250000.0000
+[par run  4 th=4] time=1.493662 sum=250000.0000
+[par run  5 th=4] time=1.487955 sum=250000.0000
+[par run  6 th=4] time=1.491162 sum=250000.0000
+[par run  7 th=4] time=1.493574 sum=250000.0000
+[par run  8 th=4] time=1.484362 sum=250000.0000
+[par run  9 th=4] time=1.505710 sum=250000.0000
+-> Best parallel time (th=4) = 1.484362 s, speedup = 0.11x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.947822 sum=250000.0000
+[par run  1 th=8] time=0.944327 sum=250000.0000
+[par run  2 th=8] time=0.941630 sum=250000.0000
+[par run  3 th=8] time=0.947247 sum=250000.0000
+[par run  4 th=8] time=0.939931 sum=250000.0000
+[par run  5 th=8] time=0.946437 sum=250000.0000
+[par run  6 th=8] time=0.942430 sum=250000.0000
+[par run  7 th=8] time=0.954550 sum=250000.0000
+[par run  8 th=8] time=0.940856 sum=250000.0000
+[par run  9 th=8] time=0.885662 sum=250000.0000
+-> Best parallel time (th=8) = 0.885662 s, speedup = 0.18x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524053 sum=250000.0000
+[par run  1 th=1] time=0.524093 sum=250000.0000
+[par run  2 th=1] time=0.523914 sum=250000.0000
+[par run  3 th=1] time=0.524200 sum=250000.0000
+[par run  4 th=1] time=0.524218 sum=250000.0000
+[par run  5 th=1] time=0.524357 sum=250000.0000
+[par run  6 th=1] time=0.524471 sum=250000.0000
+[par run  7 th=1] time=0.524301 sum=250000.0000
+[par run  8 th=1] time=0.524452 sum=250000.0000
+[par run  9 th=1] time=0.523864 sum=250000.0000
+-> Best parallel time (th=1) = 0.523864 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.618287 sum=250000.0000
+[par run  1 th=2] time=0.619861 sum=250000.0000
+[par run  2 th=2] time=0.618521 sum=250000.0000
+[par run  3 th=2] time=0.615817 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155171  sum=250000.0000
+[serial run  1] time=0.155468  sum=250000.0000
+[serial run  2] time=0.155247  sum=250000.0000
+[serial run  3] time=0.155517  sum=250000.0000
+[serial run  4] time=0.155132  sum=250000.0000
+[serial run  5] time=0.155387  sum=250000.0000
+[serial run  6] time=0.155310  sum=250000.0000
+[serial run  7] time=0.155377  sum=250000.0000
+[serial run  8] time=0.155540  sum=250000.0000
+[serial run  9] time=0.155699  sum=250000.0000
+-> Best serial time = 0.155132 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522960 sum=250000.0000
+[par run  1 th=1] time=0.522881 sum=250000.0000
+[par run  2 th=1] time=0.522767 sum=250000.0000
+[par run  3 th=1] time=0.522791 sum=250000.0000
+[par run  4 th=1] time=0.523204 sum=250000.0000
+[par run  5 th=1] time=0.522454 sum=250000.0000
+[par run  6 th=1] time=0.523164 sum=250000.0000
+[par run  7 th=1] time=0.522866 sum=250000.0000
+[par run  8 th=1] time=0.522652 sum=250000.0000
+[par run  9 th=1] time=0.522479 sum=250000.0000
+-> Best parallel time (th=1) = 0.522454 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.499431 sum=250000.0000
+[par run  1 th=2] time=2.511929 sum=250000.0000
+[par run  2 th=2] time=2.509944 sum=250000.0000
+[par run  3 th=2] time=2.513328 sum=250000.0000
+[par run  4 th=2] time=2.500248 sum=250000.0000
+[par run  5 th=2] time=2.508134 sum=250000.0000
+[par run  6 th=2] time=2.517550 sum=250000.0000
+[par run  7 th=2] time=2.520679 sum=250000.0000
+[par run  8 th=2] time=2.516420 sum=250000.0000
+[par run  9 th=2] time=2.520199 sum=250000.0000
+-> Best parallel time (th=2) = 2.499431 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.507517 sum=250000.0000
+[par run  1 th=4] time=1.499050 sum=250000.0000
+[par run  2 th=4] time=1.498834 sum=250000.0000
+[par run  3 th=4] time=1.496161 sum=250000.0000
+[par run  4 th=4] time=1.495058 sum=250000.0000
+[par run  5 th=4] time=1.497604 sum=250000.0000
+[par run  6 th=4] time=1.497661 sum=250000.0000
+[par run  7 th=4] time=1.497783 sum=250000.0000
+[par run  8 th=4] time=1.496536 sum=250000.0000
+[par run  9 th=4] time=1.496756 sum=250000.0000
+-> Best parallel time (th=4) = 1.495058 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.966080 sum=250000.0000
+[par run  1 th=8] time=0.965917 sum=250000.0000
+[par run  2 th=8] time=0.959815 sum=250000.0000
+[par run  3 th=8] time=0.967016 sum=250000.0000
+[par run  4 th=8] time=0.973631 sum=250000.0000
+[par run  5 th=8] time=0.966712 sum=250000.0000
+[par run  6 th=8] time=0.968687 sum=250000.0000
+[par run  7 th=8] time=0.953855 sum=250000.0000
+[par run  8 th=8] time=0.965218 sum=250000.0000
+[par run  9 th=8] time=0.958465 sum=250000.0000
+-> Best parallel time (th=8) = 0.953855 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522179 sum=250000.0000
+[par run  1 th=1] time=0.522491 sum=250000.0000
+[par run  2 th=1] time=0.522493 sum=250000.0000
+[par run  3 th=1] time=0.522777 sum=250000.0000
+[par run  4 th=1] time=0.522752 sum=250000.0000
+[par run  5 th=1] time=0.522347 sum=250000.0000
+[par run  6 th=1] time=0.522488 sum=250000.0000
+[par run  7 th=1] time=0.522643 sum=250000.0000
+[par run  8 th=1] time=0.522444 sum=250000.0000
+[par run  9 th=1] time=0.522423 sum=250000.0000
+-> Best parallel time (th=1) = 0.522179 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.622067 sum=250000.0000
+[par run  1 th=2] time=0.513165 sum=250000.0000
+[par run  2 th=2] time=0.504394 sum=250000.0000
+[par run  3 th=2] time=0.502401 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155285  sum=250000.0000
+[serial run  1] time=0.155383  sum=250000.0000
+[serial run  2] time=0.155345  sum=250000.0000
+[serial run  3] time=0.155412  sum=250000.0000
+[serial run  4] time=0.155301  sum=250000.0000
+[serial run  5] time=0.155306  sum=250000.0000
+[serial run  6] time=0.155188  sum=250000.0000
+[serial run  7] time=0.155503  sum=250000.0000
+[serial run  8] time=0.155433  sum=250000.0000
+[serial run  9] time=0.155550  sum=250000.0000
+-> Best serial time = 0.155188 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.524030 sum=250000.0000
+[par run  1 th=1] time=0.524199 sum=250000.0000
+[par run  2 th=1] time=0.524653 sum=250000.0000
+[par run  3 th=1] time=0.524341 sum=250000.0000
+[par run  4 th=1] time=0.524317 sum=250000.0000
+[par run  5 th=1] time=0.524418 sum=250000.0000
+[par run  6 th=1] time=0.524555 sum=250000.0000
+[par run  7 th=1] time=0.524407 sum=250000.0000
+[par run  8 th=1] time=0.524400 sum=250000.0000
+[par run  9 th=1] time=0.524242 sum=250000.0000
+-> Best parallel time (th=1) = 0.524030 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.516158 sum=250000.0000
+[par run  1 th=2] time=2.516256 sum=250000.0000
+[par run  2 th=2] time=2.520481 sum=250000.0000
+[par run  3 th=2] time=2.522085 sum=250000.0000
+[par run  4 th=2] time=2.517155 sum=250000.0000
+[par run  5 th=2] time=2.515883 sum=250000.0000
+[par run  6 th=2] time=2.523307 sum=250000.0000
+[par run  7 th=2] time=2.521974 sum=250000.0000
+[par run  8 th=2] time=2.521983 sum=250000.0000
+[par run  9 th=2] time=2.514720 sum=250000.0000
+-> Best parallel time (th=2) = 2.514720 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.488015 sum=250000.0000
+[par run  1 th=4] time=1.495099 sum=250000.0000
+[par run  2 th=4] time=1.498814 sum=250000.0000
+[par run  3 th=4] time=1.490914 sum=250000.0000
+[par run  4 th=4] time=1.486009 sum=250000.0000
+[par run  5 th=4] time=1.490460 sum=250000.0000
+[par run  6 th=4] time=1.491758 sum=250000.0000
+[par run  7 th=4] time=1.491722 sum=250000.0000
+[par run  8 th=4] time=1.496101 sum=250000.0000
+[par run  9 th=4] time=1.495166 sum=250000.0000
+-> Best parallel time (th=4) = 1.486009 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.962522 sum=250000.0000
+[par run  1 th=8] time=0.938274 sum=250000.0000
+[par run  2 th=8] time=0.942840 sum=250000.0000
+[par run  3 th=8] time=0.941458 sum=250000.0000
+[par run  4 th=8] time=0.950268 sum=250000.0000
+[par run  5 th=8] time=0.934136 sum=250000.0000
+[par run  6 th=8] time=0.949339 sum=250000.0000
+[par run  7 th=8] time=0.953841 sum=250000.0000
+[par run  8 th=8] time=0.939657 sum=250000.0000
+[par run  9 th=8] time=0.939244 sum=250000.0000
+-> Best parallel time (th=8) = 0.934136 s, speedup = 0.17x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523742 sum=250000.0000
+[par run  1 th=1] time=0.523940 sum=250000.0000
+[par run  2 th=1] time=0.523968 sum=250000.0000
+[par run  3 th=1] time=0.524082 sum=250000.0000
+[par run  4 th=1] time=0.523899 sum=250000.0000
+[par run  5 th=1] time=0.524276 sum=250000.0000
+[par run  6 th=1] time=0.523664 sum=250000.0000
+[par run  7 th=1] time=0.524238 sum=250000.0000
+[par run  8 th=1] time=0.523780 sum=250000.0000
+[par run  9 th=1] time=0.524275 sum=250000.0000
+-> Best parallel time (th=1) = 0.523664 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.600607 sum=250000.0000
+[par run  1 th=2] time=0.597466 sum=250000.0000
+[par run  2 th=2] time=0.596161 sum=250000.0000
+[par run  3 th=2] time=0.599900 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155036  sum=250000.0000
+[serial run  1] time=0.155241  sum=250000.0000
+[serial run  2] time=0.155436  sum=250000.0000
+[serial run  3] time=0.155369  sum=250000.0000
+[serial run  4] time=0.155322  sum=250000.0000
+[serial run  5] time=0.155325  sum=250000.0000
+[serial run  6] time=0.155116  sum=250000.0000
+[serial run  7] time=0.155492  sum=250000.0000
+[serial run  8] time=0.155327  sum=250000.0000
+[serial run  9] time=0.155387  sum=250000.0000
+-> Best serial time = 0.155036 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522204 sum=250000.0000
+[par run  1 th=1] time=0.521942 sum=250000.0000
+[par run  2 th=1] time=0.522145 sum=250000.0000
+[par run  3 th=1] time=0.521974 sum=250000.0000
+[par run  4 th=1] time=0.522087 sum=250000.0000
+[par run  5 th=1] time=0.521870 sum=250000.0000
+[par run  6 th=1] time=0.522278 sum=250000.0000
+[par run  7 th=1] time=0.521065 sum=250000.0000
+[par run  8 th=1] time=0.521443 sum=250000.0000
+[par run  9 th=1] time=0.521844 sum=250000.0000
+-> Best parallel time (th=1) = 0.521065 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.501126 sum=250000.0000
+[par run  1 th=2] time=2.499080 sum=250000.0000
+[par run  2 th=2] time=2.501857 sum=250000.0000
+[par run  3 th=2] time=2.505371 sum=250000.0000
+[par run  4 th=2] time=2.508402 sum=250000.0000
+[par run  5 th=2] time=2.527456 sum=250000.0000
+[par run  6 th=2] time=2.513569 sum=250000.0000
+[par run  7 th=2] time=2.511112 sum=250000.0000
+[par run  8 th=2] time=2.511182 sum=250000.0000
+[par run  9 th=2] time=2.504939 sum=250000.0000
+-> Best parallel time (th=2) = 2.499080 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.499910 sum=250000.0000
+[par run  1 th=4] time=1.497796 sum=250000.0000
+[par run  2 th=4] time=1.498292 sum=250000.0000
+[par run  3 th=4] time=1.499146 sum=250000.0000
+[par run  4 th=4] time=1.501178 sum=250000.0000
+[par run  5 th=4] time=1.501088 sum=250000.0000
+[par run  6 th=4] time=1.501079 sum=250000.0000
+[par run  7 th=4] time=1.495333 sum=250000.0000
+[par run  8 th=4] time=1.495878 sum=250000.0000
+[par run  9 th=4] time=1.498415 sum=250000.0000
+-> Best parallel time (th=4) = 1.495333 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.963961 sum=250000.0000
+[par run  1 th=8] time=0.965460 sum=250000.0000
+[par run  2 th=8] time=0.953436 sum=250000.0000
+[par run  3 th=8] time=0.957012 sum=250000.0000
+[par run  4 th=8] time=0.960948 sum=250000.0000
+[par run  5 th=8] time=0.954562 sum=250000.0000
+[par run  6 th=8] time=0.950183 sum=250000.0000
+[par run  7 th=8] time=0.952886 sum=250000.0000
+[par run  8 th=8] time=0.956323 sum=250000.0000
+[par run  9 th=8] time=0.947308 sum=250000.0000
+-> Best parallel time (th=8) = 0.947308 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.520198 sum=250000.0000
+[par run  1 th=1] time=0.520282 sum=250000.0000
+[par run  2 th=1] time=0.519990 sum=250000.0000
+[par run  3 th=1] time=0.519900 sum=250000.0000
+[par run  4 th=1] time=0.519782 sum=250000.0000
+[par run  5 th=1] time=0.520311 sum=250000.0000
+[par run  6 th=1] time=0.519734 sum=250000.0000
+[par run  7 th=1] time=0.520253 sum=250000.0000
+[par run  8 th=1] time=0.520187 sum=250000.0000
+[par run  9 th=1] time=0.520332 sum=250000.0000
+-> Best parallel time (th=1) = 0.519734 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.607452 sum=250000.0000
+[par run  1 th=2] time=0.610236 sum=250000.0000
+[par run  2 th=2] time=0.608805 sum=250000.0000
+[par run  3 th=2] time=0.606019 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155687  sum=250000.0000
+[serial run  1] time=0.155795  sum=250000.0000
+[serial run  2] time=0.155888  sum=250000.0000
+[serial run  3] time=0.155788  sum=250000.0000
+[serial run  4] time=0.155676  sum=250000.0000
+[serial run  5] time=0.155711  sum=250000.0000
+[serial run  6] time=0.155749  sum=250000.0000
+[serial run  7] time=0.156070  sum=250000.0000
+[serial run  8] time=0.155948  sum=250000.0000
+[serial run  9] time=0.156016  sum=250000.0000
+-> Best serial time = 0.155676 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522544 sum=250000.0000
+[par run  1 th=1] time=0.522237 sum=250000.0000
+[par run  2 th=1] time=0.522420 sum=250000.0000
+[par run  3 th=1] time=0.522500 sum=250000.0000
+[par run  4 th=1] time=0.522283 sum=250000.0000
+[par run  5 th=1] time=0.522496 sum=250000.0000
+[par run  6 th=1] time=0.521840 sum=250000.0000
+[par run  7 th=1] time=0.522971 sum=250000.0000
+[par run  8 th=1] time=0.522228 sum=250000.0000
+[par run  9 th=1] time=0.522436 sum=250000.0000
+-> Best parallel time (th=1) = 0.521840 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.500980 sum=250000.0000
+[par run  1 th=2] time=2.502716 sum=250000.0000
+[par run  2 th=2] time=2.498608 sum=250000.0000
+[par run  3 th=2] time=2.499063 sum=250000.0000
+[par run  4 th=2] time=2.500984 sum=250000.0000
+[par run  5 th=2] time=2.499240 sum=250000.0000
+[par run  6 th=2] time=2.503297 sum=250000.0000
+[par run  7 th=2] time=2.502287 sum=250000.0000
+[par run  8 th=2] time=2.505100 sum=250000.0000
+[par run  9 th=2] time=2.496833 sum=250000.0000
+-> Best parallel time (th=2) = 2.496833 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.499444 sum=250000.0000
+[par run  1 th=4] time=1.494828 sum=250000.0000
+[par run  2 th=4] time=1.495470 sum=250000.0000
+[par run  3 th=4] time=1.498804 sum=250000.0000
+[par run  4 th=4] time=1.497771 sum=250000.0000
+[par run  5 th=4] time=1.499164 sum=250000.0000
+[par run  6 th=4] time=1.497870 sum=250000.0000
+[par run  7 th=4] time=1.493500 sum=250000.0000
+[par run  8 th=4] time=1.496577 sum=250000.0000
+[par run  9 th=4] time=1.526358 sum=250000.0000
+-> Best parallel time (th=4) = 1.493500 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.970338 sum=250000.0000
+[par run  1 th=8] time=0.980319 sum=250000.0000
+[par run  2 th=8] time=0.972436 sum=250000.0000
+[par run  3 th=8] time=0.967853 sum=250000.0000
+[par run  4 th=8] time=0.963878 sum=250000.0000
+[par run  5 th=8] time=0.963545 sum=250000.0000
+[par run  6 th=8] time=0.962866 sum=250000.0000
+[par run  7 th=8] time=0.972469 sum=250000.0000
+[par run  8 th=8] time=0.977400 sum=250000.0000
+[par run  9 th=8] time=0.861347 sum=250000.0000
+-> Best parallel time (th=8) = 0.861347 s, speedup = 0.18x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521985 sum=250000.0000
+[par run  1 th=1] time=0.522557 sum=250000.0000
+[par run  2 th=1] time=0.522426 sum=250000.0000
+[par run  3 th=1] time=0.522883 sum=250000.0000
+[par run  4 th=1] time=0.522223 sum=250000.0000
+[par run  5 th=1] time=0.522879 sum=250000.0000
+[par run  6 th=1] time=0.522226 sum=250000.0000
+[par run  7 th=1] time=0.522260 sum=250000.0000
+[par run  8 th=1] time=0.522551 sum=250000.0000
+[par run  9 th=1] time=0.521944 sum=250000.0000
+-> Best parallel time (th=1) = 0.521944 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.617905 sum=250000.0000
+[par run  1 th=2] time=0.617291 sum=250000.0000
+[par run  2 th=2] time=0.617765 sum=250000.0000
+[par run  3 th=2] time=0.614428 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155916  sum=250000.0000
+[serial run  1] time=0.155979  sum=250000.0000
+[serial run  2] time=0.156123  sum=250000.0000
+[serial run  3] time=0.155961  sum=250000.0000
+[serial run  4] time=0.155769  sum=250000.0000
+[serial run  5] time=0.155875  sum=250000.0000
+[serial run  6] time=0.155797  sum=250000.0000
+[serial run  7] time=0.156171  sum=250000.0000
+[serial run  8] time=0.155956  sum=250000.0000
+[serial run  9] time=0.156083  sum=250000.0000
+-> Best serial time = 0.155769 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523986 sum=250000.0000
+[par run  1 th=1] time=0.523441 sum=250000.0000
+[par run  2 th=1] time=0.523635 sum=250000.0000
+[par run  3 th=1] time=0.523856 sum=250000.0000
+[par run  4 th=1] time=0.523206 sum=250000.0000
+[par run  5 th=1] time=0.523895 sum=250000.0000
+[par run  6 th=1] time=0.522945 sum=250000.0000
+[par run  7 th=1] time=0.523961 sum=250000.0000
+[par run  8 th=1] time=0.523515 sum=250000.0000
+[par run  9 th=1] time=0.523712 sum=250000.0000
+-> Best parallel time (th=1) = 0.522945 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.512384 sum=250000.0000
+[par run  1 th=2] time=2.513506 sum=250000.0000
+[par run  2 th=2] time=2.511577 sum=250000.0000
+[par run  3 th=2] time=2.507146 sum=250000.0000
+[par run  4 th=2] time=2.515702 sum=250000.0000
+[par run  5 th=2] time=2.512769 sum=250000.0000
+[par run  6 th=2] time=2.515748 sum=250000.0000
+[par run  7 th=2] time=2.511565 sum=250000.0000
+[par run  8 th=2] time=2.519454 sum=250000.0000
+[par run  9 th=2] time=2.514022 sum=250000.0000
+-> Best parallel time (th=2) = 2.507146 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.499959 sum=250000.0000
+[par run  1 th=4] time=1.496744 sum=250000.0000
+[par run  2 th=4] time=1.501107 sum=250000.0000
+[par run  3 th=4] time=1.496223 sum=250000.0000
+[par run  4 th=4] time=1.497265 sum=250000.0000
+[par run  5 th=4] time=1.498461 sum=250000.0000
+[par run  6 th=4] time=1.496727 sum=250000.0000
+[par run  7 th=4] time=1.501324 sum=250000.0000
+[par run  8 th=4] time=1.496954 sum=250000.0000
+[par run  9 th=4] time=1.537573 sum=250000.0000
+-> Best parallel time (th=4) = 1.496223 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.951851 sum=250000.0000
+[par run  1 th=8] time=0.955246 sum=250000.0000
+[par run  2 th=8] time=0.951935 sum=250000.0000
+[par run  3 th=8] time=0.956806 sum=250000.0000
+[par run  4 th=8] time=0.957771 sum=250000.0000
+[par run  5 th=8] time=0.969789 sum=250000.0000
+[par run  6 th=8] time=0.960648 sum=250000.0000
+[par run  7 th=8] time=0.949932 sum=250000.0000
+[par run  8 th=8] time=0.953170 sum=250000.0000
+[par run  9 th=8] time=0.853791 sum=250000.0000
+-> Best parallel time (th=8) = 0.853791 s, speedup = 0.18x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523468 sum=250000.0000
+[par run  1 th=1] time=0.523962 sum=250000.0000
+[par run  2 th=1] time=0.523669 sum=250000.0000
+[par run  3 th=1] time=0.524043 sum=250000.0000
+[par run  4 th=1] time=0.523699 sum=250000.0000
+[par run  5 th=1] time=0.523666 sum=250000.0000
+[par run  6 th=1] time=0.523563 sum=250000.0000
+[par run  7 th=1] time=0.523417 sum=250000.0000
+[par run  8 th=1] time=0.523466 sum=250000.0000
+[par run  9 th=1] time=0.523200 sum=250000.0000
+-> Best parallel time (th=1) = 0.523200 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.621103 sum=250000.0000
+[par run  1 th=2] time=0.617928 sum=250000.0000
+[par run  2 th=2] time=0.618104 sum=250000.0000
+[par run  3 th=2] time=0.618352 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155364  sum=250000.0000
+[serial run  1] time=0.155569  sum=250000.0000
+[serial run  2] time=0.155619  sum=250000.0000
+[serial run  3] time=0.155835  sum=250000.0000
+[serial run  4] time=0.155428  sum=250000.0000
+[serial run  5] time=0.155692  sum=250000.0000
+[serial run  6] time=0.155430  sum=250000.0000
+[serial run  7] time=0.155584  sum=250000.0000
+[serial run  8] time=0.155699  sum=250000.0000
+[serial run  9] time=0.155960  sum=250000.0000
+-> Best serial time = 0.155364 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523224 sum=250000.0000
+[par run  1 th=1] time=0.522999 sum=250000.0000
+[par run  2 th=1] time=0.522842 sum=250000.0000
+[par run  3 th=1] time=0.522842 sum=250000.0000
+[par run  4 th=1] time=0.523458 sum=250000.0000
+[par run  5 th=1] time=0.522443 sum=250000.0000
+[par run  6 th=1] time=0.523220 sum=250000.0000
+[par run  7 th=1] time=0.522930 sum=250000.0000
+[par run  8 th=1] time=0.522981 sum=250000.0000
+[par run  9 th=1] time=0.522943 sum=250000.0000
+-> Best parallel time (th=1) = 0.522443 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.507206 sum=250000.0000
+[par run  1 th=2] time=2.508388 sum=250000.0000
+[par run  2 th=2] time=2.513244 sum=250000.0000
+[par run  3 th=2] time=2.519511 sum=250000.0000
+[par run  4 th=2] time=2.514102 sum=250000.0000
+[par run  5 th=2] time=2.512272 sum=250000.0000
+[par run  6 th=2] time=2.512727 sum=250000.0000
+[par run  7 th=2] time=2.514218 sum=250000.0000
+[par run  8 th=2] time=2.511319 sum=250000.0000
+[par run  9 th=2] time=2.513004 sum=250000.0000
+-> Best parallel time (th=2) = 2.507206 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.498039 sum=250000.0000
+[par run  1 th=4] time=1.499126 sum=250000.0000
+[par run  2 th=4] time=1.495115 sum=250000.0000
+[par run  3 th=4] time=1.497767 sum=250000.0000
+[par run  4 th=4] time=1.494579 sum=250000.0000
+[par run  5 th=4] time=1.497456 sum=250000.0000
+[par run  6 th=4] time=1.497484 sum=250000.0000
+[par run  7 th=4] time=1.497773 sum=250000.0000
+[par run  8 th=4] time=1.495763 sum=250000.0000
+[par run  9 th=4] time=1.529512 sum=250000.0000
+-> Best parallel time (th=4) = 1.494579 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.956545 sum=250000.0000
+[par run  1 th=8] time=0.967184 sum=250000.0000
+[par run  2 th=8] time=0.965467 sum=250000.0000
+[par run  3 th=8] time=0.976410 sum=250000.0000
+[par run  4 th=8] time=0.966432 sum=250000.0000
+[par run  5 th=8] time=0.965431 sum=250000.0000
+[par run  6 th=8] time=0.975938 sum=250000.0000
+[par run  7 th=8] time=0.952180 sum=250000.0000
+[par run  8 th=8] time=0.968978 sum=250000.0000
+[par run  9 th=8] time=0.884605 sum=250000.0000
+-> Best parallel time (th=8) = 0.884605 s, speedup = 0.18x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523051 sum=250000.0000
+[par run  1 th=1] time=0.523297 sum=250000.0000
+[par run  2 th=1] time=0.522969 sum=250000.0000
+[par run  3 th=1] time=0.523407 sum=250000.0000
+[par run  4 th=1] time=0.523474 sum=250000.0000
+[par run  5 th=1] time=0.523258 sum=250000.0000
+[par run  6 th=1] time=0.522929 sum=250000.0000
+[par run  7 th=1] time=0.522941 sum=250000.0000
+[par run  8 th=1] time=0.522599 sum=250000.0000
+[par run  9 th=1] time=0.522548 sum=250000.0000
+-> Best parallel time (th=1) = 0.522548 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.616265 sum=250000.0000
+[par run  1 th=2] time=0.617407 sum=250000.0000
+[par run  2 th=2] time=0.617801 sum=250000.0000
+[par run  3 th=2] time=0.617056 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155025  sum=250000.0000
+[serial run  1] time=0.155387  sum=250000.0000
+[serial run  2] time=0.155241  sum=250000.0000
+[serial run  3] time=0.155408  sum=250000.0000
+[serial run  4] time=0.154984  sum=250000.0000
+[serial run  5] time=0.155168  sum=250000.0000
+[serial run  6] time=0.155068  sum=250000.0000
+[serial run  7] time=0.155285  sum=250000.0000
+[serial run  8] time=0.155355  sum=250000.0000
+[serial run  9] time=0.155389  sum=250000.0000
+-> Best serial time = 0.154984 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522916 sum=250000.0000
+[par run  1 th=1] time=0.522424 sum=250000.0000
+[par run  2 th=1] time=0.522129 sum=250000.0000
+[par run  3 th=1] time=0.522271 sum=250000.0000
+[par run  4 th=1] time=0.522828 sum=250000.0000
+[par run  5 th=1] time=0.522845 sum=250000.0000
+[par run  6 th=1] time=0.523035 sum=250000.0000
+[par run  7 th=1] time=0.522842 sum=250000.0000
+[par run  8 th=1] time=0.522628 sum=250000.0000
+[par run  9 th=1] time=0.522639 sum=250000.0000
+-> Best parallel time (th=1) = 0.522129 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.491187 sum=250000.0000
+[par run  1 th=2] time=2.505662 sum=250000.0000
+[par run  2 th=2] time=2.510180 sum=250000.0000
+[par run  3 th=2] time=2.507596 sum=250000.0000
+[par run  4 th=2] time=2.501138 sum=250000.0000
+[par run  5 th=2] time=2.509134 sum=250000.0000
+[par run  6 th=2] time=2.510772 sum=250000.0000
+[par run  7 th=2] time=2.514923 sum=250000.0000
+[par run  8 th=2] time=2.509960 sum=250000.0000
+[par run  9 th=2] time=2.504251 sum=250000.0000
+-> Best parallel time (th=2) = 2.491187 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.500738 sum=250000.0000
+[par run  1 th=4] time=1.498238 sum=250000.0000
+[par run  2 th=4] time=1.499265 sum=250000.0000
+[par run  3 th=4] time=1.499763 sum=250000.0000
+[par run  4 th=4] time=1.499270 sum=250000.0000
+[par run  5 th=4] time=1.501343 sum=250000.0000
+[par run  6 th=4] time=1.500360 sum=250000.0000
+[par run  7 th=4] time=1.498692 sum=250000.0000
+[par run  8 th=4] time=1.499215 sum=250000.0000
+[par run  9 th=4] time=1.500912 sum=250000.0000
+-> Best parallel time (th=4) = 1.498238 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.976688 sum=250000.0000
+[par run  1 th=8] time=0.979373 sum=250000.0000
+[par run  2 th=8] time=0.971698 sum=250000.0000
+[par run  3 th=8] time=0.971727 sum=250000.0000
+[par run  4 th=8] time=0.975392 sum=250000.0000
+[par run  5 th=8] time=0.980999 sum=250000.0000
+[par run  6 th=8] time=0.968113 sum=250000.0000
+[par run  7 th=8] time=0.965070 sum=250000.0000
+[par run  8 th=8] time=0.965008 sum=250000.0000
+[par run  9 th=8] time=0.971895 sum=250000.0000
+-> Best parallel time (th=8) = 0.965008 s, speedup = 0.16x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522665 sum=250000.0000
+[par run  1 th=1] time=0.522608 sum=250000.0000
+[par run  2 th=1] time=0.522324 sum=250000.0000
+[par run  3 th=1] time=0.522530 sum=250000.0000
+[par run  4 th=1] time=0.522578 sum=250000.0000
+[par run  5 th=1] time=0.522634 sum=250000.0000
+[par run  6 th=1] time=0.522578 sum=250000.0000
+[par run  7 th=1] time=0.522988 sum=250000.0000
+[par run  8 th=1] time=0.522567 sum=250000.0000
+[par run  9 th=1] time=0.522288 sum=250000.0000
+-> Best parallel time (th=1) = 0.522288 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.626574 sum=250000.0000
+[par run  1 th=2] time=0.626202 sum=250000.0000
+[par run  2 th=2] time=0.625159 sum=250000.0000
+[par run  3 th=2] time=0.626194 sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run  0] time=0.155605  sum=250000.0000
+[serial run  1] time=0.155860  sum=250000.0000
+[serial run  2] time=0.155739  sum=250000.0000
+[serial run  3] time=0.155844  sum=250000.0000
+[serial run  4] time=0.155498  sum=250000.0000
+[serial run  5] time=0.155724  sum=250000.0000
+[serial run  6] time=0.155608  sum=250000.0000
+[serial run  7] time=0.155815  sum=250000.0000
+[serial run  8] time=0.155777  sum=250000.0000
+[serial run  9] time=0.155922  sum=250000.0000
+-> Best serial time = 0.155498 s
+
+=== Schedule: static ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522711 sum=250000.0000
+[par run  1 th=1] time=0.522469 sum=250000.0000
+[par run  2 th=1] time=0.522092 sum=250000.0000
+[par run  3 th=1] time=0.522498 sum=250000.0000
+[par run  4 th=1] time=0.522689 sum=250000.0000
+[par run  5 th=1] time=0.522485 sum=250000.0000
+[par run  6 th=1] time=0.522736 sum=250000.0000
+[par run  7 th=1] time=0.522619 sum=250000.0000
+[par run  8 th=1] time=0.521975 sum=250000.0000
+[par run  9 th=1] time=0.521727 sum=250000.0000
+-> Best parallel time (th=1) = 0.521727 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=2.519788 sum=250000.0000
+[par run  1 th=2] time=2.524121 sum=250000.0000
+[par run  2 th=2] time=2.524874 sum=250000.0000
+[par run  3 th=2] time=2.519414 sum=250000.0000
+[par run  4 th=2] time=2.521861 sum=250000.0000
+[par run  5 th=2] time=2.525200 sum=250000.0000
+[par run  6 th=2] time=2.529531 sum=250000.0000
+[par run  7 th=2] time=2.527437 sum=250000.0000
+[par run  8 th=2] time=2.525952 sum=250000.0000
+[par run  9 th=2] time=2.527958 sum=250000.0000
+-> Best parallel time (th=2) = 2.519414 s, speedup = 0.06x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=1.500566 sum=250000.0000
+[par run  1 th=4] time=1.498473 sum=250000.0000
+[par run  2 th=4] time=1.500000 sum=250000.0000
+[par run  3 th=4] time=1.500142 sum=250000.0000
+[par run  4 th=4] time=1.499559 sum=250000.0000
+[par run  5 th=4] time=1.501411 sum=250000.0000
+[par run  6 th=4] time=1.500752 sum=250000.0000
+[par run  7 th=4] time=1.496193 sum=250000.0000
+[par run  8 th=4] time=1.499672 sum=250000.0000
+[par run  9 th=4] time=1.520377 sum=250000.0000
+-> Best parallel time (th=4) = 1.496193 s, speedup = 0.10x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.972100 sum=250000.0000
+[par run  1 th=8] time=0.957674 sum=250000.0000
+[par run  2 th=8] time=0.964679 sum=250000.0000
+[par run  3 th=8] time=0.969841 sum=250000.0000
+[par run  4 th=8] time=0.967234 sum=250000.0000
+[par run  5 th=8] time=0.961773 sum=250000.0000
+[par run  6 th=8] time=0.966134 sum=250000.0000
+[par run  7 th=8] time=0.961423 sum=250000.0000
+[par run  8 th=8] time=0.973102 sum=250000.0000
+[par run  9 th=8] time=0.913944 sum=250000.0000
+-> Best parallel time (th=8) = 0.913944 s, speedup = 0.17x
+
+=== Schedule: static,16 ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521530 sum=250000.0000
+[par run  1 th=1] time=0.521588 sum=250000.0000
+[par run  2 th=1] time=0.521646 sum=250000.0000
+[par run  3 th=1] time=0.521488 sum=250000.0000
+[par run  4 th=1] time=0.522130 sum=250000.0000
+[par run  5 th=1] time=0.521455 sum=250000.0000
+[par run  6 th=1] time=0.521604 sum=250000.0000
+[par run  7 th=1] time=0.520763 sum=250000.0000
+[par run  8 th=1] time=0.520956 sum=250000.0000
+[par run  9 th=1] time=0.520469 sum=250000.0000
+-> Best parallel time (th=1) = 0.520469 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.620525 sum=250000.0000
+[par run  1 th=2] time=0.622489 sum=250000.0000
+[par run  2 th=2] time=0.622265 sum=250000.0000
+[par run  3 th=2] time=0.625232 sum=250000.0000
+[par run  4 th=2] time=0.616541 sum=250000.0000
+[par run  5 th=2] time=0.615363 sum=250000.0000
+[par run  6 th=2] time=0.614207 sum=250000.0000
+[par run  7 th=2] time=0.614757 sum=250000.0000
+[par run  8 th=2] time=0.617107 sum=250000.0000
+[par run  9 th=2] time=0.616604 sum=250000.0000
+-> Best parallel time (th=2) = 0.614207 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.501032 sum=250000.0000
+[par run  1 th=4] time=0.498487 sum=250000.0000
+[par run  2 th=4] time=0.500534 sum=250000.0000
+[par run  3 th=4] time=0.499632 sum=250000.0000
+[par run  4 th=4] time=0.500019 sum=250000.0000
+[par run  5 th=4] time=0.499415 sum=250000.0000
+[par run  6 th=4] time=0.500415 sum=250000.0000
+[par run  7 th=4] time=0.499976 sum=250000.0000
+[par run  8 th=4] time=0.499551 sum=250000.0000
+[par run  9 th=4] time=0.500707 sum=250000.0000
+-> Best parallel time (th=4) = 0.498487 s, speedup = 0.31x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.294920 sum=250000.0000
+[par run  1 th=8] time=0.298440 sum=250000.0000
+[par run  2 th=8] time=0.299708 sum=250000.0000
+[par run  3 th=8] time=0.297780 sum=250000.0000
+[par run  4 th=8] time=0.297736 sum=250000.0000
+[par run  5 th=8] time=0.298022 sum=250000.0000
+[par run  6 th=8] time=0.299223 sum=250000.0000
+[par run  7 th=8] time=0.299079 sum=250000.0000
+[par run  8 th=8] time=0.299767 sum=250000.0000
+[par run  9 th=8] time=0.298459 sum=250000.0000
+-> Best parallel time (th=8) = 0.294920 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.356840 sum=250000.0000
+[par run  1 th=1] time=2.356156 sum=250000.0000
+[par run  2 th=1] time=2.356563 sum=250000.0000
+[par run  3 th=1] time=2.357642 sum=250000.0000
+[par run  4 th=1] time=2.357193 sum=250000.0000
+[par run  5 th=1] time=2.358203 sum=250000.0000
+[par run  6 th=1] time=2.357939 sum=250000.0000
+[par run  7 th=1] time=2.355998 sum=250000.0000
+[par run  8 th=1] time=2.356039 sum=250000.0000
+[par run  9 th=1] time=2.356144 sum=250000.0000
+-> Best parallel time (th=1) = 2.355998 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=25.831299 sum=250000.0000
+[par run  1 th=2] time=25.824129 sum=250000.0000
+[par run  2 th=2] time=25.820075 sum=250000.0000
+[par run  3 th=2] time=25.824147 sum=250000.0000
+[par run  4 th=2] time=25.815966 sum=250000.0000
+[par run  5 th=2] time=25.822243 sum=250000.0000
+[par run  6 th=2] time=25.816572 sum=250000.0000
+[par run  7 th=2] time=25.821997 sum=250000.0000
+[par run  8 th=2] time=25.818454 sum=250000.0000
+[par run  9 th=2] time=25.826537 sum=250000.0000
+-> Best parallel time (th=2) = 25.815966 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.127967 sum=250000.0000
+[par run  1 th=4] time=18.134552 sum=250000.0000
+[par run  2 th=4] time=18.134586 sum=250000.0000
+[par run  3 th=4] time=18.138259 sum=250000.0000
+[par run  4 th=4] time=18.128501 sum=250000.0000
+[par run  5 th=4] time=18.133995 sum=250000.0000
+[par run  6 th=4] time=18.138089 sum=250000.0000
+[par run  7 th=4] time=18.135308 sum=250000.0000
+[par run  8 th=4] time=18.122345 sum=250000.0000
+[par run  9 th=4] time=18.121972 sum=250000.0000
+-> Best parallel time (th=4) = 18.121972 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=9.846785 sum=250000.0000
+[par run  1 th=8] time=9.844022 sum=250000.0000
+[par run  2 th=8] time=9.842560 sum=250000.0000
+[par run  3 th=8] time=9.842258 sum=250000.0000
+[par run  4 th=8] time=9.843646 sum=250000.0000
+[par run  5 th=8] time=9.842015 sum=250000.0000
+[par run  6 th=8] time=9.841655 sum=250000.0000
+[par run  7 th=8] time=9.842768 sum=250000.0000
+[par run  8 th=8] time=9.842446 sum=250000.0000
+[par run  4 th=2] time=0.616046 sum=250000.0000
+[par run  5 th=2] time=0.616281 sum=250000.0000
+[par run  6 th=2] time=0.614504 sum=250000.0000
+[par run  7 th=2] time=0.615528 sum=250000.0000
+[par run  8 th=2] time=0.614204 sum=250000.0000
+[par run  9 th=2] time=0.615986 sum=250000.0000
+-> Best parallel time (th=2) = 0.614204 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.499988 sum=250000.0000
+[par run  1 th=4] time=0.501198 sum=250000.0000
+[par run  2 th=4] time=0.501699 sum=250000.0000
+[par run  3 th=4] time=0.499248 sum=250000.0000
+[par run  4 th=4] time=0.500599 sum=250000.0000
+[par run  5 th=4] time=0.499043 sum=250000.0000
+[par run  6 th=4] time=0.498876 sum=250000.0000
+[par run  7 th=4] time=0.498940 sum=250000.0000
+[par run  8 th=4] time=0.498071 sum=250000.0000
+[par run  9 th=4] time=0.499936 sum=250000.0000
+-> Best parallel time (th=4) = 0.498071 s, speedup = 0.31x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.298107 sum=250000.0000
+[par run  1 th=8] time=0.300192 sum=250000.0000
+[par run  2 th=8] time=0.300545 sum=250000.0000
+[par run  3 th=8] time=0.300185 sum=250000.0000
+[par run  4 th=8] time=0.299577 sum=250000.0000
+[par run  5 th=8] time=0.300271 sum=250000.0000
+[par run  6 th=8] time=0.300689 sum=250000.0000
+[par run  7 th=8] time=0.300852 sum=250000.0000
+[par run  8 th=8] time=0.300418 sum=250000.0000
+[par run  9 th=8] time=0.295771 sum=250000.0000
+-> Best parallel time (th=8) = 0.295771 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.359094 sum=250000.0000
+[par run  1 th=1] time=2.357999 sum=250000.0000
+[par run  2 th=1] time=2.357998 sum=250000.0000
+[par run  3 th=1] time=2.358528 sum=250000.0000
+[par run  4 th=1] time=2.357663 sum=250000.0000
+[par run  5 th=1] time=2.359602 sum=250000.0000
+[par run  6 th=1] time=2.358325 sum=250000.0000
+[par run  7 th=1] time=2.357655 sum=250000.0000
+[par run  8 th=1] time=2.357397 sum=250000.0000
+[par run  9 th=1] time=2.357424 sum=250000.0000
+-> Best parallel time (th=1) = 2.357397 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=25.986265 sum=250000.0000
+[par run  1 th=2] time=25.990697 sum=250000.0000
+[par run  2 th=2] time=25.989341 sum=250000.0000
+[par run  3 th=2] time=25.989119 sum=250000.0000
+[par run  4 th=2] time=25.979449 sum=250000.0000
+[par run  5 th=2] time=25.989765 sum=250000.0000
+[par run  6 th=2] time=25.980841 sum=250000.0000
+[par run  7 th=2] time=25.984678 sum=250000.0000
+[par run  8 th=2] time=25.984372 sum=250000.0000
+[par run  9 th=2] time=25.984645 sum=250000.0000
+-> Best parallel time (th=2) = 25.979449 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.127173 sum=250000.0000
+[par run  1 th=4] time=18.142282 sum=250000.0000
+[par run  2 th=4] time=18.129946 sum=250000.0000
+[par run  3 th=4] time=18.131413 sum=250000.0000
+[par run  4 th=4] time=18.137307 sum=250000.0000
+[par run  5 th=4] time=18.131744 sum=250000.0000
+[par run  6 th=4] time=18.136448 sum=250000.0000
+[par run  7 th=4] time=18.134206 sum=250000.0000
+[par run  8 th=4] time=18.136326 sum=250000.0000
+[par run  9 th=4] time=18.137094 sum=250000.0000
+-> Best parallel time (th=4) = 18.127173 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=9.852586 sum=250000.0000
+[par run  1 th=8] time=9.851399 sum=250000.0000
+[par run  2 th=8] time=9.851247 sum=250000.0000
+[par run  3 th=8] time=9.852240 sum=250000.0000
+[par run  4 th=8] time=9.851579 sum=250000.0000
+[par run  5 th=8] time=9.850965 sum=250000.0000
+[par run  6 th=8] time=9.850695 sum=250000.0000
+[par run  7 th=8] time=9.851565 sum=250000.0000
+[par run  8 th=8] time=9.850939 sum=250000.0000
+[par run  4 th=2] time=0.601218 sum=250000.0000
+[par run  5 th=2] time=0.501875 sum=250000.0000
+[par run  6 th=2] time=0.500217 sum=250000.0000
+[par run  7 th=2] time=0.502218 sum=250000.0000
+[par run  8 th=2] time=0.501943 sum=250000.0000
+[par run  9 th=2] time=0.501704 sum=250000.0000
+-> Best parallel time (th=2) = 0.500217 s, speedup = 0.31x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.570013 sum=250000.0000
+[par run  1 th=4] time=0.567775 sum=250000.0000
+[par run  2 th=4] time=0.568402 sum=250000.0000
+[par run  3 th=4] time=0.569169 sum=250000.0000
+[par run  4 th=4] time=0.566047 sum=250000.0000
+[par run  5 th=4] time=0.577217 sum=250000.0000
+[par run  6 th=4] time=0.570080 sum=250000.0000
+[par run  7 th=4] time=0.570026 sum=250000.0000
+[par run  8 th=4] time=0.572806 sum=250000.0000
+[par run  9 th=4] time=0.570147 sum=250000.0000
+-> Best parallel time (th=4) = 0.566047 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.294508 sum=250000.0000
+[par run  1 th=8] time=0.301022 sum=250000.0000
+[par run  2 th=8] time=0.305241 sum=250000.0000
+[par run  3 th=8] time=0.301659 sum=250000.0000
+[par run  4 th=8] time=0.298818 sum=250000.0000
+[par run  5 th=8] time=0.301811 sum=250000.0000
+[par run  6 th=8] time=0.299528 sum=250000.0000
+[par run  7 th=8] time=0.307616 sum=250000.0000
+[par run  8 th=8] time=0.300005 sum=250000.0000
+[par run  9 th=8] time=0.300880 sum=250000.0000
+-> Best parallel time (th=8) = 0.294508 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.351266 sum=250000.0000
+[par run  1 th=1] time=2.349229 sum=250000.0000
+[par run  2 th=1] time=2.348172 sum=250000.0000
+[par run  3 th=1] time=2.348663 sum=250000.0000
+[par run  4 th=1] time=2.348173 sum=250000.0000
+[par run  5 th=1] time=2.349489 sum=250000.0000
+[par run  6 th=1] time=2.353743 sum=250000.0000
+[par run  7 th=1] time=2.348703 sum=250000.0000
+[par run  8 th=1] time=2.349696 sum=250000.0000
+[par run  9 th=1] time=2.349487 sum=250000.0000
+-> Best parallel time (th=1) = 2.348172 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.406282 sum=250000.0000
+[par run  1 th=2] time=26.392151 sum=250000.0000
+[par run  2 th=2] time=26.392855 sum=250000.0000
+[par run  3 th=2] time=26.395272 sum=250000.0000
+[par run  4 th=2] time=26.378209 sum=250000.0000
+[par run  5 th=2] time=26.365395 sum=250000.0000
+[par run  6 th=2] time=26.376541 sum=250000.0000
+[par run  7 th=2] time=26.399316 sum=250000.0000
+[par run  8 th=2] time=26.409943 sum=250000.0000
+[par run  9 th=2] time=26.356611 sum=250000.0000
+-> Best parallel time (th=2) = 26.356611 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=17.841798 sum=250000.0000
+[par run  1 th=4] time=17.819052 sum=250000.0000
+[par run  2 th=4] time=17.760783 sum=250000.0000
+[par run  3 th=4] time=17.914272 sum=250000.0000
+[par run  4 th=4] time=17.876112 sum=250000.0000
+[par run  5 th=4] time=17.785925 sum=250000.0000
+[par run  6 th=4] time=17.820129 sum=250000.0000
+[par run  7 th=4] time=17.957792 sum=250000.0000
+[par run  8 th=4] time=17.641365 sum=250000.0000
+[par run  9 th=4] time=17.644954 sum=250000.0000
+-> Best parallel time (th=4) = 17.641365 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.190774 sum=250000.0000
+[par run  1 th=8] time=10.127831 sum=250000.0000
+[par run  2 th=8] time=10.281180 sum=250000.0000
+[par run  3 th=8] time=10.142856 sum=250000.0000
+[par run  4 th=8] time=10.193214 sum=250000.0000
+[par run  5 th=8] time=10.119390 sum=250000.0000
+[par run  6 th=8] time=10.282020 sum=250000.0000
+[par run  7 th=8] time=10.234433 sum=250000.0000
+[par run  8 th=8] time=10.144666 sum=250000.0000
+[par run  4 th=2] time=0.600441 sum=250000.0000
+[par run  5 th=2] time=0.598573 sum=250000.0000
+[par run  6 th=2] time=0.599386 sum=250000.0000
+[par run  7 th=2] time=0.599669 sum=250000.0000
+[par run  8 th=2] time=0.601001 sum=250000.0000
+[par run  9 th=2] time=0.604019 sum=250000.0000
+-> Best parallel time (th=2) = 0.596161 s, speedup = 0.26x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.559953 sum=250000.0000
+[par run  1 th=4] time=0.560624 sum=250000.0000
+[par run  2 th=4] time=0.561292 sum=250000.0000
+[par run  3 th=4] time=0.561405 sum=250000.0000
+[par run  4 th=4] time=0.561095 sum=250000.0000
+[par run  5 th=4] time=0.561208 sum=250000.0000
+[par run  6 th=4] time=0.560938 sum=250000.0000
+[par run  7 th=4] time=0.559969 sum=250000.0000
+[par run  8 th=4] time=0.560617 sum=250000.0000
+[par run  9 th=4] time=0.561926 sum=250000.0000
+-> Best parallel time (th=4) = 0.559953 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.299961 sum=250000.0000
+[par run  1 th=8] time=0.300703 sum=250000.0000
+[par run  2 th=8] time=0.300334 sum=250000.0000
+[par run  3 th=8] time=0.300639 sum=250000.0000
+[par run  4 th=8] time=0.300523 sum=250000.0000
+[par run  5 th=8] time=0.298225 sum=250000.0000
+[par run  6 th=8] time=0.295068 sum=250000.0000
+[par run  7 th=8] time=0.293931 sum=250000.0000
+[par run  8 th=8] time=0.290929 sum=250000.0000
+[par run  9 th=8] time=0.290229 sum=250000.0000
+-> Best parallel time (th=8) = 0.290229 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.358497 sum=250000.0000
+[par run  1 th=1] time=2.358435 sum=250000.0000
+[par run  2 th=1] time=2.358703 sum=250000.0000
+[par run  3 th=1] time=2.358103 sum=250000.0000
+[par run  4 th=1] time=2.358695 sum=250000.0000
+[par run  5 th=1] time=2.360838 sum=250000.0000
+[par run  6 th=1] time=2.358482 sum=250000.0000
+[par run  7 th=1] time=2.358350 sum=250000.0000
+[par run  8 th=1] time=2.358653 sum=250000.0000
+[par run  9 th=1] time=2.357859 sum=250000.0000
+-> Best parallel time (th=1) = 2.357859 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=25.823145 sum=250000.0000
+[par run  1 th=2] time=25.820217 sum=250000.0000
+[par run  2 th=2] time=25.825718 sum=250000.0000
+[par run  3 th=2] time=25.836084 sum=250000.0000
+[par run  4 th=2] time=25.837722 sum=250000.0000
+[par run  5 th=2] time=25.830858 sum=250000.0000
+[par run  6 th=2] time=25.831938 sum=250000.0000
+[par run  7 th=2] time=25.837467 sum=250000.0000
+[par run  8 th=2] time=25.848554 sum=250000.0000
+[par run  9 th=2] time=25.853241 sum=250000.0000
+-> Best parallel time (th=2) = 25.820217 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.365803 sum=250000.0000
+[par run  1 th=4] time=18.365527 sum=250000.0000
+[par run  2 th=4] time=18.363828 sum=250000.0000
+[par run  3 th=4] time=18.373682 sum=250000.0000
+[par run  4 th=4] time=18.367116 sum=250000.0000
+[par run  5 th=4] time=18.364971 sum=250000.0000
+[par run  6 th=4] time=18.364222 sum=250000.0000
+[par run  7 th=4] time=18.356406 sum=250000.0000
+[par run  8 th=4] time=18.366693 sum=250000.0000
+[par run  9 th=4] time=18.325973 sum=250000.0000
+-> Best parallel time (th=4) = 18.325973 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.048019 sum=250000.0000
+[par run  1 th=8] time=10.048162 sum=250000.0000
+[par run  2 th=8] time=10.047269 sum=250000.0000
+[par run  3 th=8] time=10.046712 sum=250000.0000
+[par run  4 th=8] time=10.046969 sum=250000.0000
+[par run  5 th=8] time=10.046418 sum=250000.0000
+[par run  6 th=8] time=10.046272 sum=250000.0000
+[par run  7 th=8] time=10.047852 sum=250000.0000
+[par run  8 th=8] time=10.047647 sum=250000.0000
+[par run  4 th=2] time=0.614773 sum=250000.0000
+[par run  5 th=2] time=0.611058 sum=250000.0000
+[par run  6 th=2] time=0.613134 sum=250000.0000
+[par run  7 th=2] time=0.614502 sum=250000.0000
+[par run  8 th=2] time=0.611900 sum=250000.0000
+[par run  9 th=2] time=0.611674 sum=250000.0000
+-> Best parallel time (th=2) = 0.611058 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.506810 sum=250000.0000
+[par run  1 th=4] time=0.505173 sum=250000.0000
+[par run  2 th=4] time=0.503798 sum=250000.0000
+[par run  3 th=4] time=0.505550 sum=250000.0000
+[par run  4 th=4] time=0.504551 sum=250000.0000
+[par run  5 th=4] time=0.506734 sum=250000.0000
+[par run  6 th=4] time=0.505010 sum=250000.0000
+[par run  7 th=4] time=0.503912 sum=250000.0000
+[par run  8 th=4] time=0.505156 sum=250000.0000
+[par run  9 th=4] time=0.506300 sum=250000.0000
+-> Best parallel time (th=4) = 0.503798 s, speedup = 0.31x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.300737 sum=250000.0000
+[par run  1 th=8] time=0.302330 sum=250000.0000
+[par run  2 th=8] time=0.301685 sum=250000.0000
+[par run  3 th=8] time=0.301512 sum=250000.0000
+[par run  4 th=8] time=0.301948 sum=250000.0000
+[par run  5 th=8] time=0.302837 sum=250000.0000
+[par run  6 th=8] time=0.301914 sum=250000.0000
+[par run  7 th=8] time=0.302397 sum=250000.0000
+[par run  8 th=8] time=0.300794 sum=250000.0000
+[par run  9 th=8] time=0.293433 sum=250000.0000
+-> Best parallel time (th=8) = 0.293433 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.357933 sum=250000.0000
+[par run  1 th=1] time=2.357725 sum=250000.0000
+[par run  2 th=1] time=2.358282 sum=250000.0000
+[par run  3 th=1] time=2.358633 sum=250000.0000
+[par run  4 th=1] time=2.358700 sum=250000.0000
+[par run  5 th=1] time=2.360946 sum=250000.0000
+[par run  6 th=1] time=2.359298 sum=250000.0000
+[par run  7 th=1] time=2.358497 sum=250000.0000
+[par run  8 th=1] time=2.358566 sum=250000.0000
+[par run  9 th=1] time=2.358724 sum=250000.0000
+-> Best parallel time (th=1) = 2.357725 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.174851 sum=250000.0000
+[par run  1 th=2] time=26.173758 sum=250000.0000
+[par run  2 th=2] time=26.164196 sum=250000.0000
+[par run  3 th=2] time=26.165677 sum=250000.0000
+[par run  4 th=2] time=26.166480 sum=250000.0000
+[par run  5 th=2] time=26.181510 sum=250000.0000
+[par run  6 th=2] time=26.194459 sum=250000.0000
+[par run  7 th=2] time=26.171586 sum=250000.0000
+[par run  8 th=2] time=26.214672 sum=250000.0000
+[par run  9 th=2] time=26.190598 sum=250000.0000
+-> Best parallel time (th=2) = 26.164196 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.231083 sum=250000.0000
+[par run  1 th=4] time=18.228592 sum=250000.0000
+[par run  2 th=4] time=18.230621 sum=250000.0000
+[par run  3 th=4] time=18.227667 sum=250000.0000
+[par run  4 th=4] time=18.230572 sum=250000.0000
+[par run  5 th=4] time=18.231261 sum=250000.0000
+[par run  6 th=4] time=18.227576 sum=250000.0000
+[par run  7 th=4] time=18.238236 sum=250000.0000
+[par run  8 th=4] time=18.231072 sum=250000.0000
+[par run  9 th=4] time=18.228439 sum=250000.0000
+-> Best parallel time (th=4) = 18.227576 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.051709 sum=250000.0000
+[par run  1 th=8] time=10.052420 sum=250000.0000
+[par run  2 th=8] time=10.054415 sum=250000.0000
+[par run  3 th=8] time=10.053244 sum=250000.0000
+[par run  4 th=8] time=10.052608 sum=250000.0000
+[par run  5 th=8] time=10.053816 sum=250000.0000
+[par run  6 th=8] time=10.054584 sum=250000.0000
+[par run  7 th=8] time=10.055365 sum=250000.0000
+[par run  8 th=8] time=10.052915 sum=250000.0000
+[par run  4 th=2] time=0.500467 sum=250000.0000
+[par run  5 th=2] time=0.501960 sum=250000.0000
+[par run  6 th=2] time=0.499305 sum=250000.0000
+[par run  7 th=2] time=0.500543 sum=250000.0000
+[par run  8 th=2] time=0.499819 sum=250000.0000
+[par run  9 th=2] time=0.502639 sum=250000.0000
+-> Best parallel time (th=2) = 0.499305 s, speedup = 0.31x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.543147 sum=250000.0000
+[par run  1 th=4] time=0.485463 sum=250000.0000
+[par run  2 th=4] time=0.525685 sum=250000.0000
+[par run  3 th=4] time=0.556113 sum=250000.0000
+[par run  4 th=4] time=0.557054 sum=250000.0000
+[par run  5 th=4] time=0.558829 sum=250000.0000
+[par run  6 th=4] time=0.561882 sum=250000.0000
+[par run  7 th=4] time=0.562050 sum=250000.0000
+[par run  8 th=4] time=0.561720 sum=250000.0000
+[par run  9 th=4] time=0.562257 sum=250000.0000
+-> Best parallel time (th=4) = 0.485463 s, speedup = 0.32x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.290378 sum=250000.0000
+[par run  1 th=8] time=0.292314 sum=250000.0000
+[par run  2 th=8] time=0.295368 sum=250000.0000
+[par run  3 th=8] time=0.298004 sum=250000.0000
+[par run  4 th=8] time=0.298024 sum=250000.0000
+[par run  5 th=8] time=0.297069 sum=250000.0000
+[par run  6 th=8] time=0.296450 sum=250000.0000
+[par run  7 th=8] time=0.295193 sum=250000.0000
+[par run  8 th=8] time=0.292871 sum=250000.0000
+[par run  9 th=8] time=0.291742 sum=250000.0000
+-> Best parallel time (th=8) = 0.290378 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.356780 sum=250000.0000
+[par run  1 th=1] time=2.356374 sum=250000.0000
+[par run  2 th=1] time=2.356146 sum=250000.0000
+[par run  3 th=1] time=2.356269 sum=250000.0000
+[par run  4 th=1] time=2.356066 sum=250000.0000
+[par run  5 th=1] time=2.357424 sum=250000.0000
+[par run  6 th=1] time=2.358232 sum=250000.0000
+[par run  7 th=1] time=2.356198 sum=250000.0000
+[par run  8 th=1] time=2.356980 sum=250000.0000
+[par run  9 th=1] time=2.356677 sum=250000.0000
+-> Best parallel time (th=1) = 2.356066 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.150625 sum=250000.0000
+[par run  1 th=2] time=26.139247 sum=250000.0000
+[par run  2 th=2] time=26.153681 sum=250000.0000
+[par run  3 th=2] time=26.150021 sum=250000.0000
+[par run  4 th=2] time=26.143483 sum=250000.0000
+[par run  5 th=2] time=26.159584 sum=250000.0000
+[par run  6 th=2] time=26.138103 sum=250000.0000
+[par run  7 th=2] time=26.147083 sum=250000.0000
+[par run  8 th=2] time=26.135901 sum=250000.0000
+[par run  9 th=2] time=26.162312 sum=250000.0000
+-> Best parallel time (th=2) = 26.135901 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.234891 sum=250000.0000
+[par run  1 th=4] time=18.237324 sum=250000.0000
+[par run  2 th=4] time=18.225736 sum=250000.0000
+[par run  3 th=4] time=18.229813 sum=250000.0000
+[par run  4 th=4] time=18.229466 sum=250000.0000
+[par run  5 th=4] time=18.229359 sum=250000.0000
+[par run  6 th=4] time=18.218128 sum=250000.0000
+[par run  7 th=4] time=18.214130 sum=250000.0000
+[par run  8 th=4] time=18.222396 sum=250000.0000
+[par run  9 th=4] time=18.229189 sum=250000.0000
+-> Best parallel time (th=4) = 18.214130 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.089245 sum=250000.0000
+[par run  1 th=8] time=10.102212 sum=250000.0000
+[par run  2 th=8] time=10.126416 sum=250000.0000
+[par run  3 th=8] time=10.099497 sum=250000.0000
+[par run  4 th=8] time=10.093157 sum=250000.0000
+[par run  5 th=8] time=10.116031 sum=250000.0000
+[par run  6 th=8] time=10.109919 sum=250000.0000
+[par run  7 th=8] time=10.097298 sum=250000.0000
+[par run  8 th=8] time=10.077028 sum=250000.0000
+[par run  4 th=2] time=0.620074 sum=250000.0000
+[par run  5 th=2] time=0.617895 sum=250000.0000
+[par run  6 th=2] time=0.619146 sum=250000.0000
+[par run  7 th=2] time=0.620222 sum=250000.0000
+[par run  8 th=2] time=0.620707 sum=250000.0000
+[par run  9 th=2] time=0.621215 sum=250000.0000
+-> Best parallel time (th=2) = 0.617895 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.504923 sum=250000.0000
+[par run  1 th=4] time=0.504455 sum=250000.0000
+[par run  2 th=4] time=0.504628 sum=250000.0000
+[par run  3 th=4] time=0.505296 sum=250000.0000
+[par run  4 th=4] time=0.504895 sum=250000.0000
+[par run  5 th=4] time=0.504173 sum=250000.0000
+[par run  6 th=4] time=0.501506 sum=250000.0000
+[par run  7 th=4] time=0.504053 sum=250000.0000
+[par run  8 th=4] time=0.505115 sum=250000.0000
+[par run  9 th=4] time=0.512198 sum=250000.0000
+-> Best parallel time (th=4) = 0.501506 s, speedup = 0.31x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.300816 sum=250000.0000
+[par run  1 th=8] time=0.300777 sum=250000.0000
+[par run  2 th=8] time=0.300625 sum=250000.0000
+[par run  3 th=8] time=0.301331 sum=250000.0000
+[par run  4 th=8] time=0.301665 sum=250000.0000
+[par run  5 th=8] time=0.301759 sum=250000.0000
+[par run  6 th=8] time=0.300813 sum=250000.0000
+[par run  7 th=8] time=0.294365 sum=250000.0000
+[par run  8 th=8] time=0.288381 sum=250000.0000
+[par run  9 th=8] time=0.287743 sum=250000.0000
+-> Best parallel time (th=8) = 0.287743 s, speedup = 0.54x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.381990 sum=250000.0000
+[par run  1 th=1] time=2.380825 sum=250000.0000
+[par run  2 th=1] time=2.380151 sum=250000.0000
+[par run  3 th=1] time=2.379670 sum=250000.0000
+[par run  4 th=1] time=2.379655 sum=250000.0000
+[par run  5 th=1] time=2.382796 sum=250000.0000
+[par run  6 th=1] time=2.380831 sum=250000.0000
+[par run  7 th=1] time=2.380903 sum=250000.0000
+[par run  8 th=1] time=2.381142 sum=250000.0000
+[par run  9 th=1] time=2.380242 sum=250000.0000
+-> Best parallel time (th=1) = 2.379655 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.229214 sum=250000.0000
+[par run  1 th=2] time=26.202777 sum=250000.0000
+[par run  2 th=2] time=26.173023 sum=250000.0000
+[par run  3 th=2] time=26.187765 sum=250000.0000
+[par run  4 th=2] time=26.188919 sum=250000.0000
+[par run  5 th=2] time=26.186058 sum=250000.0000
+[par run  6 th=2] time=26.215484 sum=250000.0000
+[par run  7 th=2] time=26.194347 sum=250000.0000
+[par run  8 th=2] time=26.184442 sum=250000.0000
+[par run  9 th=2] time=26.208009 sum=250000.0000
+-> Best parallel time (th=2) = 26.173023 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.221641 sum=250000.0000
+[par run  1 th=4] time=18.226643 sum=250000.0000
+[par run  2 th=4] time=18.229196 sum=250000.0000
+[par run  3 th=4] time=18.222401 sum=250000.0000
+[par run  4 th=4] time=18.220064 sum=250000.0000
+[par run  5 th=4] time=18.225091 sum=250000.0000
+[par run  6 th=4] time=18.220719 sum=250000.0000
+[par run  7 th=4] time=18.223533 sum=250000.0000
+[par run  8 th=4] time=18.217623 sum=250000.0000
+[par run  9 th=4] time=18.229188 sum=250000.0000
+-> Best parallel time (th=4) = 18.217623 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.048149 sum=250000.0000
+[par run  1 th=8] time=10.048829 sum=250000.0000
+[par run  2 th=8] time=10.048995 sum=250000.0000
+[par run  3 th=8] time=10.050304 sum=250000.0000
+[par run  4 th=8] time=10.049332 sum=250000.0000
+[par run  5 th=8] time=10.050234 sum=250000.0000
+[par run  6 th=8] time=10.050539 sum=250000.0000
+[par run  7 th=8] time=10.050836 sum=250000.0000
+[par run  8 th=8] time=10.049644 sum=250000.0000
+[par run  4 th=2] time=0.626545 sum=250000.0000
+[par run  5 th=2] time=0.623686 sum=250000.0000
+[par run  6 th=2] time=0.625902 sum=250000.0000
+[par run  7 th=2] time=0.622846 sum=250000.0000
+[par run  8 th=2] time=0.623286 sum=250000.0000
+[par run  9 th=2] time=0.624467 sum=250000.0000
+-> Best parallel time (th=2) = 0.622846 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.552592 sum=250000.0000
+[par run  1 th=4] time=0.553437 sum=250000.0000
+[par run  2 th=4] time=0.555675 sum=250000.0000
+[par run  3 th=4] time=0.558479 sum=250000.0000
+[par run  4 th=4] time=0.558411 sum=250000.0000
+[par run  5 th=4] time=0.558492 sum=250000.0000
+[par run  6 th=4] time=0.558460 sum=250000.0000
+[par run  7 th=4] time=0.558496 sum=250000.0000
+[par run  8 th=4] time=0.558832 sum=250000.0000
+[par run  9 th=4] time=0.561857 sum=250000.0000
+-> Best parallel time (th=4) = 0.552592 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.302748 sum=250000.0000
+[par run  1 th=8] time=0.300520 sum=250000.0000
+[par run  2 th=8] time=0.301209 sum=250000.0000
+[par run  3 th=8] time=0.299552 sum=250000.0000
+[par run  4 th=8] time=0.296843 sum=250000.0000
+[par run  5 th=8] time=0.295576 sum=250000.0000
+[par run  6 th=8] time=0.292535 sum=250000.0000
+[par run  7 th=8] time=0.290512 sum=250000.0000
+[par run  8 th=8] time=0.290382 sum=250000.0000
+[par run  9 th=8] time=0.290002 sum=250000.0000
+-> Best parallel time (th=8) = 0.290002 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.356353 sum=250000.0000
+[par run  1 th=1] time=2.355651 sum=250000.0000
+[par run  2 th=1] time=2.355814 sum=250000.0000
+[par run  3 th=1] time=2.355615 sum=250000.0000
+[par run  4 th=1] time=2.356630 sum=250000.0000
+[par run  5 th=1] time=2.358618 sum=250000.0000
+[par run  6 th=1] time=2.356097 sum=250000.0000
+[par run  7 th=1] time=2.356650 sum=250000.0000
+[par run  8 th=1] time=2.356669 sum=250000.0000
+[par run  9 th=1] time=2.355333 sum=250000.0000
+-> Best parallel time (th=1) = 2.355333 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.204088 sum=250000.0000
+[par run  1 th=2] time=26.223387 sum=250000.0000
+[par run  2 th=2] time=26.215744 sum=250000.0000
+[par run  3 th=2] time=26.211291 sum=250000.0000
+[par run  4 th=2] time=26.199063 sum=250000.0000
+[par run  5 th=2] time=26.222281 sum=250000.0000
+[par run  6 th=2] time=26.211301 sum=250000.0000
+[par run  7 th=2] time=26.218952 sum=250000.0000
+[par run  8 th=2] time=26.201054 sum=250000.0000
+[par run  9 th=2] time=26.191394 sum=250000.0000
+-> Best parallel time (th=2) = 26.191394 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.237585 sum=250000.0000
+[par run  1 th=4] time=18.237550 sum=250000.0000
+[par run  2 th=4] time=18.217901 sum=250000.0000
+[par run  3 th=4] time=18.209015 sum=250000.0000
+[par run  4 th=4] time=18.219261 sum=250000.0000
+[par run  5 th=4] time=18.227216 sum=250000.0000
+[par run  6 th=4] time=18.212865 sum=250000.0000
+[par run  7 th=4] time=18.224877 sum=250000.0000
+[par run  8 th=4] time=18.213091 sum=250000.0000
+[par run  9 th=4] time=18.224205 sum=250000.0000
+-> Best parallel time (th=4) = 18.209015 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.053039 sum=250000.0000
+[par run  1 th=8] time=10.053255 sum=250000.0000
+[par run  2 th=8] time=10.053639 sum=250000.0000
+[par run  3 th=8] time=10.052554 sum=250000.0000
+[par run  4 th=8] time=10.054054 sum=250000.0000
+[par run  5 th=8] time=10.052316 sum=250000.0000
+[par run  6 th=8] time=10.054170 sum=250000.0000
+[par run  7 th=8] time=10.053835 sum=250000.0000
+[par run  8 th=8] time=10.053233 sum=250000.0000
+[par run  4 th=2] time=0.603189 sum=250000.0000
+[par run  5 th=2] time=0.606663 sum=250000.0000
+[par run  6 th=2] time=0.608435 sum=250000.0000
+[par run  7 th=2] time=0.604250 sum=250000.0000
+[par run  8 th=2] time=0.606288 sum=250000.0000
+[par run  9 th=2] time=0.609414 sum=250000.0000
+-> Best parallel time (th=2) = 0.603189 s, speedup = 0.26x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.552725 sum=250000.0000
+[par run  1 th=4] time=0.552395 sum=250000.0000
+[par run  2 th=4] time=0.552834 sum=250000.0000
+[par run  3 th=4] time=0.552342 sum=250000.0000
+[par run  4 th=4] time=0.552714 sum=250000.0000
+[par run  5 th=4] time=0.552194 sum=250000.0000
+[par run  6 th=4] time=0.553189 sum=250000.0000
+[par run  7 th=4] time=0.553372 sum=250000.0000
+[par run  8 th=4] time=0.553078 sum=250000.0000
+[par run  9 th=4] time=0.553510 sum=250000.0000
+-> Best parallel time (th=4) = 0.552194 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.300395 sum=250000.0000
+[par run  1 th=8] time=0.300636 sum=250000.0000
+[par run  2 th=8] time=0.300666 sum=250000.0000
+[par run  3 th=8] time=0.301098 sum=250000.0000
+[par run  4 th=8] time=0.300319 sum=250000.0000
+[par run  5 th=8] time=0.298561 sum=250000.0000
+[par run  6 th=8] time=0.296479 sum=250000.0000
+[par run  7 th=8] time=0.294741 sum=250000.0000
+[par run  8 th=8] time=0.291825 sum=250000.0000
+[par run  9 th=8] time=0.291181 sum=250000.0000
+-> Best parallel time (th=8) = 0.291181 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.358028 sum=250000.0000
+[par run  1 th=1] time=2.357468 sum=250000.0000
+[par run  2 th=1] time=2.357404 sum=250000.0000
+[par run  3 th=1] time=2.356909 sum=250000.0000
+[par run  4 th=1] time=2.357224 sum=250000.0000
+[par run  5 th=1] time=2.359130 sum=250000.0000
+[par run  6 th=1] time=2.358128 sum=250000.0000
+[par run  7 th=1] time=2.357592 sum=250000.0000
+[par run  8 th=1] time=2.357483 sum=250000.0000
+[par run  9 th=1] time=2.356532 sum=250000.0000
+-> Best parallel time (th=1) = 2.356532 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.194646 sum=250000.0000
+[par run  1 th=2] time=26.187264 sum=250000.0000
+[par run  2 th=2] time=26.185968 sum=250000.0000
+[par run  3 th=2] time=26.185387 sum=250000.0000
+[par run  4 th=2] time=26.171810 sum=250000.0000
+[par run  5 th=2] time=26.161073 sum=250000.0000
+[par run  6 th=2] time=26.180403 sum=250000.0000
+[par run  7 th=2] time=26.165636 sum=250000.0000
+[par run  8 th=2] time=26.168303 sum=250000.0000
+[par run  9 th=2] time=26.156905 sum=250000.0000
+-> Best parallel time (th=2) = 26.156905 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.272152 sum=250000.0000
+[par run  1 th=4] time=18.267080 sum=250000.0000
+[par run  2 th=4] time=18.254464 sum=250000.0000
+[par run  3 th=4] time=18.278167 sum=250000.0000
+[par run  4 th=4] time=18.276682 sum=250000.0000
+[par run  5 th=4] time=18.269375 sum=250000.0000
+[par run  6 th=4] time=18.262243 sum=250000.0000
+[par run  7 th=4] time=18.268114 sum=250000.0000
+[par run  8 th=4] time=18.265668 sum=250000.0000
+[par run  9 th=4] time=18.272136 sum=250000.0000
+-> Best parallel time (th=4) = 18.254464 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.047718 sum=250000.0000
+[par run  1 th=8] time=10.046496 sum=250000.0000
+[par run  2 th=8] time=10.047697 sum=250000.0000
+[par run  3 th=8] time=10.046642 sum=250000.0000
+[par run  4 th=8] time=10.047412 sum=250000.0000
+[par run  5 th=8] time=10.047028 sum=250000.0000
+[par run  6 th=8] time=10.047556 sum=250000.0000
+[par run  7 th=8] time=10.048337 sum=250000.0000
+[par run  8 th=8] time=10.046698 sum=250000.0000
+[par run  4 th=2] time=0.621247 sum=250000.0000
+[par run  5 th=2] time=0.619009 sum=250000.0000
+[par run  6 th=2] time=0.616382 sum=250000.0000
+[par run  7 th=2] time=0.621557 sum=250000.0000
+[par run  8 th=2] time=0.618991 sum=250000.0000
+[par run  9 th=2] time=0.617040 sum=250000.0000
+-> Best parallel time (th=2) = 0.615817 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.556242 sum=250000.0000
+[par run  1 th=4] time=0.557210 sum=250000.0000
+[par run  2 th=4] time=0.557070 sum=250000.0000
+[par run  3 th=4] time=0.556639 sum=250000.0000
+[par run  4 th=4] time=0.557213 sum=250000.0000
+[par run  5 th=4] time=0.556841 sum=250000.0000
+[par run  6 th=4] time=0.556855 sum=250000.0000
+[par run  7 th=4] time=0.556873 sum=250000.0000
+[par run  8 th=4] time=0.562023 sum=250000.0000
+[par run  9 th=4] time=0.567135 sum=250000.0000
+-> Best parallel time (th=4) = 0.556242 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.300317 sum=250000.0000
+[par run  1 th=8] time=0.300561 sum=250000.0000
+[par run  2 th=8] time=0.301567 sum=250000.0000
+[par run  3 th=8] time=0.301714 sum=250000.0000
+[par run  4 th=8] time=0.302072 sum=250000.0000
+[par run  5 th=8] time=0.301266 sum=250000.0000
+[par run  6 th=8] time=0.293032 sum=250000.0000
+[par run  7 th=8] time=0.288305 sum=250000.0000
+[par run  8 th=8] time=0.288064 sum=250000.0000
+[par run  9 th=8] time=0.288119 sum=250000.0000
+-> Best parallel time (th=8) = 0.288064 s, speedup = 0.54x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.357630 sum=250000.0000
+[par run  1 th=1] time=2.356147 sum=250000.0000
+[par run  2 th=1] time=2.356521 sum=250000.0000
+[par run  3 th=1] time=2.356371 sum=250000.0000
+[par run  4 th=1] time=2.357222 sum=250000.0000
+[par run  5 th=1] time=2.360170 sum=250000.0000
+[par run  6 th=1] time=2.358096 sum=250000.0000
+[par run  7 th=1] time=2.357664 sum=250000.0000
+[par run  8 th=1] time=2.356730 sum=250000.0000
+[par run  9 th=1] time=2.356782 sum=250000.0000
+-> Best parallel time (th=1) = 2.356147 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.161369 sum=250000.0000
+[par run  1 th=2] time=26.167284 sum=250000.0000
+[par run  2 th=2] time=26.178010 sum=250000.0000
+[par run  3 th=2] time=26.169675 sum=250000.0000
+[par run  4 th=2] time=26.166336 sum=250000.0000
+[par run  5 th=2] time=26.186699 sum=250000.0000
+[par run  6 th=2] time=26.180355 sum=250000.0000
+[par run  7 th=2] time=26.195616 sum=250000.0000
+[par run  8 th=2] time=26.198028 sum=250000.0000
+[par run  9 th=2] time=26.187008 sum=250000.0000
+-> Best parallel time (th=2) = 26.161369 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.286697 sum=250000.0000
+[par run  1 th=4] time=18.287729 sum=250000.0000
+[par run  2 th=4] time=18.290427 sum=250000.0000
+[par run  3 th=4] time=18.296878 sum=250000.0000
+[par run  4 th=4] time=18.297338 sum=250000.0000
+[par run  5 th=4] time=18.291977 sum=250000.0000
+[par run  6 th=4] time=18.290099 sum=250000.0000
+[par run  7 th=4] time=18.289125 sum=250000.0000
+[par run  8 th=4] time=18.294715 sum=250000.0000
+[par run  9 th=4] time=18.297622 sum=250000.0000
+-> Best parallel time (th=4) = 18.286697 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.051890 sum=250000.0000
+[par run  1 th=8] time=10.049952 sum=250000.0000
+[par run  2 th=8] time=10.049520 sum=250000.0000
+[par run  3 th=8] time=10.049735 sum=250000.0000
+[par run  4 th=8] time=10.048229 sum=250000.0000
+[par run  5 th=8] time=10.047553 sum=250000.0000
+[par run  6 th=8] time=10.047959 sum=250000.0000
+[par run  7 th=8] time=10.048366 sum=250000.0000
+[par run  8 th=8] time=10.048293 sum=250000.0000
+[par run  4 th=2] time=0.617783 sum=250000.0000
+[par run  5 th=2] time=0.621137 sum=250000.0000
+[par run  6 th=2] time=0.617269 sum=250000.0000
+[par run  7 th=2] time=0.610560 sum=250000.0000
+[par run  8 th=2] time=0.609655 sum=250000.0000
+[par run  9 th=2] time=0.611104 sum=250000.0000
+-> Best parallel time (th=2) = 0.609655 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.485144 sum=250000.0000
+[par run  1 th=4] time=0.484291 sum=250000.0000
+[par run  2 th=4] time=0.484438 sum=250000.0000
+[par run  3 th=4] time=0.484765 sum=250000.0000
+[par run  4 th=4] time=0.483823 sum=250000.0000
+[par run  5 th=4] time=0.484648 sum=250000.0000
+[par run  6 th=4] time=0.540970 sum=250000.0000
+[par run  7 th=4] time=0.556272 sum=250000.0000
+[par run  8 th=4] time=0.557941 sum=250000.0000
+[par run  9 th=4] time=0.557016 sum=250000.0000
+-> Best parallel time (th=4) = 0.483823 s, speedup = 0.32x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.301537 sum=250000.0000
+[par run  1 th=8] time=0.302705 sum=250000.0000
+[par run  2 th=8] time=0.302398 sum=250000.0000
+[par run  3 th=8] time=0.300538 sum=250000.0000
+[par run  4 th=8] time=0.300526 sum=250000.0000
+[par run  5 th=8] time=0.298057 sum=250000.0000
+[par run  6 th=8] time=0.294679 sum=250000.0000
+[par run  7 th=8] time=0.294256 sum=250000.0000
+[par run  8 th=8] time=0.291311 sum=250000.0000
+[par run  9 th=8] time=0.288824 sum=250000.0000
+-> Best parallel time (th=8) = 0.288824 s, speedup = 0.54x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.386995 sum=250000.0000
+[par run  1 th=1] time=2.386421 sum=250000.0000
+[par run  2 th=1] time=2.386408 sum=250000.0000
+[par run  3 th=1] time=2.385605 sum=250000.0000
+[par run  4 th=1] time=2.385980 sum=250000.0000
+[par run  5 th=1] time=2.388167 sum=250000.0000
+[par run  6 th=1] time=2.386125 sum=250000.0000
+[par run  7 th=1] time=2.386558 sum=250000.0000
+[par run  8 th=1] time=2.386461 sum=250000.0000
+[par run  9 th=1] time=2.385648 sum=250000.0000
+-> Best parallel time (th=1) = 2.385605 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.220317 sum=250000.0000
+[par run  1 th=2] time=26.230529 sum=250000.0000
+[par run  2 th=2] time=26.229000 sum=250000.0000
+[par run  3 th=2] time=26.220747 sum=250000.0000
+[par run  4 th=2] time=26.219153 sum=250000.0000
+[par run  5 th=2] time=26.228802 sum=250000.0000
+[par run  6 th=2] time=26.225137 sum=250000.0000
+[par run  7 th=2] time=26.217016 sum=250000.0000
+[par run  8 th=2] time=26.220234 sum=250000.0000
+[par run  9 th=2] time=26.227870 sum=250000.0000
+-> Best parallel time (th=2) = 26.217016 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.282196 sum=250000.0000
+[par run  1 th=4] time=18.284001 sum=250000.0000
+[par run  2 th=4] time=18.276310 sum=250000.0000
+[par run  3 th=4] time=18.277952 sum=250000.0000
+[par run  4 th=4] time=18.283079 sum=250000.0000
+[par run  5 th=4] time=18.277258 sum=250000.0000
+[par run  6 th=4] time=18.281430 sum=250000.0000
+[par run  7 th=4] time=18.283869 sum=250000.0000
+[par run  8 th=4] time=18.280232 sum=250000.0000
+[par run  9 th=4] time=18.265025 sum=250000.0000
+-> Best parallel time (th=4) = 18.265025 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.047815 sum=250000.0000
+[par run  1 th=8] time=10.047171 sum=250000.0000
+[par run  2 th=8] time=10.047208 sum=250000.0000
+[par run  3 th=8] time=10.047441 sum=250000.0000
+[par run  4 th=8] time=10.046547 sum=250000.0000
+[par run  5 th=8] time=10.048433 sum=250000.0000
+[par run  6 th=8] time=10.047740 sum=250000.0000
+[par run  7 th=8] time=10.047372 sum=250000.0000
+[par run  8 th=8] time=10.048395 sum=250000.0000
+[par run  4 th=2] time=0.495769 sum=250000.0000
+[par run  5 th=2] time=0.496937 sum=250000.0000
+[par run  6 th=2] time=0.496140 sum=250000.0000
+[par run  7 th=2] time=0.497848 sum=250000.0000
+[par run  8 th=2] time=0.494852 sum=250000.0000
+[par run  9 th=2] time=0.496634 sum=250000.0000
+-> Best parallel time (th=2) = 0.494852 s, speedup = 0.31x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.560392 sum=250000.0000
+[par run  1 th=4] time=0.562972 sum=250000.0000
+[par run  2 th=4] time=0.563066 sum=250000.0000
+[par run  3 th=4] time=0.563119 sum=250000.0000
+[par run  4 th=4] time=0.562769 sum=250000.0000
+[par run  5 th=4] time=0.562742 sum=250000.0000
+[par run  6 th=4] time=0.562803 sum=250000.0000
+[par run  7 th=4] time=0.562812 sum=250000.0000
+[par run  8 th=4] time=0.562011 sum=250000.0000
+[par run  9 th=4] time=0.561103 sum=250000.0000
+-> Best parallel time (th=4) = 0.560392 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.290405 sum=250000.0000
+[par run  1 th=8] time=0.291431 sum=250000.0000
+[par run  2 th=8] time=0.294009 sum=250000.0000
+[par run  3 th=8] time=0.295599 sum=250000.0000
+[par run  4 th=8] time=0.297669 sum=250000.0000
+[par run  5 th=8] time=0.300002 sum=250000.0000
+[par run  6 th=8] time=0.300697 sum=250000.0000
+[par run  7 th=8] time=0.300464 sum=250000.0000
+[par run  8 th=8] time=0.300754 sum=250000.0000
+[par run  9 th=8] time=0.300863 sum=250000.0000
+-> Best parallel time (th=8) = 0.290405 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.376824 sum=250000.0000
+[par run  1 th=1] time=2.377728 sum=250000.0000
+[par run  2 th=1] time=2.377750 sum=250000.0000
+[par run  3 th=1] time=2.377855 sum=250000.0000
+[par run  4 th=1] time=2.377891 sum=250000.0000
+[par run  5 th=1] time=2.379457 sum=250000.0000
+[par run  6 th=1] time=2.380375 sum=250000.0000
+[par run  7 th=1] time=2.377825 sum=250000.0000
+[par run  8 th=1] time=2.378909 sum=250000.0000
+[par run  9 th=1] time=2.378360 sum=250000.0000
+-> Best parallel time (th=1) = 2.376824 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.474886 sum=250000.0000
+[par run  1 th=2] time=26.476769 sum=250000.0000
+[par run  2 th=2] time=26.467399 sum=250000.0000
+[par run  3 th=2] time=26.471935 sum=250000.0000
+[par run  4 th=2] time=26.466918 sum=250000.0000
+[par run  5 th=2] time=26.469293 sum=250000.0000
+[par run  6 th=2] time=26.462719 sum=250000.0000
+[par run  7 th=2] time=26.479095 sum=250000.0000
+[par run  8 th=2] time=26.470075 sum=250000.0000
+[par run  9 th=2] time=26.461930 sum=250000.0000
+-> Best parallel time (th=2) = 26.461930 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.221269 sum=250000.0000
+[par run  1 th=4] time=18.220913 sum=250000.0000
+[par run  2 th=4] time=18.219471 sum=250000.0000
+[par run  3 th=4] time=18.218491 sum=250000.0000
+[par run  4 th=4] time=18.231386 sum=250000.0000
+[par run  5 th=4] time=18.225671 sum=250000.0000
+[par run  6 th=4] time=18.227714 sum=250000.0000
+[par run  7 th=4] time=18.227765 sum=250000.0000
+[par run  8 th=4] time=18.221516 sum=250000.0000
+[par run  9 th=4] time=18.223462 sum=250000.0000
+-> Best parallel time (th=4) = 18.218491 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.053241 sum=250000.0000
+[par run  1 th=8] time=10.053813 sum=250000.0000
+[par run  2 th=8] time=10.055291 sum=250000.0000
+[par run  3 th=8] time=10.053683 sum=250000.0000
+[par run  4 th=8] time=10.055760 sum=250000.0000
+[par run  5 th=8] time=10.053162 sum=250000.0000
+[par run  6 th=8] time=10.055699 sum=250000.0000
+[par run  7 th=8] time=10.055581 sum=250000.0000
+[par run  8 th=8] time=10.055461 sum=250000.0000
+[par run  9 th=8] time=9.842501 sum=250000.0000
+-> Best parallel time (th=8) = 9.841655 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522499 sum=250000.0000
+[par run  1 th=1] time=0.522415 sum=250000.0000
+[par run  2 th=1] time=0.522358 sum=250000.0000
+[par run  3 th=1] time=0.522244 sum=250000.0000
+[par run  4 th=1] time=0.522231 sum=250000.0000
+[par run  5 th=1] time=0.522234 sum=250000.0000
+[par run  6 th=1] time=0.522245 sum=250000.0000
+[par run  7 th=1] time=0.522410 sum=250000.0000
+[par run  8 th=1] time=0.522352 sum=250000.0000
+[par run  9 th=1] time=0.522325 sum=250000.0000
+-> Best parallel time (th=1) = 0.522231 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262670 sum=250000.0000
+[par run  1 th=2] time=0.262454 sum=250000.0000
+[par run  2 th=2] time=0.262421 sum=250000.0000
+[par run  3 th=2] time=0.262475 sum=250000.0000
+[par run  4 th=2] time=0.262528 sum=250000.0000
+[par run  5 th=2] time=0.262538 sum=250000.0000
+[par run  6 th=2] time=0.262570 sum=250000.0000
+[par run  7 th=2] time=0.262632 sum=250000.0000
+[par run  8 th=2] time=0.262726 sum=250000.0000
+[par run  9 th=2] time=0.262516 sum=250000.0000
+-> Best parallel time (th=2) = 0.262421 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134733 sum=250000.0000
+[par run  1 th=4] time=0.134801 sum=250000.0000
+[par run  2 th=4] time=0.134635 sum=250000.0000
+[par run  3 th=4] time=0.134678 sum=250000.0000
+[par run  4 th=4] time=0.134663 sum=250000.0000
+[par run  5 th=4] time=0.134755 sum=250000.0000
+[par run  6 th=4] time=0.134728 sum=250000.0000
+[par run  7 th=4] time=0.134622 sum=250000.0000
+[par run  8 th=4] time=0.134734 sum=250000.0000
+[par run  9 th=4] time=0.134763 sum=250000.0000
+-> Best parallel time (th=4) = 0.134622 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073083 sum=250000.0000
+[par run  1 th=8] time=0.072823 sum=250000.0000
+[par run  2 th=8] time=0.073217 sum=250000.0000
+[par run  3 th=8] time=0.073110 sum=250000.0000
+[par run  4 th=8] time=0.073322 sum=250000.0000
+[par run  5 th=8] time=0.073115 sum=250000.0000
+[par run  6 th=8] time=0.073173 sum=250000.0000
+[par run  7 th=8] time=0.072997 sum=250000.0000
+[par run  8 th=8] time=0.073046 sum=250000.0000
+[par run  9 th=8] time=0.073274 sum=250000.0000
+-> Best parallel time (th=8) = 0.072823 s, speedup = 2.13x
+
+Output written to output.txt
+[par run  4 th=2] time=0.622437 sum=250000.0000
+[par run  5 th=2] time=0.625271 sum=250000.0000
+[par run  6 th=2] time=0.621808 sum=250000.0000
+[par run  7 th=2] time=0.642985 sum=250000.0000
+[par run  8 th=2] time=0.642402 sum=250000.0000
+[par run  9 th=2] time=0.642644 sum=250000.0000
+-> Best parallel time (th=2) = 0.620525 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.561258 sum=250000.0000
+[par run  1 th=4] time=0.561082 sum=250000.0000
+[par run  2 th=4] time=0.561884 sum=250000.0000
+[par run  3 th=4] time=0.563231 sum=250000.0000
+[par run  4 th=4] time=0.563278 sum=250000.0000
+[par run  5 th=4] time=0.563095 sum=250000.0000
+[par run  6 th=4] time=0.563454 sum=250000.0000
+[par run  7 th=4] time=0.563197 sum=250000.0000
+[par run  8 th=4] time=0.565806 sum=250000.0000
+[par run  9 th=4] time=0.572912 sum=250000.0000
+-> Best parallel time (th=4) = 0.561082 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.301373 sum=250000.0000
+[par run  1 th=8] time=0.301395 sum=250000.0000
+[par run  2 th=8] time=0.297789 sum=250000.0000
+[par run  3 th=8] time=0.295358 sum=250000.0000
+[par run  4 th=8] time=0.294148 sum=250000.0000
+[par run  5 th=8] time=0.290764 sum=250000.0000
+[par run  6 th=8] time=0.289385 sum=250000.0000
+[par run  7 th=8] time=0.289330 sum=250000.0000
+[par run  8 th=8] time=0.288589 sum=250000.0000
+[par run  9 th=8] time=0.286944 sum=250000.0000
+-> Best parallel time (th=8) = 0.286944 s, speedup = 0.54x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.355502 sum=250000.0000
+[par run  1 th=1] time=2.355247 sum=250000.0000
+[par run  2 th=1] time=2.355957 sum=250000.0000
+[par run  3 th=1] time=2.355934 sum=250000.0000
+[par run  4 th=1] time=2.356941 sum=250000.0000
+[par run  5 th=1] time=2.359011 sum=250000.0000
+[par run  6 th=1] time=2.356145 sum=250000.0000
+[par run  7 th=1] time=2.357328 sum=250000.0000
+[par run  8 th=1] time=2.357165 sum=250000.0000
+[par run  9 th=1] time=2.355579 sum=250000.0000
+-> Best parallel time (th=1) = 2.355247 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.397025 sum=250000.0000
+[par run  1 th=2] time=26.405345 sum=250000.0000
+[par run  2 th=2] time=26.404653 sum=250000.0000
+[par run  3 th=2] time=26.424894 sum=250000.0000
+[par run  4 th=2] time=26.409200 sum=250000.0000
+[par run  5 th=2] time=26.402030 sum=250000.0000
+[par run  6 th=2] time=26.422334 sum=250000.0000
+[par run  7 th=2] time=26.402270 sum=250000.0000
+[par run  8 th=2] time=26.411496 sum=250000.0000
+[par run  9 th=2] time=26.421748 sum=250000.0000
+-> Best parallel time (th=2) = 26.397025 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.255628 sum=250000.0000
+[par run  1 th=4] time=18.256357 sum=250000.0000
+[par run  2 th=4] time=18.270668 sum=250000.0000
+[par run  3 th=4] time=18.274392 sum=250000.0000
+[par run  4 th=4] time=18.254483 sum=250000.0000
+[par run  5 th=4] time=18.274145 sum=250000.0000
+[par run  6 th=4] time=18.230226 sum=250000.0000
+[par run  7 th=4] time=18.268754 sum=250000.0000
+[par run  8 th=4] time=18.259518 sum=250000.0000
+[par run  9 th=4] time=18.264576 sum=250000.0000
+-> Best parallel time (th=4) = 18.230226 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.058767 sum=250000.0000
+[par run  1 th=8] time=10.058997 sum=250000.0000
+[par run  2 th=8] time=10.057471 sum=250000.0000
+[par run  3 th=8] time=10.057844 sum=250000.0000
+[par run  4 th=8] time=10.057451 sum=250000.0000
+[par run  5 th=8] time=10.058994 sum=250000.0000
+[par run  6 th=8] time=10.056269 sum=250000.0000
+[par run  7 th=8] time=10.056360 sum=250000.0000
+[par run  8 th=8] time=10.055922 sum=250000.0000
+[par run  4 th=2] time=0.502856 sum=250000.0000
+[par run  5 th=2] time=0.502897 sum=250000.0000
+[par run  6 th=2] time=0.502754 sum=250000.0000
+[par run  7 th=2] time=0.501740 sum=250000.0000
+[par run  8 th=2] time=0.502417 sum=250000.0000
+[par run  9 th=2] time=0.501725 sum=250000.0000
+-> Best parallel time (th=2) = 0.501725 s, speedup = 0.31x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.557751 sum=250000.0000
+[par run  1 th=4] time=0.556848 sum=250000.0000
+[par run  2 th=4] time=0.560299 sum=250000.0000
+[par run  3 th=4] time=0.560071 sum=250000.0000
+[par run  4 th=4] time=0.559850 sum=250000.0000
+[par run  5 th=4] time=0.562601 sum=250000.0000
+[par run  6 th=4] time=0.562007 sum=250000.0000
+[par run  7 th=4] time=0.562293 sum=250000.0000
+[par run  8 th=4] time=0.562393 sum=250000.0000
+[par run  9 th=4] time=0.563820 sum=250000.0000
+-> Best parallel time (th=4) = 0.556848 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.293034 sum=250000.0000
+[par run  1 th=8] time=0.293765 sum=250000.0000
+[par run  2 th=8] time=0.297359 sum=250000.0000
+[par run  3 th=8] time=0.298505 sum=250000.0000
+[par run  4 th=8] time=0.298108 sum=250000.0000
+[par run  5 th=8] time=0.298474 sum=250000.0000
+[par run  6 th=8] time=0.298473 sum=250000.0000
+[par run  7 th=8] time=0.294819 sum=250000.0000
+[par run  8 th=8] time=0.292339 sum=250000.0000
+[par run  9 th=8] time=0.290918 sum=250000.0000
+-> Best parallel time (th=8) = 0.290918 s, speedup = 0.53x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.358134 sum=250000.0000
+[par run  1 th=1] time=2.357635 sum=250000.0000
+[par run  2 th=1] time=2.357600 sum=250000.0000
+[par run  3 th=1] time=2.357445 sum=250000.0000
+[par run  4 th=1] time=2.356855 sum=250000.0000
+[par run  5 th=1] time=2.357991 sum=250000.0000
+[par run  6 th=1] time=2.359007 sum=250000.0000
+[par run  7 th=1] time=2.356927 sum=250000.0000
+[par run  8 th=1] time=2.357651 sum=250000.0000
+[par run  9 th=1] time=2.357326 sum=250000.0000
+-> Best parallel time (th=1) = 2.356855 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.431378 sum=250000.0000
+[par run  1 th=2] time=26.414047 sum=250000.0000
+[par run  2 th=2] time=26.440775 sum=250000.0000
+[par run  3 th=2] time=26.422053 sum=250000.0000
+[par run  4 th=2] time=26.441700 sum=250000.0000
+[par run  5 th=2] time=26.444139 sum=250000.0000
+[par run  6 th=2] time=26.448436 sum=250000.0000
+[par run  7 th=2] time=26.433636 sum=250000.0000
+[par run  8 th=2] time=26.426253 sum=250000.0000
+[par run  9 th=2] time=26.432277 sum=250000.0000
+-> Best parallel time (th=2) = 26.414047 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.301688 sum=250000.0000
+[par run  1 th=4] time=18.283908 sum=250000.0000
+[par run  2 th=4] time=18.292781 sum=250000.0000
+[par run  3 th=4] time=18.303873 sum=250000.0000
+[par run  4 th=4] time=18.293508 sum=250000.0000
+[par run  5 th=4] time=18.304536 sum=250000.0000
+[par run  6 th=4] time=18.292427 sum=250000.0000
+[par run  7 th=4] time=18.286997 sum=250000.0000
+[par run  8 th=4] time=18.296043 sum=250000.0000
+[par run  9 th=4] time=18.296403 sum=250000.0000
+-> Best parallel time (th=4) = 18.283908 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.091986 sum=250000.0000
+[par run  1 th=8] time=10.108408 sum=250000.0000
+[par run  2 th=8] time=10.148104 sum=250000.0000
+[par run  3 th=8] time=10.132737 sum=250000.0000
+[par run  4 th=8] time=10.145445 sum=250000.0000
+[par run  5 th=8] time=10.100406 sum=250000.0000
+[par run  6 th=8] time=10.178020 sum=250000.0000
+[par run  7 th=8] time=10.123711 sum=250000.0000
+[par run  8 th=8] time=10.077702 sum=250000.0000
+[par run  4 th=2] time=0.615123 sum=250000.0000
+[par run  5 th=2] time=0.618216 sum=250000.0000
+[par run  6 th=2] time=0.615321 sum=250000.0000
+[par run  7 th=2] time=0.616837 sum=250000.0000
+[par run  8 th=2] time=0.618184 sum=250000.0000
+[par run  9 th=2] time=0.616837 sum=250000.0000
+-> Best parallel time (th=2) = 0.614428 s, speedup = 0.25x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.553419 sum=250000.0000
+[par run  1 th=4] time=0.553847 sum=250000.0000
+[par run  2 th=4] time=0.556126 sum=250000.0000
+[par run  3 th=4] time=0.556411 sum=250000.0000
+[par run  4 th=4] time=0.556515 sum=250000.0000
+[par run  5 th=4] time=0.555778 sum=250000.0000
+[par run  6 th=4] time=0.555964 sum=250000.0000
+[par run  7 th=4] time=0.557397 sum=250000.0000
+[par run  8 th=4] time=0.564117 sum=250000.0000
+[par run  9 th=4] time=0.571733 sum=250000.0000
+-> Best parallel time (th=4) = 0.553419 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.301594 sum=250000.0000
+[par run  1 th=8] time=0.301668 sum=250000.0000
+[par run  2 th=8] time=0.302009 sum=250000.0000
+[par run  3 th=8] time=0.302386 sum=250000.0000
+[par run  4 th=8] time=0.301122 sum=250000.0000
+[par run  5 th=8] time=0.294073 sum=250000.0000
+[par run  6 th=8] time=0.288412 sum=250000.0000
+[par run  7 th=8] time=0.288138 sum=250000.0000
+[par run  8 th=8] time=0.288184 sum=250000.0000
+[par run  9 th=8] time=0.288124 sum=250000.0000
+-> Best parallel time (th=8) = 0.288124 s, speedup = 0.54x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.358109 sum=250000.0000
+[par run  1 th=1] time=2.358247 sum=250000.0000
+[par run  2 th=1] time=2.358376 sum=250000.0000
+[par run  3 th=1] time=2.358229 sum=250000.0000
+[par run  4 th=1] time=2.357998 sum=250000.0000
+[par run  5 th=1] time=2.360305 sum=250000.0000
+[par run  6 th=1] time=2.358742 sum=250000.0000
+[par run  7 th=1] time=2.358164 sum=250000.0000
+[par run  8 th=1] time=2.356996 sum=250000.0000
+[par run  9 th=1] time=2.356985 sum=250000.0000
+-> Best parallel time (th=1) = 2.356985 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.431628 sum=250000.0000
+[par run  1 th=2] time=26.431339 sum=250000.0000
+[par run  2 th=2] time=26.432768 sum=250000.0000
+[par run  3 th=2] time=26.430167 sum=250000.0000
+[par run  4 th=2] time=26.428987 sum=250000.0000
+[par run  5 th=2] time=26.429463 sum=250000.0000
+[par run  6 th=2] time=26.446028 sum=250000.0000
+[par run  7 th=2] time=26.417839 sum=250000.0000
+[par run  8 th=2] time=26.424314 sum=250000.0000
+[par run  9 th=2] time=26.436040 sum=250000.0000
+-> Best parallel time (th=2) = 26.417839 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.303552 sum=250000.0000
+[par run  1 th=4] time=18.299060 sum=250000.0000
+[par run  2 th=4] time=18.289579 sum=250000.0000
+[par run  3 th=4] time=18.292298 sum=250000.0000
+[par run  4 th=4] time=18.306122 sum=250000.0000
+[par run  5 th=4] time=18.296432 sum=250000.0000
+[par run  6 th=4] time=18.296716 sum=250000.0000
+[par run  7 th=4] time=18.303199 sum=250000.0000
+[par run  8 th=4] time=18.301246 sum=250000.0000
+[par run  9 th=4] time=18.299473 sum=250000.0000
+-> Best parallel time (th=4) = 18.289579 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.056901 sum=250000.0000
+[par run  1 th=8] time=10.057057 sum=250000.0000
+[par run  2 th=8] time=10.057350 sum=250000.0000
+[par run  3 th=8] time=10.057820 sum=250000.0000
+[par run  4 th=8] time=10.057209 sum=250000.0000
+[par run  5 th=8] time=10.056302 sum=250000.0000
+[par run  6 th=8] time=10.057321 sum=250000.0000
+[par run  7 th=8] time=10.055475 sum=250000.0000
+[par run  8 th=8] time=10.053615 sum=250000.0000
+[par run  4 th=2] time=0.492217 sum=250000.0000
+[par run  5 th=2] time=0.491036 sum=250000.0000
+[par run  6 th=2] time=0.493387 sum=250000.0000
+[par run  7 th=2] time=0.492248 sum=250000.0000
+[par run  8 th=2] time=0.491990 sum=250000.0000
+[par run  9 th=2] time=0.484017 sum=250000.0000
+-> Best parallel time (th=2) = 0.484017 s, speedup = 0.32x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.562947 sum=250000.0000
+[par run  1 th=4] time=0.562501 sum=250000.0000
+[par run  2 th=4] time=0.563410 sum=250000.0000
+[par run  3 th=4] time=0.563470 sum=250000.0000
+[par run  4 th=4] time=0.556813 sum=250000.0000
+[par run  5 th=4] time=0.552941 sum=250000.0000
+[par run  6 th=4] time=0.556094 sum=250000.0000
+[par run  7 th=4] time=0.558662 sum=250000.0000
+[par run  8 th=4] time=0.558476 sum=250000.0000
+[par run  9 th=4] time=0.561425 sum=250000.0000
+-> Best parallel time (th=4) = 0.552941 s, speedup = 0.28x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.296862 sum=250000.0000
+[par run  1 th=8] time=0.298004 sum=250000.0000
+[par run  2 th=8] time=0.297322 sum=250000.0000
+[par run  3 th=8] time=0.296062 sum=250000.0000
+[par run  4 th=8] time=0.296182 sum=250000.0000
+[par run  5 th=8] time=0.296756 sum=250000.0000
+[par run  6 th=8] time=0.297761 sum=250000.0000
+[par run  7 th=8] time=0.297576 sum=250000.0000
+[par run  8 th=8] time=0.298413 sum=250000.0000
+[par run  9 th=8] time=0.296061 sum=250000.0000
+-> Best parallel time (th=8) = 0.296061 s, speedup = 0.52x
+
+=== Schedule: dynamic ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=2.358859 sum=250000.0000
+[par run  1 th=1] time=2.357058 sum=250000.0000
+[par run  2 th=1] time=2.356374 sum=250000.0000
+[par run  3 th=1] time=2.355473 sum=250000.0000
+[par run  4 th=1] time=2.355794 sum=250000.0000
+[par run  5 th=1] time=2.358010 sum=250000.0000
+[par run  6 th=1] time=2.358574 sum=250000.0000
+[par run  7 th=1] time=2.357482 sum=250000.0000
+[par run  8 th=1] time=2.356603 sum=250000.0000
+[par run  9 th=1] time=2.357271 sum=250000.0000
+-> Best parallel time (th=1) = 2.355473 s, speedup = 0.07x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=26.416376 sum=250000.0000
+[par run  1 th=2] time=26.406848 sum=250000.0000
+[par run  2 th=2] time=26.405611 sum=250000.0000
+[par run  3 th=2] time=26.399104 sum=250000.0000
+[par run  4 th=2] time=26.392440 sum=250000.0000
+[par run  5 th=2] time=26.389143 sum=250000.0000
+[par run  6 th=2] time=26.387962 sum=250000.0000
+[par run  7 th=2] time=26.412145 sum=250000.0000
+[par run  8 th=2] time=26.423759 sum=250000.0000
+[par run  9 th=2] time=26.404100 sum=250000.0000
+-> Best parallel time (th=2) = 26.387962 s, speedup = 0.01x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=18.363196 sum=250000.0000
+[par run  1 th=4] time=18.378195 sum=250000.0000
+[par run  2 th=4] time=18.335474 sum=250000.0000
+[par run  3 th=4] time=18.362304 sum=250000.0000
+[par run  4 th=4] time=18.382124 sum=250000.0000
+[par run  5 th=4] time=18.356768 sum=250000.0000
+[par run  6 th=4] time=18.395776 sum=250000.0000
+[par run  7 th=4] time=18.377934 sum=250000.0000
+[par run  8 th=4] time=18.334873 sum=250000.0000
+[par run  9 th=4] time=18.331439 sum=250000.0000
+-> Best parallel time (th=4) = 18.331439 s, speedup = 0.01x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=10.112231 sum=250000.0000
+[par run  1 th=8] time=10.239723 sum=250000.0000
+[par run  2 th=8] time=10.107467 sum=250000.0000
+[par run  3 th=8] time=10.205236 sum=250000.0000
+[par run  4 th=8] time=10.118888 sum=250000.0000
+[par run  5 th=8] time=10.112582 sum=250000.0000
+[par run  6 th=8] time=10.314792 sum=250000.0000
+[par run  7 th=8] time=10.096166 sum=250000.0000
+[par run  8 th=8] time=10.148537 sum=250000.0000
+[par run  9 th=8] time=9.850978 sum=250000.0000
+-> Best parallel time (th=8) = 9.850695 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522165 sum=250000.0000
+[par run  1 th=1] time=0.522063 sum=250000.0000
+[par run  2 th=1] time=0.522079 sum=250000.0000
+[par run  3 th=1] time=0.522180 sum=250000.0000
+[par run  4 th=1] time=0.522308 sum=250000.0000
+[par run  5 th=1] time=0.522413 sum=250000.0000
+[par run  6 th=1] time=0.522129 sum=250000.0000
+[par run  7 th=1] time=0.522062 sum=250000.0000
+[par run  8 th=1] time=0.522069 sum=250000.0000
+[par run  9 th=1] time=0.522090 sum=250000.0000
+-> Best parallel time (th=1) = 0.522062 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262408 sum=250000.0000
+[par run  1 th=2] time=0.262425 sum=250000.0000
+[par run  2 th=2] time=0.262403 sum=250000.0000
+[par run  3 th=2] time=0.262419 sum=250000.0000
+[par run  4 th=2] time=0.262409 sum=250000.0000
+[par run  5 th=2] time=0.262334 sum=250000.0000
+[par run  6 th=2] time=0.262334 sum=250000.0000
+[par run  7 th=2] time=0.262292 sum=250000.0000
+[par run  8 th=2] time=0.262417 sum=250000.0000
+[par run  9 th=2] time=0.262459 sum=250000.0000
+-> Best parallel time (th=2) = 0.262292 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134428 sum=250000.0000
+[par run  1 th=4] time=0.134484 sum=250000.0000
+[par run  2 th=4] time=0.134380 sum=250000.0000
+[par run  3 th=4] time=0.134411 sum=250000.0000
+[par run  4 th=4] time=0.134481 sum=250000.0000
+[par run  5 th=4] time=0.134552 sum=250000.0000
+[par run  6 th=4] time=0.134527 sum=250000.0000
+[par run  7 th=4] time=0.134553 sum=250000.0000
+[par run  8 th=4] time=0.134542 sum=250000.0000
+[par run  9 th=4] time=0.134579 sum=250000.0000
+-> Best parallel time (th=4) = 0.134380 s, speedup = 1.16x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.072969 sum=250000.0000
+[par run  1 th=8] time=0.072828 sum=250000.0000
+[par run  2 th=8] time=0.072967 sum=250000.0000
+[par run  3 th=8] time=0.073059 sum=250000.0000
+[par run  4 th=8] time=0.072878 sum=250000.0000
+[par run  5 th=8] time=0.073097 sum=250000.0000
+[par run  6 th=8] time=0.073150 sum=250000.0000
+[par run  7 th=8] time=0.073141 sum=250000.0000
+[par run  8 th=8] time=0.073095 sum=250000.0000
+[par run  9 th=8] time=0.072829 sum=250000.0000
+-> Best parallel time (th=8) = 0.072828 s, speedup = 2.13x
+
+Output written to output.txt
+[par run  9 th=8] time=10.047317 sum=250000.0000
+-> Best parallel time (th=8) = 10.046272 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523705 sum=250000.0000
+[par run  1 th=1] time=0.523824 sum=250000.0000
+[par run  2 th=1] time=0.523904 sum=250000.0000
+[par run  3 th=1] time=0.523898 sum=250000.0000
+[par run  4 th=1] time=0.523830 sum=250000.0000
+[par run  5 th=1] time=0.523552 sum=250000.0000
+[par run  6 th=1] time=0.523622 sum=250000.0000
+[par run  7 th=1] time=0.523587 sum=250000.0000
+[par run  8 th=1] time=0.523751 sum=250000.0000
+[par run  9 th=1] time=0.523663 sum=250000.0000
+-> Best parallel time (th=1) = 0.523552 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.263069 sum=250000.0000
+[par run  1 th=2] time=0.263015 sum=250000.0000
+[par run  2 th=2] time=0.262924 sum=250000.0000
+[par run  3 th=2] time=0.263021 sum=250000.0000
+[par run  4 th=2] time=0.263039 sum=250000.0000
+[par run  5 th=2] time=0.263002 sum=250000.0000
+[par run  6 th=2] time=0.263092 sum=250000.0000
+[par run  7 th=2] time=0.263022 sum=250000.0000
+[par run  8 th=2] time=0.262861 sum=250000.0000
+[par run  9 th=2] time=0.262940 sum=250000.0000
+-> Best parallel time (th=2) = 0.262861 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134868 sum=250000.0000
+[par run  1 th=4] time=0.134840 sum=250000.0000
+[par run  2 th=4] time=0.134943 sum=250000.0000
+[par run  3 th=4] time=0.134920 sum=250000.0000
+[par run  4 th=4] time=0.134886 sum=250000.0000
+[par run  5 th=4] time=0.134857 sum=250000.0000
+[par run  6 th=4] time=0.134849 sum=250000.0000
+[par run  7 th=4] time=0.134843 sum=250000.0000
+[par run  8 th=4] time=0.134841 sum=250000.0000
+[par run  9 th=4] time=0.134922 sum=250000.0000
+-> Best parallel time (th=4) = 0.134840 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.074397 sum=250000.0000
+[par run  1 th=8] time=0.074240 sum=250000.0000
+[par run  2 th=8] time=0.074158 sum=250000.0000
+[par run  3 th=8] time=0.074200 sum=250000.0000
+[par run  4 th=8] time=0.074498 sum=250000.0000
+[par run  5 th=8] time=0.074499 sum=250000.0000
+[par run  6 th=8] time=0.074030 sum=250000.0000
+[par run  7 th=8] time=0.074458 sum=250000.0000
+[par run  8 th=8] time=0.074221 sum=250000.0000
+[par run  9 th=8] time=0.074048 sum=250000.0000
+-> Best parallel time (th=8) = 0.074030 s, speedup = 2.10x
+
+Output written to output.txt
+[par run  9 th=8] time=10.212073 sum=250000.0000
+-> Best parallel time (th=8) = 10.119390 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.539728 sum=250000.0000
+[par run  1 th=1] time=0.540872 sum=250000.0000
+[par run  2 th=1] time=0.540890 sum=250000.0000
+[par run  3 th=1] time=0.540677 sum=250000.0000
+[par run  4 th=1] time=0.544220 sum=250000.0000
+[par run  5 th=1] time=0.543629 sum=250000.0000
+[par run  6 th=1] time=0.543494 sum=250000.0000
+[par run  7 th=1] time=0.544080 sum=250000.0000
+[par run  8 th=1] time=0.544610 sum=250000.0000
+[par run  9 th=1] time=0.544747 sum=250000.0000
+-> Best parallel time (th=1) = 0.539728 s, speedup = 0.29x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.271024 sum=250000.0000
+[par run  1 th=2] time=0.270648 sum=250000.0000
+[par run  2 th=2] time=0.270534 sum=250000.0000
+[par run  3 th=2] time=0.267577 sum=250000.0000
+[par run  4 th=2] time=0.264067 sum=250000.0000
+[par run  5 th=2] time=0.263485 sum=250000.0000
+[par run  6 th=2] time=0.263018 sum=250000.0000
+[par run  7 th=2] time=0.262716 sum=250000.0000
+[par run  8 th=2] time=0.262960 sum=250000.0000
+[par run  9 th=2] time=0.263276 sum=250000.0000
+-> Best parallel time (th=2) = 0.262716 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.138221 sum=250000.0000
+[par run  1 th=4] time=0.137290 sum=250000.0000
+[par run  2 th=4] time=0.137928 sum=250000.0000
+[par run  3 th=4] time=0.137330 sum=250000.0000
+[par run  4 th=4] time=0.137362 sum=250000.0000
+[par run  5 th=4] time=0.137342 sum=250000.0000
+[par run  6 th=4] time=0.138198 sum=250000.0000
+[par run  7 th=4] time=0.137437 sum=250000.0000
+[par run  8 th=4] time=0.137486 sum=250000.0000
+[par run  9 th=4] time=0.137866 sum=250000.0000
+-> Best parallel time (th=4) = 0.137290 s, speedup = 1.13x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.074821 sum=250000.0000
+[par run  1 th=8] time=0.074534 sum=250000.0000
+[par run  2 th=8] time=0.074890 sum=250000.0000
+[par run  3 th=8] time=0.074591 sum=250000.0000
+[par run  4 th=8] time=0.074469 sum=250000.0000
+[par run  5 th=8] time=0.074437 sum=250000.0000
+[par run  6 th=8] time=0.074690 sum=250000.0000
+[par run  7 th=8] time=0.074809 sum=250000.0000
+[par run  8 th=8] time=0.074366 sum=250000.0000
+[par run  9 th=8] time=0.074733 sum=250000.0000
+-> Best parallel time (th=8) = 0.074366 s, speedup = 2.09x
+
+Output written to output.txt
+[par run  9 th=8] time=10.051857 sum=250000.0000
+-> Best parallel time (th=8) = 10.051709 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522909 sum=250000.0000
+[par run  1 th=1] time=0.522571 sum=250000.0000
+[par run  2 th=1] time=0.522649 sum=250000.0000
+[par run  3 th=1] time=0.521841 sum=250000.0000
+[par run  4 th=1] time=0.522934 sum=250000.0000
+[par run  5 th=1] time=0.522856 sum=250000.0000
+[par run  6 th=1] time=0.522936 sum=250000.0000
+[par run  7 th=1] time=0.523284 sum=250000.0000
+[par run  8 th=1] time=0.523166 sum=250000.0000
+[par run  9 th=1] time=0.523378 sum=250000.0000
+-> Best parallel time (th=1) = 0.521841 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262959 sum=250000.0000
+[par run  1 th=2] time=0.262928 sum=250000.0000
+[par run  2 th=2] time=0.262841 sum=250000.0000
+[par run  3 th=2] time=0.262645 sum=250000.0000
+[par run  4 th=2] time=0.262577 sum=250000.0000
+[par run  5 th=2] time=0.262548 sum=250000.0000
+[par run  6 th=2] time=0.262590 sum=250000.0000
+[par run  7 th=2] time=0.262656 sum=250000.0000
+[par run  8 th=2] time=0.262538 sum=250000.0000
+[par run  9 th=2] time=0.262674 sum=250000.0000
+-> Best parallel time (th=2) = 0.262538 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134678 sum=250000.0000
+[par run  1 th=4] time=0.134825 sum=250000.0000
+[par run  2 th=4] time=0.134850 sum=250000.0000
+[par run  3 th=4] time=0.135031 sum=250000.0000
+[par run  4 th=4] time=0.134946 sum=250000.0000
+[par run  5 th=4] time=0.134749 sum=250000.0000
+[par run  6 th=4] time=0.134733 sum=250000.0000
+[par run  7 th=4] time=0.135240 sum=250000.0000
+[par run  8 th=4] time=0.135325 sum=250000.0000
+[par run  9 th=4] time=0.135356 sum=250000.0000
+-> Best parallel time (th=4) = 0.134678 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.077425 sum=250000.0000
+[par run  1 th=8] time=0.077037 sum=250000.0000
+[par run  2 th=8] time=0.076651 sum=250000.0000
+[par run  3 th=8] time=0.076374 sum=250000.0000
+[par run  4 th=8] time=0.076910 sum=250000.0000
+[par run  5 th=8] time=0.077552 sum=250000.0000
+[par run  6 th=8] time=0.077557 sum=250000.0000
+[par run  7 th=8] time=0.077187 sum=250000.0000
+[par run  8 th=8] time=0.076486 sum=250000.0000
+[par run  9 th=8] time=0.076811 sum=250000.0000
+-> Best parallel time (th=8) = 0.076374 s, speedup = 2.03x
+
+Output written to output.txt
+[par run  9 th=8] time=10.079755 sum=250000.0000
+-> Best parallel time (th=8) = 10.077028 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523677 sum=250000.0000
+[par run  1 th=1] time=0.523544 sum=250000.0000
+[par run  2 th=1] time=0.523534 sum=250000.0000
+[par run  3 th=1] time=0.523367 sum=250000.0000
+[par run  4 th=1] time=0.523051 sum=250000.0000
+[par run  5 th=1] time=0.523219 sum=250000.0000
+[par run  6 th=1] time=0.523092 sum=250000.0000
+[par run  7 th=1] time=0.522863 sum=250000.0000
+[par run  8 th=1] time=0.523227 sum=250000.0000
+[par run  9 th=1] time=0.522898 sum=250000.0000
+-> Best parallel time (th=1) = 0.522863 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262961 sum=250000.0000
+[par run  1 th=2] time=0.263079 sum=250000.0000
+[par run  2 th=2] time=0.263073 sum=250000.0000
+[par run  3 th=2] time=0.262962 sum=250000.0000
+[par run  4 th=2] time=0.263001 sum=250000.0000
+[par run  5 th=2] time=0.263050 sum=250000.0000
+[par run  6 th=2] time=0.263042 sum=250000.0000
+[par run  7 th=2] time=0.263045 sum=250000.0000
+[par run  8 th=2] time=0.263213 sum=250000.0000
+[par run  9 th=2] time=0.263092 sum=250000.0000
+-> Best parallel time (th=2) = 0.262961 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134695 sum=250000.0000
+[par run  1 th=4] time=0.134770 sum=250000.0000
+[par run  2 th=4] time=0.134732 sum=250000.0000
+[par run  3 th=4] time=0.134726 sum=250000.0000
+[par run  4 th=4] time=0.134744 sum=250000.0000
+[par run  5 th=4] time=0.134731 sum=250000.0000
+[par run  6 th=4] time=0.134810 sum=250000.0000
+[par run  7 th=4] time=0.134707 sum=250000.0000
+[par run  8 th=4] time=0.134892 sum=250000.0000
+[par run  9 th=4] time=0.134873 sum=250000.0000
+-> Best parallel time (th=4) = 0.134695 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.075026 sum=250000.0000
+[par run  1 th=8] time=0.074906 sum=250000.0000
+[par run  2 th=8] time=0.075216 sum=250000.0000
+[par run  3 th=8] time=0.075408 sum=250000.0000
+[par run  4 th=8] time=0.075449 sum=250000.0000
+[par run  5 th=8] time=0.075441 sum=250000.0000
+[par run  6 th=8] time=0.075429 sum=250000.0000
+[par run  7 th=8] time=0.075336 sum=250000.0000
+[par run  8 th=8] time=0.075227 sum=250000.0000
+[par run  9 th=8] time=0.075253 sum=250000.0000
+-> Best parallel time (th=8) = 0.074906 s, speedup = 2.07x
+
+Output written to output.txt
+[par run  9 th=8] time=10.051736 sum=250000.0000
+-> Best parallel time (th=8) = 10.048149 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521875 sum=250000.0000
+[par run  1 th=1] time=0.522064 sum=250000.0000
+[par run  2 th=1] time=0.521895 sum=250000.0000
+[par run  3 th=1] time=0.522081 sum=250000.0000
+[par run  4 th=1] time=0.522382 sum=250000.0000
+[par run  5 th=1] time=0.522185 sum=250000.0000
+[par run  6 th=1] time=0.522236 sum=250000.0000
+[par run  7 th=1] time=0.523489 sum=250000.0000
+[par run  8 th=1] time=0.522361 sum=250000.0000
+[par run  9 th=1] time=0.522169 sum=250000.0000
+-> Best parallel time (th=1) = 0.521875 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262732 sum=250000.0000
+[par run  1 th=2] time=0.262771 sum=250000.0000
+[par run  2 th=2] time=0.262720 sum=250000.0000
+[par run  3 th=2] time=0.262713 sum=250000.0000
+[par run  4 th=2] time=0.262926 sum=250000.0000
+[par run  5 th=2] time=0.262784 sum=250000.0000
+[par run  6 th=2] time=0.262691 sum=250000.0000
+[par run  7 th=2] time=0.262692 sum=250000.0000
+[par run  8 th=2] time=0.262996 sum=250000.0000
+[par run  9 th=2] time=0.262697 sum=250000.0000
+-> Best parallel time (th=2) = 0.262691 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.136527 sum=250000.0000
+[par run  1 th=4] time=0.136567 sum=250000.0000
+[par run  2 th=4] time=0.136553 sum=250000.0000
+[par run  3 th=4] time=0.136348 sum=250000.0000
+[par run  4 th=4] time=0.136621 sum=250000.0000
+[par run  5 th=4] time=0.136554 sum=250000.0000
+[par run  6 th=4] time=0.136413 sum=250000.0000
+[par run  7 th=4] time=0.136416 sum=250000.0000
+[par run  8 th=4] time=0.134646 sum=250000.0000
+[par run  9 th=4] time=0.134728 sum=250000.0000
+-> Best parallel time (th=4) = 0.134646 s, speedup = 1.16x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073160 sum=250000.0000
+[par run  1 th=8] time=0.072945 sum=250000.0000
+[par run  2 th=8] time=0.073146 sum=250000.0000
+[par run  3 th=8] time=0.073234 sum=250000.0000
+[par run  4 th=8] time=0.073168 sum=250000.0000
+[par run  5 th=8] time=0.073283 sum=250000.0000
+[par run  6 th=8] time=0.073002 sum=250000.0000
+[par run  7 th=8] time=0.073136 sum=250000.0000
+[par run  8 th=8] time=0.073178 sum=250000.0000
+[par run  9 th=8] time=0.073310 sum=250000.0000
+-> Best parallel time (th=8) = 0.072945 s, speedup = 2.14x
+
+Output written to output.txt
+[par run  9 th=8] time=10.052514 sum=250000.0000
+-> Best parallel time (th=8) = 10.052316 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521173 sum=250000.0000
+[par run  1 th=1] time=0.521366 sum=250000.0000
+[par run  2 th=1] time=0.521896 sum=250000.0000
+[par run  3 th=1] time=0.522135 sum=250000.0000
+[par run  4 th=1] time=0.522577 sum=250000.0000
+[par run  5 th=1] time=0.522530 sum=250000.0000
+[par run  6 th=1] time=0.522409 sum=250000.0000
+[par run  7 th=1] time=0.522472 sum=250000.0000
+[par run  8 th=1] time=0.522325 sum=250000.0000
+[par run  9 th=1] time=0.522293 sum=250000.0000
+-> Best parallel time (th=1) = 0.521173 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.261720 sum=250000.0000
+[par run  1 th=2] time=0.261749 sum=250000.0000
+[par run  2 th=2] time=0.261757 sum=250000.0000
+[par run  3 th=2] time=0.261739 sum=250000.0000
+[par run  4 th=2] time=0.261853 sum=250000.0000
+[par run  5 th=2] time=0.261909 sum=250000.0000
+[par run  6 th=2] time=0.262023 sum=250000.0000
+[par run  7 th=2] time=0.261992 sum=250000.0000
+[par run  8 th=2] time=0.261949 sum=250000.0000
+[par run  9 th=2] time=0.261986 sum=250000.0000
+-> Best parallel time (th=2) = 0.261720 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134751 sum=250000.0000
+[par run  1 th=4] time=0.134794 sum=250000.0000
+[par run  2 th=4] time=0.136600 sum=250000.0000
+[par run  3 th=4] time=0.136587 sum=250000.0000
+[par run  4 th=4] time=0.136648 sum=250000.0000
+[par run  5 th=4] time=0.136685 sum=250000.0000
+[par run  6 th=4] time=0.136849 sum=250000.0000
+[par run  7 th=4] time=0.136865 sum=250000.0000
+[par run  8 th=4] time=0.136921 sum=250000.0000
+[par run  9 th=4] time=0.136478 sum=250000.0000
+-> Best parallel time (th=4) = 0.134751 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.075653 sum=250000.0000
+[par run  1 th=8] time=0.075302 sum=250000.0000
+[par run  2 th=8] time=0.075664 sum=250000.0000
+[par run  3 th=8] time=0.077444 sum=250000.0000
+[par run  4 th=8] time=0.077375 sum=250000.0000
+[par run  5 th=8] time=0.077423 sum=250000.0000
+[par run  6 th=8] time=0.077100 sum=250000.0000
+[par run  7 th=8] time=0.077568 sum=250000.0000
+[par run  8 th=8] time=0.077427 sum=250000.0000
+[par run  9 th=8] time=0.077325 sum=250000.0000
+-> Best parallel time (th=8) = 0.075302 s, speedup = 2.06x
+
+Output written to output.txt
+[par run  9 th=8] time=10.047352 sum=250000.0000
+-> Best parallel time (th=8) = 10.046496 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.519799 sum=250000.0000
+[par run  1 th=1] time=0.519815 sum=250000.0000
+[par run  2 th=1] time=0.519600 sum=250000.0000
+[par run  3 th=1] time=0.519751 sum=250000.0000
+[par run  4 th=1] time=0.519678 sum=250000.0000
+[par run  5 th=1] time=0.519609 sum=250000.0000
+[par run  6 th=1] time=0.519573 sum=250000.0000
+[par run  7 th=1] time=0.519709 sum=250000.0000
+[par run  8 th=1] time=0.519642 sum=250000.0000
+[par run  9 th=1] time=0.519638 sum=250000.0000
+-> Best parallel time (th=1) = 0.519573 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262279 sum=250000.0000
+[par run  1 th=2] time=0.262488 sum=250000.0000
+[par run  2 th=2] time=0.262382 sum=250000.0000
+[par run  3 th=2] time=0.262532 sum=250000.0000
+[par run  4 th=2] time=0.262835 sum=250000.0000
+[par run  5 th=2] time=0.262844 sum=250000.0000
+[par run  6 th=2] time=0.262652 sum=250000.0000
+[par run  7 th=2] time=0.262539 sum=250000.0000
+[par run  8 th=2] time=0.262315 sum=250000.0000
+[par run  9 th=2] time=0.262237 sum=250000.0000
+-> Best parallel time (th=2) = 0.262237 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134828 sum=250000.0000
+[par run  1 th=4] time=0.134888 sum=250000.0000
+[par run  2 th=4] time=0.136678 sum=250000.0000
+[par run  3 th=4] time=0.136591 sum=250000.0000
+[par run  4 th=4] time=0.136739 sum=250000.0000
+[par run  5 th=4] time=0.136749 sum=250000.0000
+[par run  6 th=4] time=0.136806 sum=250000.0000
+[par run  7 th=4] time=0.136989 sum=250000.0000
+[par run  8 th=4] time=0.136837 sum=250000.0000
+[par run  9 th=4] time=0.136520 sum=250000.0000
+-> Best parallel time (th=4) = 0.134828 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.074707 sum=250000.0000
+[par run  1 th=8] time=0.074802 sum=250000.0000
+[par run  2 th=8] time=0.075265 sum=250000.0000
+[par run  3 th=8] time=0.076776 sum=250000.0000
+[par run  4 th=8] time=0.076829 sum=250000.0000
+[par run  5 th=8] time=0.076823 sum=250000.0000
+[par run  6 th=8] time=0.077054 sum=250000.0000
+[par run  7 th=8] time=0.077014 sum=250000.0000
+[par run  8 th=8] time=0.076545 sum=250000.0000
+[par run  9 th=8] time=0.076639 sum=250000.0000
+-> Best parallel time (th=8) = 0.074707 s, speedup = 2.08x
+
+Output written to output.txt
+[par run  9 th=8] time=10.066674 sum=250000.0000
+-> Best parallel time (th=8) = 10.047553 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.523738 sum=250000.0000
+[par run  1 th=1] time=0.529464 sum=250000.0000
+[par run  2 th=1] time=0.524093 sum=250000.0000
+[par run  3 th=1] time=0.523592 sum=250000.0000
+[par run  4 th=1] time=0.523662 sum=250000.0000
+[par run  5 th=1] time=0.523521 sum=250000.0000
+[par run  6 th=1] time=0.524398 sum=250000.0000
+[par run  7 th=1] time=0.524651 sum=250000.0000
+[par run  8 th=1] time=0.523818 sum=250000.0000
+[par run  9 th=1] time=0.523696 sum=250000.0000
+-> Best parallel time (th=1) = 0.523521 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.265755 sum=250000.0000
+[par run  1 th=2] time=0.267141 sum=250000.0000
+[par run  2 th=2] time=0.265894 sum=250000.0000
+[par run  3 th=2] time=0.263267 sum=250000.0000
+[par run  4 th=2] time=0.263247 sum=250000.0000
+[par run  5 th=2] time=0.263157 sum=250000.0000
+[par run  6 th=2] time=0.263269 sum=250000.0000
+[par run  7 th=2] time=0.263542 sum=250000.0000
+[par run  8 th=2] time=0.262933 sum=250000.0000
+[par run  9 th=2] time=0.263117 sum=250000.0000
+-> Best parallel time (th=2) = 0.262933 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134879 sum=250000.0000
+[par run  1 th=4] time=0.134911 sum=250000.0000
+[par run  2 th=4] time=0.134954 sum=250000.0000
+[par run  3 th=4] time=0.134944 sum=250000.0000
+[par run  4 th=4] time=0.135236 sum=250000.0000
+[par run  5 th=4] time=0.135076 sum=250000.0000
+[par run  6 th=4] time=0.134903 sum=250000.0000
+[par run  7 th=4] time=0.134967 sum=250000.0000
+[par run  8 th=4] time=0.134921 sum=250000.0000
+[par run  9 th=4] time=0.134903 sum=250000.0000
+-> Best parallel time (th=4) = 0.134879 s, speedup = 1.16x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073418 sum=250000.0000
+[par run  1 th=8] time=0.073137 sum=250000.0000
+[par run  2 th=8] time=0.073175 sum=250000.0000
+[par run  3 th=8] time=0.073026 sum=250000.0000
+[par run  4 th=8] time=0.073208 sum=250000.0000
+[par run  5 th=8] time=0.073185 sum=250000.0000
+[par run  6 th=8] time=0.073293 sum=250000.0000
+[par run  7 th=8] time=0.073499 sum=250000.0000
+[par run  8 th=8] time=0.073255 sum=250000.0000
+[par run  9 th=8] time=0.073502 sum=250000.0000
+-> Best parallel time (th=8) = 0.073026 s, speedup = 2.14x
+
+Output written to output.txt
+[par run  9 th=8] time=10.052022 sum=250000.0000
+-> Best parallel time (th=8) = 10.046547 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.520433 sum=250000.0000
+[par run  1 th=1] time=0.520307 sum=250000.0000
+[par run  2 th=1] time=0.520102 sum=250000.0000
+[par run  3 th=1] time=0.520322 sum=250000.0000
+[par run  4 th=1] time=0.520806 sum=250000.0000
+[par run  5 th=1] time=0.520197 sum=250000.0000
+[par run  6 th=1] time=0.521365 sum=250000.0000
+[par run  7 th=1] time=0.522202 sum=250000.0000
+[par run  8 th=1] time=0.522096 sum=250000.0000
+[par run  9 th=1] time=0.522267 sum=250000.0000
+-> Best parallel time (th=1) = 0.520102 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262617 sum=250000.0000
+[par run  1 th=2] time=0.262798 sum=250000.0000
+[par run  2 th=2] time=0.262691 sum=250000.0000
+[par run  3 th=2] time=0.262726 sum=250000.0000
+[par run  4 th=2] time=0.262857 sum=250000.0000
+[par run  5 th=2] time=0.262309 sum=250000.0000
+[par run  6 th=2] time=0.262545 sum=250000.0000
+[par run  7 th=2] time=0.262573 sum=250000.0000
+[par run  8 th=2] time=0.262467 sum=250000.0000
+[par run  9 th=2] time=0.262474 sum=250000.0000
+-> Best parallel time (th=2) = 0.262309 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.136678 sum=250000.0000
+[par run  1 th=4] time=0.136600 sum=250000.0000
+[par run  2 th=4] time=0.136812 sum=250000.0000
+[par run  3 th=4] time=0.136861 sum=250000.0000
+[par run  4 th=4] time=0.137054 sum=250000.0000
+[par run  5 th=4] time=0.136993 sum=250000.0000
+[par run  6 th=4] time=0.136405 sum=250000.0000
+[par run  7 th=4] time=0.137094 sum=250000.0000
+[par run  8 th=4] time=0.139134 sum=250000.0000
+[par run  9 th=4] time=0.138872 sum=250000.0000
+-> Best parallel time (th=4) = 0.136405 s, speedup = 1.14x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.079380 sum=250000.0000
+[par run  1 th=8] time=0.079515 sum=250000.0000
+[par run  2 th=8] time=0.079658 sum=250000.0000
+[par run  3 th=8] time=0.079619 sum=250000.0000
+[par run  4 th=8] time=0.080174 sum=250000.0000
+[par run  5 th=8] time=0.076792 sum=250000.0000
+[par run  6 th=8] time=0.076927 sum=250000.0000
+[par run  7 th=8] time=0.077013 sum=250000.0000
+[par run  8 th=8] time=0.077003 sum=250000.0000
+[par run  9 th=8] time=0.077104 sum=250000.0000
+-> Best parallel time (th=8) = 0.076792 s, speedup = 2.02x
+
+Output written to output.txt
+[par run  9 th=8] time=10.053846 sum=250000.0000
+-> Best parallel time (th=8) = 10.053162 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521525 sum=250000.0000
+[par run  1 th=1] time=0.521601 sum=250000.0000
+[par run  2 th=1] time=0.521774 sum=250000.0000
+[par run  3 th=1] time=0.521705 sum=250000.0000
+[par run  4 th=1] time=0.521391 sum=250000.0000
+[par run  5 th=1] time=0.521295 sum=250000.0000
+[par run  6 th=1] time=0.521254 sum=250000.0000
+[par run  7 th=1] time=0.521235 sum=250000.0000
+[par run  8 th=1] time=0.521335 sum=250000.0000
+[par run  9 th=1] time=0.521480 sum=250000.0000
+-> Best parallel time (th=1) = 0.521235 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262881 sum=250000.0000
+[par run  1 th=2] time=0.262828 sum=250000.0000
+[par run  2 th=2] time=0.262700 sum=250000.0000
+[par run  3 th=2] time=0.262775 sum=250000.0000
+[par run  4 th=2] time=0.262896 sum=250000.0000
+[par run  5 th=2] time=0.264889 sum=250000.0000
+[par run  6 th=2] time=0.266605 sum=250000.0000
+[par run  7 th=2] time=0.266788 sum=250000.0000
+[par run  8 th=2] time=0.267053 sum=250000.0000
+[par run  9 th=2] time=0.266098 sum=250000.0000
+-> Best parallel time (th=2) = 0.262700 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.143999 sum=250000.0000
+[par run  1 th=4] time=0.143689 sum=250000.0000
+[par run  2 th=4] time=0.143987 sum=250000.0000
+[par run  3 th=4] time=0.142455 sum=250000.0000
+[par run  4 th=4] time=0.136386 sum=250000.0000
+[par run  5 th=4] time=0.136401 sum=250000.0000
+[par run  6 th=4] time=0.136499 sum=250000.0000
+[par run  7 th=4] time=0.134916 sum=250000.0000
+[par run  8 th=4] time=0.134644 sum=250000.0000
+[par run  9 th=4] time=0.134802 sum=250000.0000
+-> Best parallel time (th=4) = 0.134644 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.072948 sum=250000.0000
+[par run  1 th=8] time=0.073400 sum=250000.0000
+[par run  2 th=8] time=0.072975 sum=250000.0000
+[par run  3 th=8] time=0.073494 sum=250000.0000
+[par run  4 th=8] time=0.073385 sum=250000.0000
+[par run  5 th=8] time=0.073247 sum=250000.0000
+[par run  6 th=8] time=0.073270 sum=250000.0000
+[par run  7 th=8] time=0.073061 sum=250000.0000
+[par run  8 th=8] time=0.073379 sum=250000.0000
+[par run  9 th=8] time=0.073312 sum=250000.0000
+-> Best parallel time (th=8) = 0.072948 s, speedup = 2.12x
+
+Output written to output.txt
+[par run  9 th=8] time=10.055192 sum=250000.0000
+-> Best parallel time (th=8) = 10.055192 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.520227 sum=250000.0000
+[par run  1 th=1] time=0.520006 sum=250000.0000
+[par run  2 th=1] time=0.519904 sum=250000.0000
+[par run  3 th=1] time=0.520063 sum=250000.0000
+[par run  4 th=1] time=0.519988 sum=250000.0000
+[par run  5 th=1] time=0.520167 sum=250000.0000
+[par run  6 th=1] time=0.520200 sum=250000.0000
+[par run  7 th=1] time=0.520311 sum=250000.0000
+[par run  8 th=1] time=0.520170 sum=250000.0000
+[par run  9 th=1] time=0.520124 sum=250000.0000
+-> Best parallel time (th=1) = 0.519904 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.266214 sum=250000.0000
+[par run  1 th=2] time=0.266742 sum=250000.0000
+[par run  2 th=2] time=0.266164 sum=250000.0000
+[par run  3 th=2] time=0.270419 sum=250000.0000
+[par run  4 th=2] time=0.277596 sum=250000.0000
+[par run  5 th=2] time=0.278419 sum=250000.0000
+[par run  6 th=2] time=0.269047 sum=250000.0000
+[par run  7 th=2] time=0.263734 sum=250000.0000
+[par run  8 th=2] time=0.267301 sum=250000.0000
+[par run  9 th=2] time=0.262447 sum=250000.0000
+-> Best parallel time (th=2) = 0.262447 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134756 sum=250000.0000
+[par run  1 th=4] time=0.134654 sum=250000.0000
+[par run  2 th=4] time=0.134739 sum=250000.0000
+[par run  3 th=4] time=0.134650 sum=250000.0000
+[par run  4 th=4] time=0.134772 sum=250000.0000
+[par run  5 th=4] time=0.135560 sum=250000.0000
+[par run  6 th=4] time=0.134823 sum=250000.0000
+[par run  7 th=4] time=0.134951 sum=250000.0000
+[par run  8 th=4] time=0.134956 sum=250000.0000
+[par run  9 th=4] time=0.134972 sum=250000.0000
+-> Best parallel time (th=4) = 0.134650 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073130 sum=250000.0000
+[par run  1 th=8] time=0.072809 sum=250000.0000
+[par run  2 th=8] time=0.073021 sum=250000.0000
+[par run  3 th=8] time=0.072742 sum=250000.0000
+[par run  4 th=8] time=0.072968 sum=250000.0000
+[par run  5 th=8] time=0.072960 sum=250000.0000
+[par run  6 th=8] time=0.072833 sum=250000.0000
+[par run  7 th=8] time=0.072859 sum=250000.0000
+[par run  8 th=8] time=0.072570 sum=250000.0000
+[par run  9 th=8] time=0.072916 sum=250000.0000
+-> Best parallel time (th=8) = 0.072570 s, speedup = 2.14x
+
+Output written to output.txt
+[par run  9 th=8] time=10.136886 sum=250000.0000
+-> Best parallel time (th=8) = 10.077702 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521587 sum=250000.0000
+[par run  1 th=1] time=0.521479 sum=250000.0000
+[par run  2 th=1] time=0.521966 sum=250000.0000
+[par run  3 th=1] time=0.521755 sum=250000.0000
+[par run  4 th=1] time=0.521645 sum=250000.0000
+[par run  5 th=1] time=0.521890 sum=250000.0000
+[par run  6 th=1] time=0.521843 sum=250000.0000
+[par run  7 th=1] time=0.522081 sum=250000.0000
+[par run  8 th=1] time=0.522117 sum=250000.0000
+[par run  9 th=1] time=0.522115 sum=250000.0000
+-> Best parallel time (th=1) = 0.521479 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.267149 sum=250000.0000
+[par run  1 th=2] time=0.266700 sum=250000.0000
+[par run  2 th=2] time=0.268725 sum=250000.0000
+[par run  3 th=2] time=0.273899 sum=250000.0000
+[par run  4 th=2] time=0.278617 sum=250000.0000
+[par run  5 th=2] time=0.276294 sum=250000.0000
+[par run  6 th=2] time=0.262648 sum=250000.0000
+[par run  7 th=2] time=0.262578 sum=250000.0000
+[par run  8 th=2] time=0.262501 sum=250000.0000
+[par run  9 th=2] time=0.262514 sum=250000.0000
+-> Best parallel time (th=2) = 0.262501 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.134597 sum=250000.0000
+[par run  1 th=4] time=0.134657 sum=250000.0000
+[par run  2 th=4] time=0.134668 sum=250000.0000
+[par run  3 th=4] time=0.134602 sum=250000.0000
+[par run  4 th=4] time=0.134685 sum=250000.0000
+[par run  5 th=4] time=0.134817 sum=250000.0000
+[par run  6 th=4] time=0.134837 sum=250000.0000
+[par run  7 th=4] time=0.134766 sum=250000.0000
+[par run  8 th=4] time=0.134845 sum=250000.0000
+[par run  9 th=4] time=0.134706 sum=250000.0000
+-> Best parallel time (th=4) = 0.134597 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073016 sum=250000.0000
+[par run  1 th=8] time=0.073231 sum=250000.0000
+[par run  2 th=8] time=0.073198 sum=250000.0000
+[par run  3 th=8] time=0.073113 sum=250000.0000
+[par run  4 th=8] time=0.073171 sum=250000.0000
+[par run  5 th=8] time=0.073132 sum=250000.0000
+[par run  6 th=8] time=0.073549 sum=250000.0000
+[par run  7 th=8] time=0.073245 sum=250000.0000
+[par run  8 th=8] time=0.073192 sum=250000.0000
+[par run  9 th=8] time=0.073283 sum=250000.0000
+-> Best parallel time (th=8) = 0.073016 s, speedup = 2.12x
+
+Output written to output.txt
+[par run  9 th=8] time=10.085709 sum=250000.0000
+-> Best parallel time (th=8) = 10.053615 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.521940 sum=250000.0000
+[par run  1 th=1] time=0.521238 sum=250000.0000
+[par run  2 th=1] time=0.521230 sum=250000.0000
+[par run  3 th=1] time=0.521169 sum=250000.0000
+[par run  4 th=1] time=0.521122 sum=250000.0000
+[par run  5 th=1] time=0.521562 sum=250000.0000
+[par run  6 th=1] time=0.521462 sum=250000.0000
+[par run  7 th=1] time=0.521796 sum=250000.0000
+[par run  8 th=1] time=0.520969 sum=250000.0000
+[par run  9 th=1] time=0.521073 sum=250000.0000
+-> Best parallel time (th=1) = 0.520969 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.262469 sum=250000.0000
+[par run  1 th=2] time=0.262598 sum=250000.0000
+[par run  2 th=2] time=0.262518 sum=250000.0000
+[par run  3 th=2] time=0.262399 sum=250000.0000
+[par run  4 th=2] time=0.262576 sum=250000.0000
+[par run  5 th=2] time=0.262602 sum=250000.0000
+[par run  6 th=2] time=0.262584 sum=250000.0000
+[par run  7 th=2] time=0.262621 sum=250000.0000
+[par run  8 th=2] time=0.262377 sum=250000.0000
+[par run  9 th=2] time=0.262388 sum=250000.0000
+-> Best parallel time (th=2) = 0.262377 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.135144 sum=250000.0000
+[par run  1 th=4] time=0.134994 sum=250000.0000
+[par run  2 th=4] time=0.135198 sum=250000.0000
+[par run  3 th=4] time=0.135126 sum=250000.0000
+[par run  4 th=4] time=0.135332 sum=250000.0000
+[par run  5 th=4] time=0.135399 sum=250000.0000
+[par run  6 th=4] time=0.135298 sum=250000.0000
+[par run  7 th=4] time=0.135085 sum=250000.0000
+[par run  8 th=4] time=0.135246 sum=250000.0000
+[par run  9 th=4] time=0.135333 sum=250000.0000
+-> Best parallel time (th=4) = 0.134994 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073162 sum=250000.0000
+[par run  1 th=8] time=0.073315 sum=250000.0000
+[par run  2 th=8] time=0.073267 sum=250000.0000
+[par run  3 th=8] time=0.072646 sum=250000.0000
+[par run  4 th=8] time=0.073186 sum=250000.0000
+[par run  5 th=8] time=0.073149 sum=250000.0000
+[par run  6 th=8] time=0.073275 sum=250000.0000
+[par run  7 th=8] time=0.073125 sum=250000.0000
+[par run  8 th=8] time=0.073344 sum=250000.0000
+[par run  9 th=8] time=0.073129 sum=250000.0000
+-> Best parallel time (th=8) = 0.072646 s, speedup = 2.14x
+
+Output written to output.txt
+[par run  9 th=8] time=10.102060 sum=250000.0000
+-> Best parallel time (th=8) = 10.096166 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[warmup th=1] sum=250000.0000
+[par run  0 th=1] time=0.522962 sum=250000.0000
+[par run  1 th=1] time=0.522689 sum=250000.0000
+[par run  2 th=1] time=0.522425 sum=250000.0000
+[par run  3 th=1] time=0.522176 sum=250000.0000
+[par run  4 th=1] time=0.522202 sum=250000.0000
+[par run  5 th=1] time=0.522148 sum=250000.0000
+[par run  6 th=1] time=0.522095 sum=250000.0000
+[par run  7 th=1] time=0.522479 sum=250000.0000
+[par run  8 th=1] time=0.522209 sum=250000.0000
+[par run  9 th=1] time=0.522784 sum=250000.0000
+-> Best parallel time (th=1) = 0.522095 s, speedup = 0.30x
+
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[warmup th=2] sum=250000.0000
+[par run  0 th=2] time=0.263311 sum=250000.0000
+[par run  1 th=2] time=0.263273 sum=250000.0000
+[par run  2 th=2] time=0.263273 sum=250000.0000
+[par run  3 th=2] time=0.263317 sum=250000.0000
+[par run  4 th=2] time=0.263254 sum=250000.0000
+[par run  5 th=2] time=0.263537 sum=250000.0000
+[par run  6 th=2] time=0.263282 sum=250000.0000
+[par run  7 th=2] time=0.263202 sum=250000.0000
+[par run  8 th=2] time=0.263082 sum=250000.0000
+[par run  9 th=2] time=0.263614 sum=250000.0000
+-> Best parallel time (th=2) = 0.263082 s, speedup = 0.59x
+
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[warmup th=4] sum=250000.0000
+[par run  0 th=4] time=0.135141 sum=250000.0000
+[par run  1 th=4] time=0.135307 sum=250000.0000
+[par run  2 th=4] time=0.135237 sum=250000.0000
+[par run  3 th=4] time=0.135110 sum=250000.0000
+[par run  4 th=4] time=0.135528 sum=250000.0000
+[par run  5 th=4] time=0.135399 sum=250000.0000
+[par run  6 th=4] time=0.135319 sum=250000.0000
+[par run  7 th=4] time=0.135293 sum=250000.0000
+[par run  8 th=4] time=0.135311 sum=250000.0000
+[par run  9 th=4] time=0.135179 sum=250000.0000
+-> Best parallel time (th=4) = 0.135110 s, speedup = 1.15x
+
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[warmup th=8] sum=250000.0000
+[par run  0 th=8] time=0.073004 sum=250000.0000
+[par run  1 th=8] time=0.073215 sum=250000.0000
+[par run  2 th=8] time=0.073133 sum=250000.0000
+[par run  3 th=8] time=0.073049 sum=250000.0000
+[par run  4 th=8] time=0.073021 sum=250000.0000
+[par run  5 th=8] time=0.072883 sum=250000.0000
+[par run  6 th=8] time=0.073071 sum=250000.0000
+[par run  7 th=8] time=0.073322 sum=250000.0000
+[par run  8 th=8] time=0.073077 sum=250000.0000
+[par run  9 th=8] time=0.073125 sum=250000.0000
+-> Best parallel time (th=8) = 0.072883 s, speedup = 2.13x
+
+Output written to output.txt
