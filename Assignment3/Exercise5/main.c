@@ -76,10 +76,10 @@ int main() {
 
     // serial run
     double serial_times[NUM_RUNS];
-    for (int w = 0; w < NUM_WARMUP; w++) {
+    for (int i = 0; i < NUM_WARMUP; i++) {
         initialize();
         compute_serial();
-        printf("[warmup serial %d] sum=%.4f\n", w, calc_sum());
+        printf("[warmup serial %d] sum=%.4f\n", i, calc_sum());
     }
     for (int run = 0; run < NUM_RUNS; run++) {
         initialize();
@@ -87,7 +87,7 @@ int main() {
         compute_serial();
         double t1 = omp_get_wtime();
         serial_times[run] = t1 - t0;
-        printf("[serial run %d] time=%.6f  sum=%.4f\n",
+        printf("[serial run %d] time=%.6f  check_sum=%.4f\n",
                run, serial_times[run], calc_sum());
     }
     // best (minimal) serial time
@@ -99,13 +99,11 @@ int main() {
     // schedules and thread counts
     struct {
         omp_sched_t policy;
-        int chunk;
         const char *name;
     } schedules[] = {
-        { omp_sched_static, 1, "static" },
-        { omp_sched_static, 16, "static,16" },
-        { omp_sched_dynamic, 1, "dynamic" },
-        { omp_sched_guided,  1, "guided" }
+        { omp_sched_static, "static" },
+        { omp_sched_dynamic, "dynamic" },
+        { omp_sched_guided, "guided" }
     };
     int threads[] = { 1, 2, 4, 8 };
     int nsched = sizeof(schedules)/sizeof(schedules[0]);
@@ -113,7 +111,7 @@ int main() {
 
     for (int s = 0; s < nsched; s++) {
         // set OpenMP schedule
-        omp_set_schedule(schedules[s].policy, schedules[s].chunk);
+        omp_set_schedule(schedules[s].policy, 1);
         printf("=== Schedule: %s ===\n", schedules[s].name);
 
         for (int t = 0; t < nth; t++) {
@@ -124,7 +122,7 @@ int main() {
             for (int w = 0; w < NUM_WARMUP; w++) {
                 initialize();
                 compute_parallel();
-                printf("[warmup thread=%d] sum=%.4f\n",
+                printf("[warmup thread=%d] check_sum=%.4f\n",
                        nthreads, calc_sum());
             }
 
@@ -136,7 +134,7 @@ int main() {
                 compute_parallel();
                 double t1 = omp_get_wtime();
                 par_times[run] = t1 - t0;
-                printf("[parallel run %d thread=%d] time=%.6f sum=%.4f\n",
+                printf("[parallel run %d nthreads=%d] time=%.6f check_sum=%.4f\n",
                        run, nthreads, par_times[run], calc_sum());
             }
             
@@ -145,7 +143,7 @@ int main() {
             for (int i = 1; i < NUM_RUNS; i++)
                 if (par_times[i] < t_par) t_par = par_times[i];
             double speedup = t_serial / t_par;
-            printf("-> Best parallel time (thread=%d) = %.6f s, speedup = %.2fx\n\n", nthreads, t_par, speedup);
+            printf("-> Best parallel time (nthreads=%d) = %.6f s, speedup = %.2fx\n\n", nthreads, t_par, speedup);
         }
     }
 
