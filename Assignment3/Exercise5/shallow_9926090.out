@@ -1,0 +1,3184 @@
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155631  check_sum=250000.0000
+[serial run 1] time=0.155554  check_sum=250000.0000
+[serial run 2] time=0.155752  check_sum=250000.0000
+[serial run 3] time=0.155691  check_sum=250000.0000
+[serial run 4] time=0.155439  check_sum=250000.0000
+[serial run 5] time=0.155714  check_sum=250000.0000
+[serial run 6] time=0.155661  check_sum=250000.0000
+[serial run 7] time=0.155609  check_sum=250000.0000
+[serial run 8] time=0.155449  check_sum=250000.0000
+[serial run 9] time=0.155667  check_sum=250000.0000
+-> Best serial time = 0.155439 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522831 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522524 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523113 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521961 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523034 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522980 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522704 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522630 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.522825 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522356 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.521961 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.456966 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.465004 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.464573 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.471303 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.454966 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.458484 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.460007 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.455881 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.462701 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.466576 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.454966 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.470091 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.478535 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.475538 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.469769 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.470859 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.478107 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.478818 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.475792 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.482840 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.481113 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.469769 s, speedup = 0.11x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.958521 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.957752 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.954093 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.982835 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.974823 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.989990 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.992984 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.986488 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.981206 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.991668 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.954093 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.156198  check_sum=250000.0000
+[serial run 1] time=0.156267  check_sum=250000.0000
+[serial run 2] time=0.156158  check_sum=250000.0000
+[serial run 3] time=0.156245  check_sum=250000.0000
+[serial run 4] time=0.156098  check_sum=250000.0000
+[serial run 5] time=0.156008  check_sum=250000.0000
+[serial run 6] time=0.156219  check_sum=250000.0000
+[serial run 7] time=0.156242  check_sum=250000.0000
+[serial run 8] time=0.156326  check_sum=250000.0000
+[serial run 9] time=0.156313  check_sum=250000.0000
+-> Best serial time = 0.156008 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524723 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.524205 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524422 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523926 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524501 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524395 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524154 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.525207 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524444 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524974 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523926 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.484815 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.482522 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.490514 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.491532 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.481591 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.479061 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.473740 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.476142 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.485577 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.483167 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.473740 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.479586 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.480822 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.477223 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.479378 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.478483 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.479199 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.480910 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.481811 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.476856 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.479577 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.476856 s, speedup = 0.11x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.955137 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.947720 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.965104 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.956157 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.950139 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.946416 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.946724 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.958318 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.965653 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.946339 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.946339 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155189  check_sum=250000.0000
+[serial run 1] time=0.154958  check_sum=250000.0000
+[serial run 2] time=0.155111  check_sum=250000.0000
+[serial run 3] time=0.154891  check_sum=250000.0000
+[serial run 4] time=0.154976  check_sum=250000.0000
+[serial run 5] time=0.154616  check_sum=250000.0000
+[serial run 6] time=0.154711  check_sum=250000.0000
+[serial run 7] time=0.154732  check_sum=250000.0000
+[serial run 8] time=0.154760  check_sum=250000.0000
+[serial run 9] time=0.154948  check_sum=250000.0000
+-> Best serial time = 0.154616 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524276 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523983 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524229 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523641 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523861 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523669 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523460 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524375 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523691 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523633 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523460 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.491907 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.498291 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.482316 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.477607 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.472828 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.477889 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.480680 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.493460 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.484547 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.480420 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.472828 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.488518 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.490159 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.489028 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.484109 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.495765 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.494048 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.486682 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.487970 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.487336 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.487253 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.484109 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.946204 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.945991 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.956200 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.939711 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.947137 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.940262 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.956079 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.948479 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.951610 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.937295 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.937295 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155579  check_sum=250000.0000
+[serial run 1] time=0.155477  check_sum=250000.0000
+[serial run 2] time=0.155579  check_sum=250000.0000
+[serial run 3] time=0.155353  check_sum=250000.0000
+[serial run 4] time=0.155160  check_sum=250000.0000
+[serial run 5] time=0.155117  check_sum=250000.0000
+[serial run 6] time=0.155214  check_sum=250000.0000
+[serial run 7] time=0.155145  check_sum=250000.0000
+[serial run 8] time=0.155067  check_sum=250000.0000
+[serial run 9] time=0.155391  check_sum=250000.0000
+-> Best serial time = 0.155067 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523352 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522815 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523322 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522700 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523544 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523226 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522760 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522634 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523042 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522534 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522534 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.474696 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.473260 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.473851 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.474359 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.480331 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.467559 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.480276 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.476331 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.485597 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.477613 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.467559 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.485403 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.483833 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.487679 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.481465 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.483637 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.482195 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.482669 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.484411 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.483338 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.484111 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.481465 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.958210 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.964116 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.963452 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.962899 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.963511 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.967572 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.963316 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.976234 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.962659 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.967185 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.958210 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.156721  check_sum=250000.0000
+[serial run 1] time=0.155269  check_sum=250000.0000
+[serial run 2] time=0.155109  check_sum=250000.0000
+[serial run 3] time=0.156181  check_sum=250000.0000
+[serial run 4] time=0.155123  check_sum=250000.0000
+[serial run 5] time=0.154770  check_sum=250000.0000
+[serial run 6] time=0.154838  check_sum=250000.0000
+[serial run 7] time=0.155711  check_sum=250000.0000
+[serial run 8] time=0.155159  check_sum=250000.0000
+[serial run 9] time=0.154942  check_sum=250000.0000
+-> Best serial time = 0.154770 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524551 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523810 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.531588 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523425 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524883 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524120 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523917 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524833 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.525742 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523882 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523425 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.501409 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.513590 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.506847 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.516525 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.515797 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.512437 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.498070 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.487229 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.485252 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.498526 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.485252 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.489693 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.486054 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.491810 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.479889 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.485676 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.485507 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.488400 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.487726 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.488334 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.481215 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.479889 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.951090 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.940295 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.944885 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.950077 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.946559 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.949697 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.939903 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.948439 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.945597 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.930637 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.930637 s, speedup = 0.17x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.156216  check_sum=250000.0000
+[serial run 1] time=0.156172  check_sum=250000.0000
+[serial run 2] time=0.156509  check_sum=250000.0000
+[serial run 3] time=0.156166  check_sum=250000.0000
+[serial run 4] time=0.155976  check_sum=250000.0000
+[serial run 5] time=0.156206  check_sum=250000.0000
+[serial run 6] time=0.156119  check_sum=250000.0000
+[serial run 7] time=0.156046  check_sum=250000.0000
+[serial run 8] time=0.156118  check_sum=250000.0000
+[serial run 9] time=0.156541  check_sum=250000.0000
+-> Best serial time = 0.155976 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524733 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.524375 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524851 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.524038 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.525519 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524734 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524610 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524567 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524730 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524376 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.524038 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.501973 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.509222 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.499002 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.502422 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.490227 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.500738 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.507015 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.495391 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.503652 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.490238 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.490227 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.481628 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.480280 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.482302 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.478315 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.476809 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.478132 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.475435 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.473821 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.475939 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.476328 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.473821 s, speedup = 0.11x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.955862 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.964327 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.965520 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.956557 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.960983 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.952463 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.966051 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.961252 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.958440 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.960315 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.952463 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155384  check_sum=250000.0000
+[serial run 1] time=0.155507  check_sum=250000.0000
+[serial run 2] time=0.155498  check_sum=250000.0000
+[serial run 3] time=0.155412  check_sum=250000.0000
+[serial run 4] time=0.155239  check_sum=250000.0000
+[serial run 5] time=0.155166  check_sum=250000.0000
+[serial run 6] time=0.155297  check_sum=250000.0000
+[serial run 7] time=0.155264  check_sum=250000.0000
+[serial run 8] time=0.155504  check_sum=250000.0000
+[serial run 9] time=0.155257  check_sum=250000.0000
+-> Best serial time = 0.155166 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524285 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523909 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524470 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523841 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524485 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524243 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524300 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.525038 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524411 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524507 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523841 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.501394 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.511852 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.499239 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.498584 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.500702 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.503031 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.497354 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.501731 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.507801 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.498579 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.497354 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.493941 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.494537 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.495627 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.494006 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.492889 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.491412 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.494825 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.493879 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.493366 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.493952 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.491412 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.949975 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.946469 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.953103 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.959052 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.938346 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.951089 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.957160 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.940691 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.948037 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.940145 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.938346 s, speedup = 0.17x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155742  check_sum=250000.0000
+[serial run 1] time=0.155902  check_sum=250000.0000
+[serial run 2] time=0.155880  check_sum=250000.0000
+[serial run 3] time=0.155944  check_sum=250000.0000
+[serial run 4] time=0.155819  check_sum=250000.0000
+[serial run 5] time=0.155567  check_sum=250000.0000
+[serial run 6] time=0.155653  check_sum=250000.0000
+[serial run 7] time=0.155831  check_sum=250000.0000
+[serial run 8] time=0.155792  check_sum=250000.0000
+[serial run 9] time=0.155676  check_sum=250000.0000
+-> Best serial time = 0.155567 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523698 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523349 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523645 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522924 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523202 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523352 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523381 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524021 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523536 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523779 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522924 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.501135 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.511994 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.508301 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.504698 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.501947 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.508748 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.497799 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.512055 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.508328 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.504457 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.497799 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.494217 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.497342 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.489639 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.492944 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.493554 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.493554 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.492397 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.492345 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.494734 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.495250 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.489639 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.951920 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.948678 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.949232 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.944845 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.945038 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.953018 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.956841 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.954525 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.959454 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.935369 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.935369 s, speedup = 0.17x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.156394  check_sum=250000.0000
+[serial run 1] time=0.156549  check_sum=250000.0000
+[serial run 2] time=0.156362  check_sum=250000.0000
+[serial run 3] time=0.156447  check_sum=250000.0000
+[serial run 4] time=0.156335  check_sum=250000.0000
+[serial run 5] time=0.156146  check_sum=250000.0000
+[serial run 6] time=0.156211  check_sum=250000.0000
+[serial run 7] time=0.155952  check_sum=250000.0000
+[serial run 8] time=0.156332  check_sum=250000.0000
+[serial run 9] time=0.156028  check_sum=250000.0000
+-> Best serial time = 0.155952 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524370 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.524220 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524308 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523875 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524399 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524226 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524162 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524783 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524222 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524388 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523875 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.510836 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.506465 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.510972 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.508051 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.510497 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.511173 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.507840 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.507590 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.513929 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.508967 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.506465 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.495227 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.489783 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.495280 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.490763 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.494720 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.492372 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.491899 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.494118 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.494937 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.505168 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.489783 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.953672 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.934126 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.952607 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.953159 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.956665 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.950428 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.948633 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.942256 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.944934 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.905273 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.905273 s, speedup = 0.17x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155726  check_sum=250000.0000
+[serial run 1] time=0.155739  check_sum=250000.0000
+[serial run 2] time=0.155946  check_sum=250000.0000
+[serial run 3] time=0.155739  check_sum=250000.0000
+[serial run 4] time=0.155291  check_sum=250000.0000
+[serial run 5] time=0.155581  check_sum=250000.0000
+[serial run 6] time=0.155379  check_sum=250000.0000
+[serial run 7] time=0.155283  check_sum=250000.0000
+[serial run 8] time=0.155161  check_sum=250000.0000
+[serial run 9] time=0.155792  check_sum=250000.0000
+-> Best serial time = 0.155161 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524441 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523964 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524204 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523611 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524839 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524261 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524213 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524229 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524373 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524056 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523611 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.492619 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.485057 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.496145 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.492972 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.489618 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.490797 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.488502 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.494084 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.495514 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.491887 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.485057 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.494716 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.494018 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.488787 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.492799 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.491808 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.495489 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.491990 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.493357 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.494679 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.517745 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.488787 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.965731 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.967656 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.975720 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.963300 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.969347 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.973432 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.971893 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.976912 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.955998 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.885621 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.885621 s, speedup = 0.18x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155454  check_sum=250000.0000
+[serial run 1] time=0.155408  check_sum=250000.0000
+[serial run 2] time=0.155904  check_sum=250000.0000
+[serial run 3] time=0.155487  check_sum=250000.0000
+[serial run 4] time=0.155519  check_sum=250000.0000
+[serial run 5] time=0.155528  check_sum=250000.0000
+[serial run 6] time=0.155588  check_sum=250000.0000
+[serial run 7] time=0.155282  check_sum=250000.0000
+[serial run 8] time=0.155141  check_sum=250000.0000
+[serial run 9] time=0.155699  check_sum=250000.0000
+-> Best serial time = 0.155141 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.524472 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523902 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524609 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523909 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524796 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524415 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524220 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.524424 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524282 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523891 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523891 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.488227 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.491633 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.493109 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.486608 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.487074 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.494240 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.496233 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.496937 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.498085 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.493001 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.486608 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.494662 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.492819 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.489082 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.490130 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.493101 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.496910 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.493922 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.492687 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.491304 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.494203 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.489082 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.969923 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.973565 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.963821 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.975979 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.967962 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.969768 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.975273 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.969775 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.973693 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.962818 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.962818 s, speedup = 0.16x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155385  check_sum=250000.0000
+[serial run 1] time=0.155032  check_sum=250000.0000
+[serial run 2] time=0.155342  check_sum=250000.0000
+[serial run 3] time=0.155245  check_sum=250000.0000
+[serial run 4] time=0.155111  check_sum=250000.0000
+[serial run 5] time=0.155254  check_sum=250000.0000
+[serial run 6] time=0.155196  check_sum=250000.0000
+[serial run 7] time=0.155192  check_sum=250000.0000
+[serial run 8] time=0.155140  check_sum=250000.0000
+[serial run 9] time=0.155526  check_sum=250000.0000
+-> Best serial time = 0.155032 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523741 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522883 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523388 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522592 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523676 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523378 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523123 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523155 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523196 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522976 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522592 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.502032 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.499680 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.499155 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.502656 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.501297 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.500391 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.499379 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.504134 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.501826 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.500642 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.499155 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.495651 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.496271 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.497483 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.494677 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.494544 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.496439 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.498344 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.491039 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.497626 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.554602 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.491039 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.967569 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.956932 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.971571 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.958261 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.969066 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.963531 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.966193 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.956995 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.973004 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.827434 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.827434 s, speedup = 0.19x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155671  check_sum=250000.0000
+[serial run 1] time=0.155703  check_sum=250000.0000
+[serial run 2] time=0.155785  check_sum=250000.0000
+[serial run 3] time=0.155239  check_sum=250000.0000
+[serial run 4] time=0.155475  check_sum=250000.0000
+[serial run 5] time=0.155216  check_sum=250000.0000
+[serial run 6] time=0.155347  check_sum=250000.0000
+[serial run 7] time=0.155272  check_sum=250000.0000
+[serial run 8] time=0.155384  check_sum=250000.0000
+[serial run 9] time=0.155359  check_sum=250000.0000
+-> Best serial time = 0.155216 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523388 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522912 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523139 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522456 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522862 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522983 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522997 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523719 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523096 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523159 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522456 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.523151 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.522907 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.521771 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.528567 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.529553 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.529126 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.526502 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.530463 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.531239 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.530883 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.521771 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.493243 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.483671 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.488648 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.491426 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.484863 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.485402 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.483658 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.485647 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.483990 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.537954 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.483658 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.959309 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.966001 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.963893 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.946976 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.951820 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.951915 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.941412 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.964499 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.952782 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.810467 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.810467 s, speedup = 0.19x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155894  check_sum=250000.0000
+[serial run 1] time=0.156099  check_sum=250000.0000
+[serial run 2] time=0.156104  check_sum=250000.0000
+[serial run 3] time=0.156125  check_sum=250000.0000
+[serial run 4] time=0.155933  check_sum=250000.0000
+[serial run 5] time=0.155853  check_sum=250000.0000
+[serial run 6] time=0.155821  check_sum=250000.0000
+[serial run 7] time=0.155830  check_sum=250000.0000
+[serial run 8] time=0.155887  check_sum=250000.0000
+[serial run 9] time=0.155944  check_sum=250000.0000
+-> Best serial time = 0.155821 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.525180 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.524433 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.524456 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.524240 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524544 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.524478 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.524446 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.525066 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524414 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.524599 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.524240 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.520301 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.523260 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.531328 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.525061 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.527465 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.529357 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.522291 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.525844 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.513035 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.521783 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.513035 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.496971 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.495002 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.492858 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.494578 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.494770 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.493701 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.497994 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.493804 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.492989 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.545116 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.492858 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.951887 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.963657 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.960204 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.959542 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.949699 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.963831 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.966270 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.958213 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.953740 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.828531 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.828531 s, speedup = 0.19x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155912  check_sum=250000.0000
+[serial run 1] time=0.155713  check_sum=250000.0000
+[serial run 2] time=0.155888  check_sum=250000.0000
+[serial run 3] time=0.155855  check_sum=250000.0000
+[serial run 4] time=0.155485  check_sum=250000.0000
+[serial run 5] time=0.155596  check_sum=250000.0000
+[serial run 6] time=0.155663  check_sum=250000.0000
+[serial run 7] time=0.155504  check_sum=250000.0000
+[serial run 8] time=0.155582  check_sum=250000.0000
+[serial run 9] time=0.155773  check_sum=250000.0000
+-> Best serial time = 0.155485 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523113 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522671 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523685 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522652 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523768 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523436 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523133 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523622 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523179 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523267 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522652 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.521420 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.520255 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.516880 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.518664 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.511796 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.515946 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.519566 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.516842 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.520886 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.517610 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.511796 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.495270 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.493533 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.492679 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.491442 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.493083 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.490462 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.495247 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.491099 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.494383 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.526118 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.490462 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.962146 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.954401 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.960792 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.960462 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.965509 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.974910 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.958146 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.955724 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.952190 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.868014 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.868014 s, speedup = 0.18x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup serial 0] sum=250000.0000
+[warmup serial 1] sum=250000.0000
+[warmup serial 2] sum=250000.0000
+[serial run 0] time=0.155139  check_sum=250000.0000
+[serial run 1] time=0.154847  check_sum=250000.0000
+[serial run 2] time=0.155235  check_sum=250000.0000
+[serial run 3] time=0.154947  check_sum=250000.0000
+[serial run 4] time=0.154723  check_sum=250000.0000
+[serial run 5] time=0.155032  check_sum=250000.0000
+[serial run 6] time=0.154976  check_sum=250000.0000
+[serial run 7] time=0.154928  check_sum=250000.0000
+[serial run 8] time=0.154960  check_sum=250000.0000
+[serial run 9] time=0.155250  check_sum=250000.0000
+-> Best serial time = 0.154723 s
+
+=== Schedule: static ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523787 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523251 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523562 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522831 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524044 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523852 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523620 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523524 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523440 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523598 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522831 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=2.507236 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=2.519323 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=2.514220 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=2.513032 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=2.518607 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=2.528902 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=2.523758 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=2.533772 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=2.533549 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=2.529853 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 2.507236 s, speedup = 0.06x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=1.497708 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=1.494193 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=1.491513 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=1.498844 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=1.493395 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=1.493718 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=1.496837 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=1.491415 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=1.492328 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=1.522797 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 1.491415 s, speedup = 0.10x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.972246 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.975761 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.969052 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.973209 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.961164 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.973933 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.967961 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.970202 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.961877 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.870303 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.870303 s, speedup = 0.18x
+
+=== Schedule: dynamic ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.388770 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.389818 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.388707 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.389367 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.388138 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.388722 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.388146 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.388605 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.389401 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.389303 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.388138 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=24.872284 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=24.906051 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=24.890931 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=24.905337 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=24.876446 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=24.996583 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=25.139494 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=25.180476 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=25.171483 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=25.145624 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 24.872284 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.059005 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.061187 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.063561 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.071024 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.083464 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.065246 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.080270 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.069647 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.068790 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.076038 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.059005 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=9.876505 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=9.875000 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=9.870673 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=9.874752 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=9.871911 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=9.869632 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=9.871738 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=9.872800 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=9.868887 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=9.866237 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 9.866237 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523174 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523187 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523214 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523174 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523220 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523179 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523260 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523631 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523560 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523161 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523161 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262756 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262937 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262855 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262775 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262805 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262918 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262753 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262728 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262984 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262765 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262728 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134848 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134835 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134993 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134864 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134797 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134881 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134845 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134837 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134858 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134974 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134797 s, speedup = 1.16x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073309 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.072944 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073363 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073153 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073155 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.072940 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073220 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073007 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073257 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073389 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.072940 s, speedup = 2.14x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.380716 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.379917 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.379175 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.381339 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.379636 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.380601 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.379738 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.380105 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.380595 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.379984 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.379175 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=25.671660 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=25.671180 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=25.667331 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=25.662348 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=25.669876 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=25.666541 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=25.661503 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=25.672040 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=25.670462 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=25.687540 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 25.661503 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.117690 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.122718 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.118398 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.119312 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.102237 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.116038 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.128818 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.121010 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.119030 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.115134 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.102237 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=9.866513 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=9.866719 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=9.868930 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=9.868355 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=9.867734 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=9.867625 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=9.868882 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=9.869098 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=9.870209 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=9.871221 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 9.866513 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523012 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523084 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523068 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523371 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523057 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523124 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523084 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523249 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523099 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523229 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523012 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262771 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262795 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262853 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262768 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262764 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262831 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262849 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262828 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262881 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262888 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262764 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134691 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134783 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134728 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134760 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134698 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134794 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134733 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134700 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134802 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134778 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134691 s, speedup = 1.16x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073374 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073222 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073154 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073174 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073071 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073309 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073138 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073179 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073196 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073461 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073071 s, speedup = 2.13x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.348228 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.347195 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.346739 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.348956 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.347769 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.349209 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.348176 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.348413 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.348730 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.349252 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.346739 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.497918 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.501469 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.494814 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.497647 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.491491 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.506571 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.493717 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.492511 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.490258 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.490574 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.490258 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.137133 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.124048 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.122673 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.119336 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.126639 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.128820 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.120041 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.130370 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.128208 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.126045 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.119336 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=9.868687 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=9.868768 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=9.868182 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=9.868069 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=9.868328 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=9.869012 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=9.868818 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=9.869682 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=9.870277 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=9.868955 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 9.868069 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522564 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522441 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.522346 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522337 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522217 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522055 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522010 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.521975 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.521932 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522014 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.345843 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.347829 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.347942 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.349207 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.347130 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.347032 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.345844 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.345470 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.346074 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.346430 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.345470 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.205963 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.209230 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.215534 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.208433 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.217340 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.224176 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.210292 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.219048 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.226218 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.214247 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.205963 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.312333 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.321451 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.315539 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.319555 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.314969 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.318639 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.324287 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.316522 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.310598 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.313396 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.310598 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.073297 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.073249 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.070292 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.071158 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.070445 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.071058 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.071384 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.072151 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.072574 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.071910 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.070292 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523260 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523401 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523440 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523411 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523577 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523584 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523631 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523580 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523538 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523424 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.352378 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.352188 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.353098 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.355692 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.351293 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.353768 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.352422 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.351558 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.351661 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.355072 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.351293 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=27.004021 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=27.008571 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=27.035822 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.983149 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=27.010190 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=27.005958 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.992479 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=27.001081 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.987575 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.527165 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.527165 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=17.566328 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=17.568901 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=17.565119 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=17.571972 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=17.574448 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=17.565209 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=17.572520 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=17.567696 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=17.567656 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=17.572550 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 17.565119 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.078085 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.079516 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.079437 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.078649 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.078910 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.081133 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.082050 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.082011 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.083798 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.084058 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.078085 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.542417 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.545687 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.543483 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.543742 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.544262 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.544391 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.545093 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.545131 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.545342 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.547355 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.359895 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.358702 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.357310 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.359339 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.357616 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.358526 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.357431 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.357572 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.357577 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.357219 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.357219 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.434628 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.432471 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.426095 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.436201 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.417983 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.433524 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.431606 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.428172 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.424319 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.425006 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.417983 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.249385 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.247542 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.251312 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.242185 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.243221 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.249309 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.256479 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.251341 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.242081 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.245648 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.242081 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.086300 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.086564 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.087096 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.085830 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.085645 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.085900 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.085383 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.085141 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.085809 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.081352 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.081352 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522938 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522734 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.522633 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522716 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522860 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523142 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523050 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523513 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523545 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523313 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.357154 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.357487 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.358151 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.360756 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.359672 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.360888 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.359782 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.359354 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.360156 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.359600 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.357154 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.308057 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.324153 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.316073 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.323831 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.314136 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.315449 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.312286 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.319130 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.316923 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.338903 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.308057 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.300367 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.299886 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.305982 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.295974 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.298460 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.295056 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.290331 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.301016 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.300453 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.283398 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.283398 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.077542 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.077403 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.078439 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.077067 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.078370 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.078682 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.078527 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.079231 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.079978 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.081564 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.077067 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523430 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523379 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523378 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523352 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.523434 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523514 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523483 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523875 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.524243 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523774 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.357589 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.357399 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.356652 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.358968 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.356640 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.357600 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.356701 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.357102 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.357692 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.356811 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.356640 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.171957 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.155194 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.163188 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.142814 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.165346 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.151751 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.197338 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.175703 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.202606 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.159730 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.142814 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.302353 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.341049 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.335049 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.365639 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.347745 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.346973 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.333790 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.343527 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.353093 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.342689 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.302353 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.224725 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.200782 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.122529 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.209409 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.130636 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.135137 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.158443 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.187334 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.177586 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.130135 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.122529 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522253 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522110 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.522069 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522140 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522105 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522174 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.521987 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522279 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.522233 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.521909 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.359444 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.358533 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.358341 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.361301 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.359503 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.360569 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.359017 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.359214 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.359693 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.358983 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.358341 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.323834 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.330658 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.332953 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.338818 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.338678 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.316507 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.345506 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.318896 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.329954 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.326162 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.316507 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.285350 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.290887 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.290474 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.284863 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.285373 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.296458 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.283987 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.285913 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.284183 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.282284 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.282284 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.168292 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.123447 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.115344 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.207245 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.150763 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.145788 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.170108 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.137649 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.156078 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.144196 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.115344 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522980 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522801 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523003 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522751 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522948 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522961 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522974 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522665 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.522808 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522929 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.357323 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.359163 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.359054 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.360342 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.358853 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.359354 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.357724 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.358003 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.357830 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.357568 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.357323 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.401280 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.392186 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.382439 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.394095 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.429912 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.400819 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.412781 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.394125 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.381439 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.391232 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.381439 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.249546 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.269461 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.263553 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.273547 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.259483 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.264622 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.267653 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.278150 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.254755 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.240496 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.240496 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.143433 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.228097 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.198977 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.147900 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.132487 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.224830 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.179909 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.146306 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.115918 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.123119 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.115918 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.523356 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.523306 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.523283 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.523661 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.524153 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.523500 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.523389 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.523560 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523432 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523531 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.521932 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262379 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262415 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262373 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262437 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262573 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262645 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262539 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262602 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262478 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262415 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262373 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134692 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134917 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134715 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134768 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134776 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134652 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134754 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134693 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134749 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134715 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134652 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.074046 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.074010 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.074689 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073954 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.074299 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.074051 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.074107 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073971 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.074107 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.074363 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073954 s, speedup = 2.10x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.380746 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.379490 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.378814 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.381148 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.378586 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.380712 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.378812 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.379248 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.379519 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.378758 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.378586 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.551286 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.542613 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.546334 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.553035 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.546230 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.541378 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.544506 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.552091 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.539092 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.555419 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.539092 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.315036 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.313424 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.314613 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.308405 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.311893 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.312934 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.312681 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.318651 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.292909 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.335042 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.292909 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.071717 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.071369 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.070976 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.071138 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.071052 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.072168 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.072234 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.074441 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.067703 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.158850 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.067703 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.521888 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.521981 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.521894 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521774 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522088 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.521679 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.521750 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.521806 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.521840 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.521906 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.346303 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.345071 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.344705 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.346886 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.346117 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.347539 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.357539 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.357541 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.357359 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.357719 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.344705 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.678621 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.656729 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.665808 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.674331 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.700913 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.680468 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.698370 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.703492 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.677507 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.667418 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.656729 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.343264 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.345826 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.327563 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.339285 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.337510 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.339468 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.336094 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.341926 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.340736 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.332450 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.327563 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.077529 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.077105 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.077041 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.077396 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.077478 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.077934 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.077530 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.077137 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.077486 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.077834 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.077041 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.521491 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.521221 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.521020 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521606 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.521628 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.521786 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.521721 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.521814 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.521858 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.521558 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.523260 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262830 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262862 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262902 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262936 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262943 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262898 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262930 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262933 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262866 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262862 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262830 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.135112 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.135231 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.135245 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.135324 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.135266 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.135118 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.135149 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.135230 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.135161 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.135147 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.135112 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.076616 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.077377 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.076238 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.079792 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.081164 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.081521 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.079837 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.080516 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.080998 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.081748 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.076238 s, speedup = 2.05x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.356244 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.356278 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.356013 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.358966 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.356421 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.358039 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.356422 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.356600 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.356415 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.356323 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.356013 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.693291 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.715419 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.711665 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.698983 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.713203 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.716251 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.742530 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.722821 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.761020 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.719321 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.693291 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.276787 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.271887 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.281566 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.280918 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.281924 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.275471 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.280448 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.281984 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.286186 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.289942 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.271887 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.069510 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.071420 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.069607 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.070854 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.072612 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.072200 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.071861 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.071340 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.070324 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.075150 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.069510 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522045 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522150 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.522012 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521996 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522067 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522121 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522131 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.521932 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.521911 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522009 check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.349151 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.349589 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.348119 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.349565 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.348845 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.349825 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.350047 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.349744 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.348962 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.348751 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.348119 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.652271 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.660202 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.658304 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.656281 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.660387 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.655524 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.669212 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.665784 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.662119 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.666723 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.652271 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.320649 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.346231 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.331289 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.342091 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.335991 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.308097 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.315905 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.343100 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.320561 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.299345 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.299345 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.153292 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.155447 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.158604 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.162999 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.191021 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.133327 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.178454 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.167487 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.170685 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.136943 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.133327 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522362 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522573 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.522462 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.522488 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.522359 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522634 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522679 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522945 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.523200 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523185 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.542417 s, speedup = 0.29x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.270922 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.270565 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.270137 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.271088 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.269977 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.270378 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.269787 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.270304 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.269871 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.270238 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.269787 s, speedup = 0.57x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.138106 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.137973 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.138512 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.138057 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.137906 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.137774 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.138704 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.139265 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.139245 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.139359 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.137774 s, speedup = 1.12x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.082322 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.081942 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.082659 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.083414 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.079807 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.074703 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.074857 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.074544 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.074779 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.075168 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.074544 s, speedup = 2.08x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.357236 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.357952 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.357469 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.358959 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.357019 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.357171 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.356575 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.356493 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.356665 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.355970 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.355970 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=26.766788 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=26.762268 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=26.769371 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=26.771359 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=26.754321 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=26.752595 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=26.769065 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=26.763003 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=26.767828 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=26.756939 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 26.752595 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.300159 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.298567 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.303669 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.292830 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.295637 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.296646 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.293789 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.288328 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.281295 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.295860 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.281295 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.086382 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.085277 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.085599 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.085504 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.085702 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.085754 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.087464 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.089148 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.088428 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.082945 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.082945 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522011 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.521844 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.521870 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521807 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.521795 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.522188 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.522651 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.522558 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.522319 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.523915 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.522633 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.263089 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262984 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.263067 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.263004 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.263090 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.263366 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.263285 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.263400 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.263372 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.263057 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262984 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134811 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134748 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134754 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134636 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134674 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134757 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134619 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134723 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134719 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134723 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134619 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073702 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073701 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073527 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073811 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073567 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073398 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073476 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073452 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073702 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073654 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073398 s, speedup = 2.11x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.523352 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262784 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262887 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262836 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262862 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262920 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262908 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262817 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262846 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262863 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262905 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262784 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134937 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134863 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134808 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134862 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134879 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134775 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.135012 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134986 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134931 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134792 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134775 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073366 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073943 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073225 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073259 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073630 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073859 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.074323 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.074066 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073944 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.074600 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073225 s, speedup = 2.12x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.521909 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262631 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262651 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262527 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262670 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262618 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262564 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262498 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262607 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262628 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262662 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262498 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134670 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134764 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134774 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134973 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.135212 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.135271 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.135062 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.135126 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.135313 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.135310 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134670 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.076252 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.076663 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.076944 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.076969 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.077287 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.077081 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.076944 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.076872 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.079777 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.081238 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.076252 s, speedup = 2.03x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.522665 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262652 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262730 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262763 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262656 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262717 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262729 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262764 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262969 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262738 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262883 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262652 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.135164 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.135373 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.135339 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.135986 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.137462 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.137333 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.137310 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.137334 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.137329 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.136896 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.135164 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073288 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073239 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073389 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073525 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073204 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073210 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073186 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073442 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073244 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073193 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073186 s, speedup = 2.12x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.523283 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262878 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262953 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262966 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262980 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.263125 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262949 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.263074 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.263357 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.263165 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262889 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262878 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.135015 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134982 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134918 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.135030 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.135085 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.135031 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.135000 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.135010 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134925 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134993 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134918 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.074534 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.074386 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.074006 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.074080 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.074169 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.074489 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.074746 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.074734 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.074407 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.074203 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.074006 s, speedup = 2.11x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.521679 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262577 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262549 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262698 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.263195 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.265435 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.264598 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.263931 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.263281 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.263134 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262516 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262516 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134830 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134635 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134587 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134568 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134709 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134703 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134911 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134698 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134572 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134685 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134568 s, speedup = 1.16x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073000 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073032 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073140 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073084 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073164 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073279 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073141 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073163 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073197 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073155 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073000 s, speedup = 2.13x
+
+Output written to output.txt
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=2.347604 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=2.348913 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=2.349659 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=2.350989 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=2.349693 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=2.350742 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=2.349558 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=2.349193 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=2.349526 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=2.348549 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 2.347604 s, speedup = 0.07x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=27.105445 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=27.108503 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=27.115421 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=27.111682 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=27.111890 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=27.120361 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=27.114972 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=27.120914 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=27.120705 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=27.100801 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 27.100801 s, speedup = 0.01x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=18.244015 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=18.254360 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=18.244341 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=18.248354 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=18.252041 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=18.243416 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=18.248301 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=18.246004 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=18.258814 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=18.264375 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 18.243416 s, speedup = 0.01x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=10.083764 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=10.084269 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=10.083985 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=10.082928 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=10.082929 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=10.084607 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=10.080088 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=10.175265 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=10.074990 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=10.075628 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 10.074990 s, speedup = 0.02x
+
+=== Schedule: guided ===
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[warmup nthreads=1] check_sum=250000.0000
+[parallel run 0 nthreads=1] time=0.522857 check_sum=250000.0000
+[parallel run 1 nthreads=1] time=0.522731 check_sum=250000.0000
+[parallel run 2 nthreads=1] time=0.521924 check_sum=250000.0000
+[parallel run 3 nthreads=1] time=0.521650 check_sum=250000.0000
+[parallel run 4 nthreads=1] time=0.521672 check_sum=250000.0000
+[parallel run 5 nthreads=1] time=0.521642 check_sum=250000.0000
+[parallel run 6 nthreads=1] time=0.521912 check_sum=250000.0000
+[parallel run 7 nthreads=1] time=0.521958 check_sum=250000.0000
+[parallel run 8 nthreads=1] time=0.521805 check_sum=250000.0000
+[parallel run 9 nthreads=1] time=0.522277 check_sum=250000.0000
+-> Best parallel time (nthreads=1) = 0.521020 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262474 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.264044 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.264085 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.263516 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262383 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.261948 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.261931 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.261922 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.261966 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.261847 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.261847 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134672 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134645 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134600 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134812 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134995 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.135055 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134891 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.135017 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.135067 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.135616 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134600 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.076777 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.076839 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.076914 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.076301 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.077342 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.076893 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.076511 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.076462 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.078928 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.080208 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.076301 s, speedup = 2.04x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.521911 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.263093 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262250 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.261971 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.261951 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.261949 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.261976 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.261966 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262057 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262071 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262013 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.261949 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.135112 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.135033 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.135171 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.135617 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.136344 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.136389 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.136400 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.136330 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.136116 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.136299 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.135033 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073002 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073220 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073065 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.072907 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073022 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.072979 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073012 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073144 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073206 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073100 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.072907 s, speedup = 2.13x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.522359 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.263361 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.263279 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.263282 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.263318 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.263578 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.263450 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.263309 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.263138 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.263185 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.263137 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.263137 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134809 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134896 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134917 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134848 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134872 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134938 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134834 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134815 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134904 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134922 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134809 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073240 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073156 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.073505 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073282 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073111 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073267 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.073112 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073142 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073148 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073304 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.073111 s, speedup = 2.11x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.521795 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262704 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262755 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.262759 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262752 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.262697 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262713 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262912 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262640 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262885 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262665 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262640 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134590 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134525 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134612 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134655 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134533 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134606 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134603 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134650 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134658 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134604 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134525 s, speedup = 1.16x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073269 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073038 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.072961 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073205 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.072851 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.073376 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.072961 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.072931 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.073204 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073370 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.072851 s, speedup = 2.14x
+
+Output written to output.txt
+-> Best parallel time (nthreads=1) = 0.521642 s, speedup = 0.30x
+
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[warmup nthreads=2] check_sum=250000.0000
+[parallel run 0 nthreads=2] time=0.262650 check_sum=250000.0000
+[parallel run 1 nthreads=2] time=0.262393 check_sum=250000.0000
+[parallel run 2 nthreads=2] time=0.263240 check_sum=250000.0000
+[parallel run 3 nthreads=2] time=0.262639 check_sum=250000.0000
+[parallel run 4 nthreads=2] time=0.266607 check_sum=250000.0000
+[parallel run 5 nthreads=2] time=0.262534 check_sum=250000.0000
+[parallel run 6 nthreads=2] time=0.262404 check_sum=250000.0000
+[parallel run 7 nthreads=2] time=0.262478 check_sum=250000.0000
+[parallel run 8 nthreads=2] time=0.262496 check_sum=250000.0000
+[parallel run 9 nthreads=2] time=0.262777 check_sum=250000.0000
+-> Best parallel time (nthreads=2) = 0.262393 s, speedup = 0.59x
+
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[warmup nthreads=4] check_sum=250000.0000
+[parallel run 0 nthreads=4] time=0.134491 check_sum=250000.0000
+[parallel run 1 nthreads=4] time=0.134468 check_sum=250000.0000
+[parallel run 2 nthreads=4] time=0.134532 check_sum=250000.0000
+[parallel run 3 nthreads=4] time=0.134570 check_sum=250000.0000
+[parallel run 4 nthreads=4] time=0.134651 check_sum=250000.0000
+[parallel run 5 nthreads=4] time=0.134584 check_sum=250000.0000
+[parallel run 6 nthreads=4] time=0.134640 check_sum=250000.0000
+[parallel run 7 nthreads=4] time=0.134518 check_sum=250000.0000
+[parallel run 8 nthreads=4] time=0.134679 check_sum=250000.0000
+[parallel run 9 nthreads=4] time=0.134591 check_sum=250000.0000
+-> Best parallel time (nthreads=4) = 0.134468 s, speedup = 1.15x
+
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[warmup nthreads=8] check_sum=250000.0000
+[parallel run 0 nthreads=8] time=0.073106 check_sum=250000.0000
+[parallel run 1 nthreads=8] time=0.073219 check_sum=250000.0000
+[parallel run 2 nthreads=8] time=0.072895 check_sum=250000.0000
+[parallel run 3 nthreads=8] time=0.073066 check_sum=250000.0000
+[parallel run 4 nthreads=8] time=0.073518 check_sum=250000.0000
+[parallel run 5 nthreads=8] time=0.072982 check_sum=250000.0000
+[parallel run 6 nthreads=8] time=0.072972 check_sum=250000.0000
+[parallel run 7 nthreads=8] time=0.073025 check_sum=250000.0000
+[parallel run 8 nthreads=8] time=0.072963 check_sum=250000.0000
+[parallel run 9 nthreads=8] time=0.073240 check_sum=250000.0000
+-> Best parallel time (nthreads=8) = 0.072895 s, speedup = 2.13x
+
+Output written to output.txt

@@ -122,7 +122,7 @@ int main() {
             for (int w = 0; w < NUM_WARMUP; w++) {
                 initialize();
                 compute_parallel();
-                printf("[warmup thread=%d] check_sum=%.4f\n",
+                printf("[warmup nthreads=%d] check_sum=%.4f\n",
                        nthreads, calc_sum());
             }
 
