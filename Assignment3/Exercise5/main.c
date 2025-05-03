@@ -7,7 +7,7 @@ Date: 2025-04-28
 #include <stdlib.h>
 #include <omp.h>
 
-#define N 500           // Grid size
+#define N 1400           // Grid size
 #define ITER 1000       // Number of iterations
 #define NUM_WARMUP 3    // Number of warm‐up runs
 #define NUM_RUNS 10     // Number of timed runs
