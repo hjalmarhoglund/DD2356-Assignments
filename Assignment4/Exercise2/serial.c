@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 100 // Matrix size
+#define N 1000 // Matrix size
 
 void initialize_matrix(double matrix[N][N]) {
     for (int i = 0; i < N; i++) {
