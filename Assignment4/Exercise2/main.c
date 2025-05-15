@@ -1,43 +1,109 @@
 /*
 Authors: Christiane Kobalt & Hjalmar Höglund for DD2356 Assignment 4
 Date: 2025-05-09
- */
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <mpi.h>
+#include <assert.h>
 
 #define N 1000 // Matrix size
 
-void initialize_matrix(double matrix[N][N]) {
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            matrix[i][j] = i + j * 0.01;
-        }
-    }
+void initialize_matrix(double matrix[N*N]) {
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			matrix[i*N+j] = i + j * 0.01;
+		}
+	}
 }
 
-void compute_row_sums(double matrix[N][N], double row_sums[N]) {
-    for (int i = 0; i < N; i++) {
-        row_sums[i] = 0.0;
-        for (int j = 0; j < N; j++) {
-            row_sums[i] += matrix[i][j];
-        }
-    }
+void compute_row_sums(double matrix[N*N], double row_sums[N], int rank, int nprocs) {
+	double buff[N*N];
+	double totalsum = 0.0;
+	int *sendcounts;
+	int *recvcounts;
+	int *displs;
+	int *gatherdispls;
+	if (rank == 0) {
+		sendcounts = (int *)malloc(nprocs * sizeof(int));
+		recvcounts = (int *)malloc(nprocs * sizeof(int));
+		displs = (int *)malloc(nprocs * sizeof(int));
+		gatherdispls = (int *)malloc(nprocs * sizeof(int));
+		int rowsperprocess = N / nprocs;
+		int tot = 0; // Total number of rows assigned
+		for (int i = 0; i < nprocs-1; i++) {
+			sendcounts[i] = rowsperprocess * N;
+			recvcounts[i] = rowsperprocess;
+			displs[i] = rowsperprocess * i * N;
+			gatherdispls[i] = rowsperprocess * i;
+			tot += rowsperprocess;
+		}
+		sendcounts[nprocs - 1] = (N - tot) * N;
+		recvcounts[nprocs - 1] = N - tot;
+		displs[nprocs - 1] = rowsperprocess * (nprocs - 1) * N;
+		gatherdispls[nprocs-1] = rowsperprocess * (nprocs-1);
+	}
+	/*
+	for (int i = 0; i < N; i++) {
+		row_sums[i] = 0.0;
+		for (int j = 0; j < N; j++) {
+			row_sums[i] += matrix[i][j];
+		}
+	}
+	*/
+	MPI_Scatterv(&matrix[0], sendcounts, displs, MPI_DOUBLE, &buff[0], N*N, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+
+	// Figure out how many rows should be processed by this process
+	int nrows = N / nprocs;
+	if (rank == nprocs - 1) nrows += N % nprocs;
+	double lsums[N];
+	double *p = &buff[0];
+	for (int i = 0; i < nrows; i++) {
+		lsums[i] = 0.0;
+		for (int j = 0; j < N; j++) {
+			lsums[i] += *p;
+			p++;
+		}
+	}
+	MPI_Gatherv(&lsums[0], nrows, MPI_DOUBLE, &row_sums[0], recvcounts, gatherdispls, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+	MPI_Reduce(&lsums, &totalsum, nrows, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+
+	if (rank == 0) {
+		free(sendcounts);
+		free(recvcounts);
+		free(displs);
+		free(gatherdispls);
+		printf("totalsum = %f\n", totalsum);
+	}
 }
 
 void write_output(double row_sums[N]) {
-    FILE *f = fopen("row_sums_output.txt", "w");
-    for (int i = 0; i < N; i++) {
-        fprintf(f, "%f\n", row_sums[i]);
-    }
-    fclose(f);
+	FILE *f = fopen("row_sums_output.txt", "w");
+	for (int i = 0; i < N; i++) {
+		fprintf(f, "%f\n", row_sums[i]);
+	}
+	fclose(f);
 }
 
-int main() {
-    double matrix[N][N], row_sums[N];
-    initialize_matrix(matrix);
-    compute_row_sums(matrix, row_sums);
-    write_output(row_sums);
-    printf("Row sum computation complete.\n");
-    return 0;
+int main(int argc, char **argv) {
+	int rank, nprocs, provided;
+	MPI_Init_thread(&argc, &argv, MPI_THREAD_SINGLE, &provided);
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+	MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
+	assert(nprocs > 1);
+	double matrix[N*N], row_sums[N];
+	if (rank == 0) {
+		initialize_matrix(matrix);
+	}
+	compute_row_sums(matrix, row_sums, rank, nprocs);
+
+	MPI_Finalize();
+
+	if (rank == 0) {
+		write_output(row_sums);
+		printf("Row sum computation complete.\n");
+	}
+	return 0;
 }
+
