@@ -49,15 +49,17 @@ void compute_row_sums(double matrix[N*N], double row_sums[N], int rank, int npro
 	if (rank == nprocs - 1) nrows += extraforlast;
 	double lsums[N];
 	double *p = buff;
+    double thissum = 0.0;
 	for (int i = 0; i < nrows; i++) {
 		lsums[i] = 0.0;
 		for (int j = 0; j < N; j++) {
 			lsums[i] += *p;
+            thissum += *p;
 			p++;
 		}
 	}
 	MPI_Gatherv(&lsums[0], nrows, MPI_DOUBLE, &row_sums[0], recvcounts, gatherdispls, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-	MPI_Reduce(&lsums[0], &totalsum, nrows, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+	MPI_Reduce(&thissum, &totalsum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 
 	if (rank == 0) {
 		free(sendcounts);
