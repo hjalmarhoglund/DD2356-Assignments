@@ -8,7 +8,7 @@ Date: 2025-05-09
 #include <mpi.h>
 #include <assert.h>
 
-#define N 20 // Matrix size
+#define N 1000 // Matrix size
 
 void initialize_matrix(double matrix[N*N]) {
 	for (int i = 0; i < N; i++) {
