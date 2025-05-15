@@ -8,7 +8,7 @@ Date: 2025-05-09
 #include <mpi.h>
 #include <assert.h>
 
-#define N 1000 // Matrix size
+#define N 20 // Matrix size
 
 void initialize_matrix(double matrix[N*N]) {
 	for (int i = 0; i < N; i++) {
@@ -21,44 +21,34 @@ void initialize_matrix(double matrix[N*N]) {
 void compute_row_sums(double matrix[N*N], double row_sums[N], int rank, int nprocs) {
 	double buff[N*N];
 	double totalsum = 0.0;
+    int nrows = N / nprocs;
+    int extraforlast = N % nprocs;
+
 	int *sendcounts;
 	int *recvcounts;
 	int *displs;
 	int *gatherdispls;
+
 	if (rank == 0) {
 		sendcounts = (int *)malloc(nprocs * sizeof(int));
 		recvcounts = (int *)malloc(nprocs * sizeof(int));
 		displs = (int *)malloc(nprocs * sizeof(int));
 		gatherdispls = (int *)malloc(nprocs * sizeof(int));
-		int rowsperprocess = N / nprocs;
-		int tot = 0; // Total number of rows assigned
-		for (int i = 0; i < nprocs-1; i++) {
-			sendcounts[i] = rowsperprocess * N;
-			recvcounts[i] = rowsperprocess;
-			displs[i] = rowsperprocess * i * N;
-			gatherdispls[i] = rowsperprocess * i;
-			tot += rowsperprocess;
+		for (int i = 0; i < nprocs; i++) {
+			sendcounts[i] = nrows * N;
+			recvcounts[i] = nrows;
+			displs[i] = nrows * i * N;
+			gatherdispls[i] = nrows * i;
 		}
-		sendcounts[nprocs - 1] = (N - tot) * N;
-		recvcounts[nprocs - 1] = N - tot;
-		displs[nprocs - 1] = rowsperprocess * (nprocs - 1) * N;
-		gatherdispls[nprocs-1] = rowsperprocess * (nprocs-1);
+		sendcounts[nprocs-1] += extraforlast * N;
+		recvcounts[nprocs-1] += extraforlast;
 	}
-	/*
-	for (int i = 0; i < N; i++) {
-		row_sums[i] = 0.0;
-		for (int j = 0; j < N; j++) {
-			row_sums[i] += matrix[i][j];
-		}
-	}
-	*/
 	MPI_Scatterv(&matrix[0], sendcounts, displs, MPI_DOUBLE, &buff[0], N*N, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
 	// Figure out how many rows should be processed by this process
-	int nrows = N / nprocs;
-	if (rank == nprocs - 1) nrows += N % nprocs;
+	if (rank == nprocs - 1) nrows += extraforlast;
 	double lsums[N];
-	double *p = &buff[0];
+	double *p = buff;
 	for (int i = 0; i < nrows; i++) {
 		lsums[i] = 0.0;
 		for (int j = 0; j < N; j++) {
@@ -67,7 +57,7 @@ void compute_row_sums(double matrix[N*N], double row_sums[N], int rank, int npro
 		}
 	}
 	MPI_Gatherv(&lsums[0], nrows, MPI_DOUBLE, &row_sums[0], recvcounts, gatherdispls, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-	MPI_Reduce(&lsums, &totalsum, nrows, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+	MPI_Reduce(&lsums[0], &totalsum, nrows, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 
 	if (rank == 0) {
 		free(sendcounts);
