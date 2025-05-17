@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import glob
 
-files = sorted(glob.glob("gol_output_*.txt"))
+files = sorted(glob.glob("mpi_output_*.txt"))
 
 for file in files:
     data = np.loadtxt(file)

@@ -194,17 +194,75 @@ void update(int step, int rank, int sq, int segi, int segj, int nrows, int ncols
     }
 }
 
-void write_output(int step, int N) {
+void write_output(int step, int N, int rank, int nprocs, int nrows, int ncols, int extraforlast, int sq) {
+    int *grid_to_send = (int *) malloc(nrows * ncols * sizeof(int));
+    for (int i = 0; i < nrows; i++) {
+        for (int j = 0; j < ncols; j++) {
+            grid_to_send[i*ncols + j] = grid[i+1][j+1];
+        }
+    }
+    int *grid_for_output;
+    int *grid_for_recv;
+	int *recvcounts;
+	int *gatherdispls;
+
+	if (rank == 0) {
+		recvcounts = (int *)malloc(nprocs * sizeof(int));
+		gatherdispls = (int *)malloc(nprocs * sizeof(int));
+        int last = 0;
+		for (int i = 0; i < nprocs; i++) {
+            int ri = i / sq;
+            int ci = i % sq;
+            int nr = N / sq;
+            int nc = N / sq;
+            if (ri == sq - 1) nr += extraforlast;
+            if (ci == sq - 1) nc += extraforlast;
+			recvcounts[i] = nr*nc;
+			gatherdispls[i] = last;
+            last += nr*nc;
+		}
+
+        grid_for_output = (int *) malloc(N * N * sizeof(int));
+        grid_for_recv = (int *) malloc(N * N * sizeof(int));
+    }
+
+    // Now use gather_v
+    MPI_Gatherv(grid_to_send, nrows*ncols, MPI_INT, grid_for_recv, recvcounts, gatherdispls, MPI_INT, 0, MPI_COMM_WORLD);
+
+    free(grid_to_send);
+    if (rank != 0) return;
+
+    // Move data from grid_for_recv to grid_for_output
+    int *p = grid_for_recv;
+    for (int n = 0; n < nprocs; n++) {
+        int ri = n / sq;
+        int ci = n % sq;
+        int nr = N / sq;
+        int nc = N / sq;
+        if (ri == sq - 1) nr += extraforlast;
+        if (ci == sq - 1) nc += extraforlast;
+        for (int i = 0; i < nr; i++) {
+            for (int j = 0; j < nc; j++) {
+                //grid_for_output[ri+i][ci+j]
+                grid_for_output[(ri+i)*N + ci+j] = *p;
+                p++;
+            }
+        }
+    }
+
     char filename[50];
-    sprintf(filename, "gol_output_%d.txt", step);
+    sprintf(filename, "mpi_output_%d.txt", step);
     FILE *f = fopen(filename, "w");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            fprintf(f, "%d ", grid[i][j]);
+            fprintf(f, "%d ", grid_for_output[i*N+j]);
         }
         fprintf(f, "\n");
     }
     fclose(f);
+    free(grid_for_output);
+    free(recvcounts);
+    free(gatherdispls);
 }
 
 int perfect_square_root(int n) {
@@ -235,7 +293,7 @@ int main(int argc, char** argv) {
     initialize(rank, sq, segi, segj, nrows, ncols);
     for (int step = 0; step < STEPS; step++) {
         update(step, rank, sq, segi, segj, nrows, ncols);
-        //if (step % 10 == 0) write_output(step);
+        if (step % 10 == 0) write_output(step, N, rank, nprocs, nrows, ncols, extraforlast, sq);
     }
 
     MPI_Finalize();
