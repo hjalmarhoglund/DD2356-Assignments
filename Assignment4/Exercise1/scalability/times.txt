@@ -1,0 +1,7 @@
+#exe  ranks  seconds
+original.out 1 0.508338
+halo.out 2 0.407950
+halo.out 4 0.207173
+halo.out 8 0.140462
+halo.out 16 0.109848
+halo.out 32 0.097828
