@@ -177,8 +177,8 @@ void update(int step, int rank, int sq, int segi, int segj, int nrows, int ncols
     // We now update the edge columns with the information
     // we stored in the temporary buffers (tc1 & tc2)
     for (int i = 0; i < nrows; i++) {
-        grid[0][i+1] = tc1[i];
-        grid[ncols+1][i+1] = tc2[i];
+        grid[0][i+1] = neig_l[i];
+        grid[ncols+1][i+1] = neig_r[i];
     }
     // Update edges
     for (int j = 1; j <= ncols; j++) {
