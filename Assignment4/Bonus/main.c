@@ -160,10 +160,9 @@ void do_update(int i, int j) {
 
 void update(int step, int rank, int sq, int segi, int segj, int nrows, int ncols) {
     // We have 8 neigs
-    MPI_Request send_req[8];
-    MPI_Request recv_req[8];
-    send_to_neig(step, rank, sq, segi, segj, nrows, ncols, &send_req[0]);
-    recv_from_neig(step, rank, sq, segi, segj, nrows, ncols, &recv_req[0]);
+    MPI_Request reqs[16];
+    send_to_neig(step, rank, sq, segi, segj, nrows, ncols, &reqs[0]);
+    recv_from_neig(step, rank, sq, segi, segj, nrows, ncols, &reqs[8]);
     // Update internal
     for (int i = 2; i < nrows; i++) {
         for (int j = 2; j < ncols; j++) {
@@ -171,9 +170,7 @@ void update(int step, int rank, int sq, int segi, int segj, int nrows, int ncols
         }
     }
     // Check if we sent to neig
-    MPI_Waitall(8, send_req, MPI_STATUSES_IGNORE);
-    // Check if we recv:ed from neig
-    MPI_Waitall(8, recv_req, MPI_STATUSES_IGNORE);
+    MPI_Waitall(16, reqs, MPI_STATUSES_IGNORE);
     // We now update the edge columns with the information
     // we stored in the temporary buffers (tc1 & tc2)
     for (int i = 0; i < nrows; i++) {
