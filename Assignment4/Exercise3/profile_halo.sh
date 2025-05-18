@@ -8,7 +8,7 @@
 #SBATCH --output=prof_%j.txt
 
 module purge
-module load cpeGNU
+module load PDC/23.12 
 module load score-p/8.4-cpeGNU   
 
 scorep mpicc -O3 ex1_halo.c -o ex1_halo.out
