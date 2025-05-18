@@ -71,19 +71,6 @@ void destroy(int nrows) {
     free(tc2);
 }
 
-int count_neighbors(int x, int y) {
-    int sum = 0;
-    for (int i = -1; i <= 1; i++) {
-        for (int j = -1; j <= 1; j++) {
-            if (i == 0 && j == 0) continue;
-            int nx = x + i;
-            int ny = y + j;
-            sum += grid[nx][ny];
-        }
-    }
-    return sum;
-}
-
 int ijtorank(int i, int j, int sq) {
     if (i < 0) i += sq;
     if (j < 0) j += sq;
@@ -95,56 +82,69 @@ int ijtorank(int i, int j, int sq) {
 void send_to_neig(int step, int rank, int sq, int segi, int segj, int nrows, int ncols, MPI_Request *req) {
     // Send to above
     int above_rank = ijtorank(segi - 1, segj, sq);
-    MPI_Isend(&grid[1][1], ncols, MPI_INT, above_rank, step, MPI_COMM_WORLD, &req[0]);
+    MPI_Isend(&grid[1][1], ncols, MPI_INT, above_rank, 1, MPI_COMM_WORLD, &req[0]);
     // Send to below
     int below_rank = ijtorank(segi + 1, segj, sq);
-    MPI_Isend(&grid[nrows][1], ncols, MPI_INT, below_rank, step, MPI_COMM_WORLD, &req[1]);
+    MPI_Isend(&grid[nrows][1], ncols, MPI_INT, below_rank, 2, MPI_COMM_WORLD, &req[1]);
     // To send left and right, we move the columns to tc1 and tc2
-    for (int i = 1; i <= nrows; i++) {
-        tc1[i] = grid[i][1];
-        tc2[i] = grid[i][ncols];
+    for (int i = 0; i < nrows; i++) {
+        tc1[i] = grid[i+1][1];
+        tc2[i] = grid[i+1][ncols];
     }
     // Send left
     int left_rank = ijtorank(segi, segj - 1, sq);
-    MPI_Isend(tc1, nrows, MPI_INT, left_rank, step, MPI_COMM_WORLD, &req[2]);
+    MPI_Isend(tc1, nrows, MPI_INT, left_rank, 3, MPI_COMM_WORLD, &req[2]);
     // Send right
     int right_rank = ijtorank(segi, segj + 1, sq);
-    MPI_Isend(tc2, nrows, MPI_INT, right_rank, step, MPI_COMM_WORLD, &req[3]);
+    MPI_Isend(tc2, nrows, MPI_INT, right_rank, 4, MPI_COMM_WORLD, &req[3]);
 
     // Send diagonals
     int top_left_rank = ijtorank(segi - 1, segj - 1, sq);
-    MPI_Isend(&grid[1][1], 1, MPI_INT, top_left_rank, step, MPI_COMM_WORLD, &req[4]);
+    MPI_Isend(&grid[1][1], 1, MPI_INT, top_left_rank, 5, MPI_COMM_WORLD, &req[4]);
     int top_right_rank = ijtorank(segi - 1, segj + 1, sq);
-    MPI_Isend(&grid[1][ncols], 1, MPI_INT, top_right_rank, step, MPI_COMM_WORLD, &req[5]);
+    MPI_Isend(&grid[1][ncols], 1, MPI_INT, top_right_rank, 6, MPI_COMM_WORLD, &req[5]);
     int bottom_left_rank = ijtorank(segi + 1, segj - 1, sq);
-    MPI_Isend(&grid[nrows][1], 1, MPI_INT, bottom_left_rank, step, MPI_COMM_WORLD, &req[6]);
+    MPI_Isend(&grid[nrows][1], 1, MPI_INT, bottom_left_rank, 7, MPI_COMM_WORLD, &req[6]);
     int bottom_right_rank = ijtorank(segi + 1, segj + 1, sq);
-    MPI_Isend(&grid[nrows][ncols], 1, MPI_INT, bottom_right_rank, step, MPI_COMM_WORLD, &req[7]);
+    MPI_Isend(&grid[nrows][ncols], 1, MPI_INT, bottom_right_rank, 8, MPI_COMM_WORLD, &req[7]);
 }
 
 void recv_from_neig(int step, int rank, int sq, int segi, int segj, int nrows, int ncols, MPI_Request *req) {
     // Get from above
     int above_rank = ijtorank(segi - 1, segj, sq);
-    MPI_Irecv(&grid[0][1], ncols, MPI_INT, above_rank, step, MPI_COMM_WORLD, &req[0]);
+    MPI_Irecv(&grid[0][1], ncols, MPI_INT, above_rank, 2, MPI_COMM_WORLD, &req[0]);
     // Get from below
     int below_rank = ijtorank(segi + 1, segj, sq);
-    MPI_Irecv(&grid[nrows][1], ncols, MPI_INT, below_rank, step, MPI_COMM_WORLD, &req[1]);
+    MPI_Irecv(&grid[nrows+1][1], ncols, MPI_INT, below_rank, 1, MPI_COMM_WORLD, &req[1]);
     // Get from left
     int left_rank = ijtorank(segi, segj - 1, sq);
-    MPI_Irecv(neig_l, nrows, MPI_INT, left_rank, step, MPI_COMM_WORLD, &req[2]);
+    MPI_Irecv(neig_l, nrows, MPI_INT, left_rank, 4, MPI_COMM_WORLD, &req[2]);
     // Get from right
     int right_rank = ijtorank(segi, segj + 1, sq);
-    MPI_Irecv(neig_r, nrows, MPI_INT, right_rank, step, MPI_COMM_WORLD, &req[3]);
+    MPI_Irecv(neig_r, nrows, MPI_INT, right_rank, 3, MPI_COMM_WORLD, &req[3]);
 
     // Get diagonals
     int top_left_rank = ijtorank(segi - 1, segj - 1, sq);
-    MPI_Irecv(&grid[0][0], 1, MPI_INT, top_left_rank, step, MPI_COMM_WORLD, &req[4]);
+    MPI_Irecv(&grid[0][0], 1, MPI_INT, top_left_rank, 8, MPI_COMM_WORLD, &req[4]);
     int top_right_rank = ijtorank(segi - 1, segj + 1, sq);
-    MPI_Irecv(&grid[0][ncols+1], 1, MPI_INT, top_right_rank, step, MPI_COMM_WORLD, &req[5]);
+    MPI_Irecv(&grid[0][ncols+1], 1, MPI_INT, top_right_rank, 7, MPI_COMM_WORLD, &req[5]);
     int bottom_left_rank = ijtorank(segi + 1, segj - 1, sq);
-    MPI_Irecv(&grid[nrows+1][0], 1, MPI_INT, bottom_left_rank, step, MPI_COMM_WORLD, &req[6]);
+    MPI_Irecv(&grid[nrows+1][0], 1, MPI_INT, bottom_left_rank, 6, MPI_COMM_WORLD, &req[6]);
     int bottom_right_rank = ijtorank(segi + 1, segj + 1, sq);
-    MPI_Irecv(&grid[nrows+1][ncols+1], 1, MPI_INT, bottom_right_rank, step, MPI_COMM_WORLD, &req[7]);
+    MPI_Irecv(&grid[nrows+1][ncols+1], 1, MPI_INT, bottom_right_rank, 5, MPI_COMM_WORLD, &req[7]);
+}
+
+int count_neighbors(int x, int y) {
+    int sum = 0;
+    for (int i = -1; i <= 1; i++) {
+        for (int j = -1; j <= 1; j++) {
+            if (i == 0 && j == 0) continue;
+            int nx = x + i;
+            int ny = y + j;
+            sum += grid[nx][ny];
+        }
+    }
+    return sum;
 }
 
 void do_update(int i, int j) {
@@ -174,15 +174,15 @@ void update(int step, int rank, int sq, int segi, int segj, int nrows, int ncols
     // We now update the edge columns with the information
     // we stored in the temporary buffers (tc1 & tc2)
     for (int i = 0; i < nrows; i++) {
-        grid[0][i+1] = neig_l[i];
-        grid[ncols+1][i+1] = neig_r[i];
+        grid[i+1][0] = neig_l[i];
+        grid[i+1][ncols+1] = neig_r[i];
     }
     // Update edges
     for (int j = 1; j <= ncols; j++) {
         do_update(1,j);
         do_update(nrows,j);
     }
-    for (int i = 2; i < nrows; i++) {
+    for (int i = 1; i <= nrows; i++) {
         do_update(i,1);
         do_update(i,ncols);
     }
@@ -234,6 +234,7 @@ void write_output(int step, int N, int rank, int nprocs, int nrows, int ncols, i
 
     // Move data from grid_for_recv to grid_for_output
     int *p = grid_for_recv;
+    int stride = N / sq;
     for (int n = 0; n < nprocs; n++) {
         int ri = n / sq;
         int ci = n % sq;
@@ -243,15 +244,18 @@ void write_output(int step, int N, int rank, int nprocs, int nrows, int ncols, i
         if (ci == sq - 1) nc += extraforlast;
         for (int i = 0; i < nr; i++) {
             for (int j = 0; j < nc; j++) {
-                //grid_for_output[ri+i][ci+j]
-                grid_for_output[(ri+i)*N + ci+j] = *p;
+                //grid_for_output[ri*S+i][ci*S+j]
+                grid_for_output[(ri*stride+i)*N + ci*stride+j] = *p;
                 p++;
             }
         }
     }
 
     char filename[50];
-    sprintf(filename, "mpi_output_%d.txt", step);
+    if (step < 10)
+        sprintf(filename, "mpi_output_0%d.txt", step);
+    else
+        sprintf(filename, "mpi_output_%d.txt", step);
     FILE *f = fopen(filename, "w");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -261,6 +265,7 @@ void write_output(int step, int N, int rank, int nprocs, int nrows, int ncols, i
     }
     fclose(f);
     free(grid_for_output);
+    free(grid_for_recv);
     free(recvcounts);
     free(gatherdispls);
 }
@@ -270,6 +275,59 @@ int perfect_square_root(int n) {
         if (i * i == n) return i;
     }
     return -1;
+}
+
+void wipe(int rank, int nrows, int ncols) {
+    for (int i = 1; i <= nrows; i++) {
+        for (int j = 1; j <= ncols; j++) {
+            grid[i][j] = 0;
+        }
+    }
+    /*
+    ..XX
+    ..XX
+    XX..
+    XX..
+    */
+    if (rank == 0) {
+        grid[9][2] = 1; grid[9][3] = 1;
+        grid[10][2] = 1; grid[10][3] = 1;
+    }
+    if (rank == 2) {
+        grid[1][4] = 1; grid[1][5] = 1;
+        grid[2][4] = 1; grid[2][5] = 1;
+    }
+
+    // Add glider
+    /*
+    ..X
+    X.X
+    .XX
+    */
+    if (rank == 0 || rank == 3) {
+        grid[1][3] = 1;
+        grid[2][1] = 1;
+        grid[2][3] = 1;
+        grid[3][2] = 1;
+        grid[3][3] = 1;
+    }
+    // Add blinker
+    /*
+    X
+    X
+    X
+    */
+    return;
+    if (rank == 2) {
+        grid[7][10] = 1;
+        grid[8][10] = 1;
+        grid[9][10] = 1;
+    }
+    if (rank == 1) {
+        grid[1][4] = 1;
+        grid[1][5] = 1;
+        grid[1][6] = 1;
+    }
 }
 
 int main(int argc, char** argv) {
@@ -291,9 +349,10 @@ int main(int argc, char** argv) {
     if (segj == sq-1) ncols += extraforlast;
 
     initialize(rank, sq, segi, segj, nrows, ncols);
+    wipe(rank, nrows, ncols);
     for (int step = 0; step < STEPS; step++) {
         update(step, rank, sq, segi, segj, nrows, ncols);
-        if (step % 10 == 0) write_output(step, N, rank, nprocs, nrows, ncols, extraforlast, sq);
+        if (step % 1 == 0) write_output(step, N, rank, nprocs, nrows, ncols, extraforlast, sq);
     }
 
     MPI_Finalize();
