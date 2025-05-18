@@ -1,0 +1,12 @@
+Estimated aggregate size of event trace:                   14MB
+Estimated requirements for largest trace buffer (max_buf): 218kB
+Estimated memory requirements (SCOREP_TOTAL_MEMORY):       4097kB
+(hint: When tracing set SCOREP_TOTAL_MEMORY=4097kB to avoid intermediate flushes
+ or reduce requirements using USR regions filters.)
+
+flt     type max_buf[B]  visits time[s] time[%]  time/visit[us]  region
+         ALL    222,851 257,153 5261.00   100.0        20458.63  ALL
+         MPI    198,690 192,832 4929.90    93.7        25565.77  MPI
+         COM     24,096  64,256  326.48     6.2         5080.94  COM
+      SCOREP         41      64    4.36     0.1        68115.15  SCOREP
+         USR         24       1    0.26     0.0       260557.76  USR
